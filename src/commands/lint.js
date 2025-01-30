@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2022-2024 Objectionary.com
+ * Copyright (c) 2022-2025 Objectionary.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -43,6 +43,10 @@ module.exports = function(opts) {
     ).then((r) => {
       console.info('EO program linted in %s', rel(path.resolve(opts.target)));
       return r;
+    }).catch((error) => {
+      throw new Error(
+        'There are error and/or warnings; you may disable warnings via the --easy option'
+      );
     });
   } else {
     return mvnw(
@@ -51,6 +55,8 @@ module.exports = function(opts) {
     ).then((r) => {
       console.info('EO program verified in %s', rel(path.resolve(opts.target)));
       return r;
+    }).catch((error) => {
+      throw new Error('You may disable warnings via the --easy option');
     });
   }
 };

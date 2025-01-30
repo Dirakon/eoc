@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2022-2024 Objectionary.com
+ * Copyright (c) 2022-2025 Objectionary.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -49,7 +49,6 @@ describe('compile', function() {
         'target/generated-sources/EOfoo/EObar/EOcompile.java',
         'target/generated-sources/EOorg/EOeolang/EObytes.java',
         'target/classes/EOfoo/EObar/EOcompile.class',
-        'target/classes/org/eolang/Phi.class',
         'target/classes/EOorg/EOeolang/EOnumber.class',
       ]
     );

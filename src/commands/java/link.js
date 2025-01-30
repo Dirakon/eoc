@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2022-2024 Objectionary.com
+ * Copyright (c) 2022-2025 Objectionary.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -33,7 +33,7 @@ const path = require('path');
  */
 module.exports = function(opts) {
   const jar = path.resolve(opts.target, 'eoc.jar');
-  return mvnw(['jar:jar'].concat(flags(opts)), opts.target, opts.batch).then((r) => {
+  return mvnw(['jar:jar', 'shade:shade'].concat(flags(opts)), opts.target, opts.batch).then((r) => {
     console.info('Executable JAR created at %s', rel(jar));
     return r;
   });
