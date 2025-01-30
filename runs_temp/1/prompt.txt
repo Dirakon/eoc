@@ -1,0 +1,31 @@
+Write a comment explaining what the object does. Only write the minimal, succinct explanation that could be inserted as a code comment above the object in place of <COMMENT-TO-BE-ADDED> mark. Do not add any additional text besides the actual comment to be added. You will be provided a few interaction examples and an actual user input afterwards.
+
+Input:
+```eo
+# <COMMENT-TO-BE-ADDED>
+[a b] > app
+  add. > @
+    a
+    b
+```
+Output: Object that adds two numbers together.
+
+Input:
+```eo
+# <COMMENT-TO-BE-ADDED>
+[as-bytes] > string
+  as-bytes > @
+
+  # Get the length of it.
+  [] > length /number
+
+  # Takes a piece of a string as another string.
+  [start len] > slice /string
+```
+Output: An abstraction of a text string, which internally is a chain of bytes.
+
+Now follows the actual user input to be documented!
+Input:
+```eo
+{code}
+```
