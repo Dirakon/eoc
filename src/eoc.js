@@ -50,6 +50,7 @@ const common = {
   unphi: require('./commands/unphi'),
   lint: require('./commands/lint'),
   docs: require('./commands/docs'),
+  docs_complete: require('./commands/docs_complete'),
   jeo_disassemble: require('./commands/jeo/disassemble'),
   jeo_assemble: require('./commands/jeo/assemble')
 };
@@ -354,6 +355,19 @@ program.command('docs')
   .description('Generate documentation from XMIR files')
   .action((str, opts) => {
     coms().docs(program.opts());
+  });
+
+program.command('docs-complete')
+  .description('Complete documentation with LLM')
+  .option('--provider <provider>', 'Which LLM provider to use. Available: `ollama`')
+  .option('--ollama_model <model>', '(only usable with `ollama` provider) name of ollama model to user')
+  .option('--ctx_size <size>', '(only usable with `ollama` provider) number of tokens for context')
+  .option('--comment_placeholder <placholder>', 'A string placeholder, each instance of which will be replaced with a generated comment', '<COMMENT-TO-BE-ADDED>')
+  .option('--target <path>', 'File to process')
+  .option('--output <path>', 'Output file path - the file will contain the replacment mapping')
+  .option('--prompt_template <path>', 'Path to prompt template file - {code} will be replaced with the code given by the user')
+  .action((str, opts) => {
+    coms().docs_complete({...program.opts(), ...str});
   });
 
 program.command('jeo:disassemble')
