@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 #
-# Copyright (c) 2022-2024 Objectionary.com
+# Copyright (c) 2022-2025 Objectionary.com
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +21,7 @@
 # SOFTWARE.
 ---
 name: telegram
-on:
+'on':
   push:
     tags:
       - '*'
@@ -30,14 +30,17 @@ concurrency:
   cancel-in-progress: true
 jobs:
   telegram:
+    timeout-minutes: 15
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - run: |
           (
-            printf "We've just published a new release "
+            printf "We've just "
+            printf "[published](https://www.npmjs.com/package/eolang) a new release "
             printf 'of [eoc](https://github.com/objectionary/eoc), '
-            printf 'a command-line tool for compiling and running EO programs: '
+            printf 'a command-line tool for compiling and running EO programs, '
+            printf 'written entirely in JavaScript: '
             printf '[%s](https://github.com/objectionary/eoc/releases/tag/%s). ' \
               "${{github.ref_name}}" "${{github.ref_name}}"
             printf 'It is advised to use this tool for all interactions with '

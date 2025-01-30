@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2022-2024 Objectionary.com
+ * Copyright (c) 2022-2025 Objectionary.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,10 +22,14 @@
  * SOFTWARE.
  */
 
+const fs = require('fs');
+const path = require('path');
+
 /**
  * Command to create docs from .EO sources.
  * @param {Hash} opts - All options
  */
 module.exports = function(opts) {
-  console.info('This command is not yet implemented, sorry');
+  const filePath = path.resolve('eodocs.html');
+  fs.writeFileSync(filePath, '');
 };

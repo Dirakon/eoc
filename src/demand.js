@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2022-2024 Objectionary.com
+ * Copyright (c) 2022-2025 Objectionary.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -32,6 +32,9 @@ const semver = require('semver');
  * @param {String} min - Minimal expected version
  */
 module.exports.gte = function(subject, current, min) {
+  if (current.endsWith('-SNAPSHOT')) {
+    return;
+  }
   if (semver.lt(current, min)) {
     console.error(
       '%s is required to have version %s or higher, while you use %s',

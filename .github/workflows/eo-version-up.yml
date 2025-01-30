@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 #
-# Copyright (c) 2022-2024 Objectionary.com
+# Copyright (c) 2022-2025 Objectionary.com
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -32,10 +32,11 @@ concurrency:
   cancel-in-progress: true
 jobs:
   eo-version-up:
+    timeout-minutes: 15
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get -y install jq
+      - run: sudo apt-get install --yes jq
       - run: |
           curl https://api.github.com/repos/objectionary/eo/releases/latest \
             --silent | jq -r .tag_name > eo-version.txt

@@ -2,7 +2,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2022-2024 Objectionary.com
+ * Copyright (c) 2022-2025 Objectionary.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -50,7 +50,7 @@ const common = {
   unphi: require('./commands/unphi'),
   lint: require('./commands/lint'),
   docs: require('./commands/docs'),
-  docs_complete: require('./commands/docs_complete'),
+  generate_comments: require('./commands/generate_comments'),
   jeo_disassemble: require('./commands/jeo/disassemble'),
   jeo_assemble: require('./commands/jeo/assemble')
 };
@@ -357,12 +357,15 @@ program.command('docs')
     coms().docs(program.opts());
   });
 
-program.command('docs-complete')
-  .description('Complete documentation with LLM')
-  .option('--provider <provider>', 'Which LLM provider to use. Available: `ollama`')
-  .option('--ollama_model <model>', '(only usable with `ollama` provider) name of ollama model to user')
+program.command('generate_comments')
+  .description('Complete comments with LLM')
+  .requiredOption('--provider <provider>', 'Which LLM provider to use. Currently supported providers are: \`placeholder\`.')
+  .requiredOption('--source <path>', 'File to process')
+  .option('--comment_placeholder <placholder>', 'A string placeholder, each instance of which will be replaced with a generated comment', '<COMMENT-TO-BE-ADDED>')
+  .option('--output <path>', 'Output file path - the file will contain the replacment mapping', 'out.json')
+  .requiredOption('--prompt_template <path>', 'Path to prompt template file, where `{code}` placholder will be replaced with the code given by the user')
   .action((str, opts) => {
-    coms().docs_complete({...program.opts(), ...str});
+    coms().generate_comments({...program.opts(), ...str});
   });
 
 program.command('jeo:disassemble')
