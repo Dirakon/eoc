@@ -25,8 +25,9 @@
 const { ChatOllama } = require('@langchain/ollama');
 const { PromptTemplate } = require("@langchain/core/prompts");
 const { RunnableSequence } = require("@langchain/core/runnables");
-const { StringOutputParser } = require("@langchain/core/output_parsers");
+const { StringOutputParser, OutputParserException } = require("@langchain/core/output_parsers");
 const { FewShotPromptTemplate } = require("@langchain/core/prompts");
+const { readFile, readFileSync, writeFileSync } = require('fs');
 
 function makeModel(opts) {
     switch (opts.provider) {
@@ -38,9 +39,20 @@ function makeModel(opts) {
                 throw new Error(`Ollama model not specified. You have to pass \`--ollama_model\` argument.`);
             }
 
+            let ctx_size = opts.ctx_size;
+            if (ctx_size == null || ctx_size == undefined)
+            {
+                throw new OutputParserException("sd")
+                //? 2048
+            }
+            else
+            {
+                ctx_size = parseInt(ctx_size)
+            }
             return new ChatOllama(
                 {
                     model: opts.ollama_model,
+                    numCtx: ctx_size
                 });
         default:
             throw new Error(`\`${opts.provider}\` provider is not supported. Supported providers are: \`ollama\``);
@@ -52,26 +64,15 @@ function makeModel(opts) {
  * @param {Hash} opts - All options
  */
 module.exports = async function(opts) {
-    const examplePrompt = PromptTemplate.fromTemplate(
-        "Input:\n\`\`\`eo\n{code}\n\`\`\`\nOutput: {comment}"
-    );
-    const examples = [
-        {
-            code: "# <COMMENT TO BE ADDED>\n[a b] > app\n  add. > @\n    a\n    b",
-            comment: "Object that adds two numbers together."
-        },
-        {
-            code: "# <COMMENT TO BE ADDED>\n[as-bytes] > string\n  as-bytes > @\n\n  # Get the length of it.\n  [] > length /number\n\n  # Takes a piece of a string as another string.\n  [start len] > slice /string",
-            comment: "An abstraction of a text string, which internally is a chain of bytes."
-        }
-    ];
-    const prompt = new FewShotPromptTemplate({
-        examples,
-        examplePrompt,
-        suffix: "The actual user input to be documented:\n\`\`\`eo\n{code}\n\`\`\`",
-        prefix: `Write a comment explaining what the object does. Only write the minimal, succinct explanation that could be inserted as a code comment above the object in place of <COMMENT TO BE ADDED> mark. Do not add any additional text besides the actual comment to be added. You will be provided a few interaction examples and an actual user input afterwards.`,
+    const prompt = new PromptTemplate({
+        template: readFileSync(opts.prompt_template, 'utf-8'),
         inputVariables: ["code"],
     });
+
+    //console.log(await prompt.format(
+    //    {code:
+    //readFileSync(opts.target, 'utf-8')}));
+    //return;
 
     const model = makeModel(opts);
 
@@ -81,9 +82,36 @@ module.exports = async function(opts) {
         new StringOutputParser(),
     ]);
 
-    const inputCode = `# <COMMENT TO BE ADDED>\n[args] > hello\n  QQ.io.stdout > @\n    "Hello, world!`
-    //console.log(await prompt.format({ code:  inputCode}));
-    const result = await chain.invoke({ code: inputCode });
+    const inputCode = readFileSync(opts.target, 'utf-8')
+    const comment_placeholder = opts.comment_placeholder;
+    const results = [];
+    const allLocationsOfPlaceholderInInputCode = Array.from(inputCode.matchAll(comment_placeholder));
 
-    console.log(result);
+    let index = 0;
+    for (const location of allLocationsOfPlaceholderInInputCode) {
+       const codeBefore = inputCode.slice(0, location.index);
+       const codeAfter = inputCode.slice(location.index + location[0].length);
+       
+       const replacedCodeBefore = codeBefore.replace(comment_placeholder, "");
+       const replacedCodeAfter = codeAfter.replace(comment_placeholder, "");
+
+       const focusedInputCode = replacedCodeBefore + comment_placeholder + replacedCodeAfter
+
+       console.log(`Generating documentation... ${index}/${allLocationsOfPlaceholderInInputCode.length}`);
+       index++;
+
+       let result = await chain.invoke({ code: focusedInputCode });
+       if (result.indexOf("</think>") != -1)
+        {
+            // deepseek (reasoning-model) specific. TODO: figure out how to make this more general
+            const thinkEnd = result.indexOf("</think>") 
+            result = result.slice(thinkEnd + "</think>".length + 1).trim()
+        }
+       console.log(result);
+       results.push(result)
+    }
+
+    console.log(results);
+
+    writeFileSync(opts.output, JSON.stringify(results))
 };
