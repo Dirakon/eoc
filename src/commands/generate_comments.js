@@ -26,17 +26,41 @@ const { FakeListChatModel } = require("@langchain/core/utils/testing");
 const { PromptTemplate } = require("@langchain/core/prompts");
 const { RunnableSequence } = require("@langchain/core/runnables");
 const { StringOutputParser } = require("@langchain/core/output_parsers");
+const { ChatOllama } = require('@langchain/ollama');
 const { readFileSync, writeFileSync } = require('fs');
 
 function makeModel(opts) {
     switch (opts.provider) {
+        case null:
+        case undefined:
+            throw new Error(`Provider not specified. You have to pass \`--provider\` argument.`);
         case 'placeholder':
             const model = new FakeListChatModel({
               responses: ["<PLACEHOLDER_RESPONSE>"],
             });
             return model;
+        case 'ollama':
+            if (opts.ollama_model == null || opts.ollama_model == undefined) {
+                throw new Error(`Ollama model not specified. You have to pass \`--ollama_model\` argument.`);
+            }
+
+            let ctx_size = opts.ctx_size;
+            if (ctx_size == null || ctx_size == undefined)
+            {
+                throw new OutputParserException("sd")
+                //? 2048
+            }
+            else
+            {
+                ctx_size = parseInt(ctx_size)
+            }
+            return new ChatOllama(
+                {
+                    model: opts.ollama_model,
+                    numCtx: ctx_size
+                });
         default:
-            throw new Error(`\`${opts.provider}\` provider is not supported. Currently supported providers are: \`placeholder\``);
+            throw new Error(`\`${opts.provider}\` provider is not supported. Currently supported providers are: \`placeholder\`, \'ollama\'`);
     }
 }
 
@@ -77,6 +101,13 @@ module.exports = async function(opts) {
         console.debug(`Generating documentation... ${index}/${allLocationsOfPlaceholderInInputCode.length}`);
 
         let result = await chain.invoke({ code: focusedInputCode });
+
+        if (result.indexOf("</think>") != -1)
+        {
+            // deepseek (reasoning-model) specific. TODO: figure out how to make this more general
+            const thinkEnd = result.indexOf("</think>") 
+            result = result.slice(thinkEnd + "</think>".length + 1).trim()
+        }
         results.push(result)
 
         index++;
