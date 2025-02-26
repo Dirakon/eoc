@@ -27,6 +27,7 @@ const { PromptTemplate } = require("@langchain/core/prompts");
 const { RunnableSequence } = require("@langchain/core/runnables");
 const { StringOutputParser } = require("@langchain/core/output_parsers");
 const { ChatOllama } = require('@langchain/ollama');
+const { HuggingFaceInference } = require("@langchain/community/llms/hf");
 const { readFileSync, writeFileSync } = require('fs');
 
 function makeModel(opts) {
@@ -34,11 +35,15 @@ function makeModel(opts) {
         case null:
         case undefined:
             throw new Error(`Provider not specified. You have to pass \`--provider\` argument.`);
+        case 'huggingface':
+            return new HuggingFaceInference({
+                model: opts.huggingface_model,
+                apiKey: opts.huggingface_token
+              });
         case 'placeholder':
-            const model = new FakeListChatModel({
+            return new FakeListChatModel({
               responses: ["<PLACEHOLDER_RESPONSE>"],
             });
-            return model;
         case 'ollama':
             if (opts.ollama_model == null || opts.ollama_model == undefined) {
                 throw new Error(`Ollama model not specified. You have to pass \`--ollama_model\` argument.`);
@@ -101,6 +106,7 @@ module.exports = async function(opts) {
         console.debug(`Generating documentation... ${index}/${allLocationsOfPlaceholderInInputCode.length}`);
 
         let result = await chain.invoke({ code: focusedInputCode });
+        console.log(result)
 
         if (result.indexOf("</think>") != -1)
         {

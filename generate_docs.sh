@@ -17,11 +17,11 @@ find ./runs_temp -mindepth 1 -maxdepth 1 -type d | while read -r dir; do
 	# Run the command if prompt template exists
 	if [ -f "$prompt_template" ]; then
 	    echo "Processing $(basename "$dir") with model $model"
-	    node ./src/eoc.js docs-complete \
+	    node ./src/eoc.js generate_comments \
 		--provider ollama \
 		--ctx_size 8000 \
 		--ollama_model "$model" \
-		--target app.eo \
+		--source app.eo \
 		--output "$output_file" \
 		--prompt_template "$prompt_template"
 	    # Cleanup
