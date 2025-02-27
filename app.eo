@@ -1,4 +1,4 @@
-# <COMMENT-TO-BE-ADDED>
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
 [state-path] > program-data-storage
   state-path > @
   [branch program-name] > data-file
@@ -19,7 +19,7 @@
         directory.made
         file
 
-# <COMMENT-TO-BE-ADDED>
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
 [args] > app
   QQ.fs.path > state-path
     args.at 0
@@ -150,7 +150,7 @@
           serialized-versions
         program-data-instance
 
-# <COMMENT-TO-BE-ADDED>
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
 [branch program-name versions] > program-data
   program-name > @
 
@@ -205,11 +205,11 @@
         versions
         versions.with new-version
 
-# <COMMENT-TO-BE-ADDED>
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
 [version-number timestamp] > program-version
   version-number > @
 
-# <COMMENT-TO-BE-ADDED>
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
 [] > external
   "" > @
   "|||" > command-separator

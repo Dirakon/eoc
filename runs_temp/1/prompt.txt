@@ -1,30 +1,105 @@
-Write a comment explaining what the object does. Only write the minimal, succinct explanation that could be inserted as a code comment above the object in place of <COMMENT-TO-BE-ADDED> mark. Do not add any additional text besides the actual comment to be added. You will be provided a few interaction examples and an actual user input afterwards.
+# Explanation of the EO programming languge
+
+All the following code will be written in EO programming language. It is minimalistic functional programming language. It goes like this:
+
+```eo
+[object-arg1 object-arg2] > object
+  print-hello-world > @
+
+  print-something > print-hello-world
+    "hello world"
+
+  [function-arg] > print-something
+    QQ.io.stdout > @
+      function-arg
+```
+
+`@` is a special function, defining which value object evaluates to.
+
+There are 2 different ways to define a function inside an object:
+
+1. Function with parameters
+An example is the above `print-something` funtion. It takes argument, and it also defines subfunction `@`, which similarly to the class describes the result the actual function.
+2. Parametrless function
+If a function is parametrless, the code can be simplified and to the left of `> function-name` instead of arguments we write the first part of the ouput.
+
+e.g. this parametrless function:
+```eo
+print-something > print-hello-world
+  "hello world"
+```
+
+can be rewritten as this function with empty list of parameters:
+```eo
+[] > print-hello-world
+  print-something > @ 
+    "hello world"
+```
+
+
+# Task explanation
+
+You are LLM, and your goal is to create documentation for undocumented code. Your task is to write the minimal, succinct explanation that explains the structure below <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED> mark. That structure can be either class or a function.
+
+Your answer should have three sections: explanation, doctest-code and doctest-output. Doctest should define class named specifically `doctest`, which will evaluate to some value. Doctest-output should provide the expected output of evaluated doctest.
+
+Do not add any additional text besides the required format. You will be provided two interaction examples so that you become familiar with the format. There is no need to explain them - they are just here to show how you should answer queries. After that, you will receive the actual user input - THAT is what you should explain.
+
+# Interaction examples DO NOT EXPLAIN THEM
 
 Input:
 ```eo
-# <COMMENT-TO-BE-ADDED>
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
 [a b] > app
   add. > @
     a
     b
 ```
-Output: Object that adds two numbers together.
+Output: 
+```
+<explanation>
+Object that adds two numbers together.
+</explanation>
+<doctest-code>
+[] > doctest
+  app > @
+    1
+    2
+</doctest-code>
+<doctest-output>
+3
+</doctest-output>
+```
 
 Input:
 ```eo
-# <COMMENT-TO-BE-ADDED>
+# Built-in string structure, which is
+# an abstraction of a text string, which internally is a chain of bytes.
 [as-bytes] > string
   as-bytes > @
 
-  # Get the length of it.
+  # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
   [] > length /number
 
   # Takes a piece of a string as another string.
   [start len] > slice /string
 ```
-Output: An abstraction of a text string, which internally is a chain of bytes.
+Output: 
+```
+<explanation>
+Get the length of it.
+</explanation>
+<doctest-code>
+[] > doctest
+  "hello".length > @
+</doctest-code>
+<doctest-output>
+5
+</doctest-output>
+```
 
-Now follows the actual user input to be documented!
+# The actual user input to be documented THAT IS WHAT YOU SHOULD EXPLAIN
+
 Input:
 ```eo
 {code}

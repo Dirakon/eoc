@@ -23,6 +23,7 @@ find ./runs_temp -mindepth 1 -maxdepth 1 -type d | while read -r dir; do
 		--ollama_model "$model" \
 		--source app.eo \
 		--output "$output_file" \
+		--comment_placeholder "<STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>"\
 		--prompt_template "$prompt_template"
 	    # Cleanup
 	    ollama stop "$model"

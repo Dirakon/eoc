@@ -103,7 +103,7 @@ module.exports = async function(opts) {
 
         const focusedInputCode = replacedCodeBefore + commentPlaceholder + replacedCodeAfter
 
-        console.debug(`Generating documentation... ${index}/${allLocationsOfPlaceholderInInputCode.length}`);
+        console.log(`Generating documentation... ${index}/${allLocationsOfPlaceholderInInputCode.length}`);
 
         let result = await chain.invoke({ code: focusedInputCode });
         console.log(result)
