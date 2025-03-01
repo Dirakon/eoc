@@ -27,6 +27,7 @@ const { PromptTemplate } = require("@langchain/core/prompts");
 const { RunnableSequence } = require("@langchain/core/runnables");
 const { StringOutputParser } = require("@langchain/core/output_parsers");
 const { ChatOllama } = require('@langchain/ollama');
+const { ChatOpenAI } = require('@langchain/openai');
 const { HuggingFaceInference } = require("@langchain/community/llms/hf");
 const { readFileSync, writeFileSync } = require('fs');
 
@@ -39,10 +40,20 @@ function makeModel(opts) {
             return new HuggingFaceInference({
                 model: opts.huggingface_model,
                 apiKey: opts.huggingface_token
-              });
+            });
+        case 'openai':
+            return new ChatOpenAI({
+                model: opts.openai_model,
+                configuration: {
+                    baseURL: opts.openai_url,
+                    defaultHeaders: {
+                        Authorization: `Bearer ${opts.openai_token}`,
+                    },
+                },
+            });
         case 'placeholder':
             return new FakeListChatModel({
-              responses: ["<PLACEHOLDER_RESPONSE>"],
+                responses: ["<PLACEHOLDER_RESPONSE>"],
             });
         case 'ollama':
             if (opts.ollama_model == null || opts.ollama_model == undefined) {
@@ -50,13 +61,11 @@ function makeModel(opts) {
             }
 
             let ctx_size = opts.ctx_size;
-            if (ctx_size == null || ctx_size == undefined)
-            {
+            if (ctx_size == null || ctx_size == undefined) {
                 throw new OutputParserException("sd")
                 //? 2048
             }
-            else
-            {
+            else {
                 ctx_size = parseInt(ctx_size)
             }
             return new ChatOllama(
@@ -65,7 +74,7 @@ function makeModel(opts) {
                     numCtx: ctx_size
                 });
         default:
-            throw new Error(`\`${opts.provider}\` provider is not supported. Currently supported providers are: \`placeholder\`, \'ollama\'`);
+            throw new Error(`\`${opts.provider}\` provider is not supported. Currently supported providers are: \`placeholder\`, \`ollama\`, \`huggingface\`, \`openai\``);
     }
 }
 
@@ -108,10 +117,9 @@ module.exports = async function(opts) {
         let result = await chain.invoke({ code: focusedInputCode });
         console.log(result)
 
-        if (result.indexOf("</think>") != -1)
-        {
+        if (result.indexOf("</think>") != -1) {
             // deepseek (reasoning-model) specific. TODO: figure out how to make this more general
-            const thinkEnd = result.indexOf("</think>") 
+            const thinkEnd = result.indexOf("</think>")
             result = result.slice(thinkEnd + "</think>".length + 1).trim()
         }
         results.push(result)
