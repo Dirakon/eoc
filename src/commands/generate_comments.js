@@ -46,9 +46,7 @@ function makeModel(opts) {
                 model: opts.openai_model,
                 configuration: {
                     baseURL: opts.openai_url,
-                    defaultHeaders: {
-                        Authorization: `Bearer ${opts.openai_token}`,
-                    },
+                    apiKey: opts.openai_token,
                 },
             });
         case 'placeholder':
