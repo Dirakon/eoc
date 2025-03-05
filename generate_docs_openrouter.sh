@@ -10,7 +10,7 @@ sanitize() {
     echo "${s,,}"                # convert to lowercase
 }
 
-MODELS=("deepseek-chat")
+MODELS=("deepseek/deepseek-r1:free")
 
 # Find all subdirectories in runs_temp
 find ./runs_temp -mindepth 1 -maxdepth 1 -type d | while read -r dir; do
@@ -29,8 +29,8 @@ find ./runs_temp -mindepth 1 -maxdepth 1 -type d | while read -r dir; do
 	    node ./src/eoc.js generate_comments \
 		--provider openai \
 		--openai_model "$model" \
-		--openai_token "$DEEPSEEK_API_KEY"\
-		--openai_url "https://api.deepseek.com/"\
+		--openai_token "$OPENROUTER_API_KEY"\
+		--openai_url "https://openrouter.ai/api/v1"\
 		--source app.eo \
 		--output "$output_file" \
 		--comment_placeholder "<STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>"\

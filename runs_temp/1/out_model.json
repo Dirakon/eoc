@@ -1,0 +1,1 @@
+["","```\n<explanation>\nMain application loop that continuously checks for updates, reads existing data, appends new versions, writes to storage, and outputs as RSS. It integrates with external comman","","",""]

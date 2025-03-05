@@ -1,5 +1,7 @@
 # Explanation of the EO programming languge
 
+## Overview
+
 All the following code will be written in EO programming language. It is minimalistic functional programming language. It goes like this:
 
 ```eo
@@ -15,6 +17,8 @@ All the following code will be written in EO programming language. It is minimal
 ```
 
 `@` is a special function, defining which value object evaluates to.
+
+## Creating functions
 
 There are 2 different ways to define a function inside an object:
 
@@ -36,6 +40,52 @@ can be rewritten as this function with empty list of parameters:
     "hello world"
 ```
 
+## Calling functions
+
+This is a function named `print-hello-world` that takes 0 arguments (hence empty square brackets) and calls function `print-something` with argument `"hello world"`:
+
+```eo
+[] > print-hello-world
+  print-something > @ 
+    "hello world"
+```
+
+If you want to pass multiple argumenets, each would take a separate line like this:
+```eo
+[] > print-hello-world
+  print-something > @ 
+    "line to print 1"
+    "line to print 2"
+```
+
+If you want to pass the result of another function, you would nest the call, the indentation would decide which parameter goes to which function, like this:
+```eo
+[] > entry-function
+  subfunction1 > @ 
+    "param1 to subfunction1"
+    subfunction2
+      "param1 to subfunction2"
+      "param2 to subfunction2"
+    "param3 to subfunction1"
+```
+
+Or you can give give a name to expression like this (i.e. make it into a parametrless function):
+
+```eo
+[] > entry-function
+  subfunction1 > @ 
+    "param1 to subfunction1"
+    saved-parameter-2
+    "param3 to subfunction1"
+
+  subfunction2 > saved-parameter-2
+    "param1 to subfunction2"
+    "param2 to subfunction2"
+```
+
+Note that two above code blocks give identical results when executed.
+
+There are also arrays. `*` is a special function that creates arrays from given parameters. For example, built-in function `seq` just evaluates the array of actions sequentually like it would happen in Haskell with IO monad.
 
 # Task explanation
 

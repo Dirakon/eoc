@@ -24,11 +24,12 @@
 
 const { FakeListChatModel } = require("@langchain/core/utils/testing");
 const { PromptTemplate } = require("@langchain/core/prompts");
-const { RunnableSequence } = require("@langchain/core/runnables");
+const { RunnableSequence, RunnableWithMessageHistory } = require("@langchain/core/runnables");
 const { StringOutputParser } = require("@langchain/core/output_parsers");
 const { ChatOllama } = require('@langchain/ollama');
 const { ChatOpenAI } = require('@langchain/openai');
 const { HuggingFaceInference } = require("@langchain/community/llms/hf");
+const { ChatMessageHistory } = require("langchain/memory");
 const { readFileSync, writeFileSync } = require('fs');
 
 function makeModel(opts) {
@@ -76,6 +77,10 @@ function makeModel(opts) {
     }
 }
 
+function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
 /**
  * Command to auto-complete EO documentation from .EO sources.
  * @param {Hash} opts - All options
@@ -83,36 +88,56 @@ function makeModel(opts) {
 module.exports = async function(opts) {
     const model = makeModel(opts);
 
-    const prompt = new PromptTemplate({
-        template: readFileSync(opts.prompt_template, 'utf-8'),
-        inputVariables: ["code"],
-    });
+    const initialInstruction = readFileSync(opts.prompt_template, 'utf-8');
+    const continueInstruction = "";
 
     const chain = RunnableSequence.from([
-        prompt,
+        new PromptTemplate({
+            template: "{instruction}",
+            inputVariables: ["instruction"],
+        }),
         model,
         new StringOutputParser(),
     ]);
 
     const inputCode = readFileSync(opts.source, 'utf-8')
     const commentPlaceholder = opts.comment_placeholder;
+    
     const results = [];
-    const allLocationsOfPlaceholderInInputCode = Array.from(inputCode.matchAll(commentPlaceholder));
+    const commentPlaceholderRegex = new RegExp(escapeRegExp(commentPlaceholder), 'g');
+    const allLocationsOfPlaceholderInInputCode = Array.from(inputCode.matchAll(commentPlaceholderRegex));
 
     let index = 0;
 
     for (const location of allLocationsOfPlaceholderInInputCode) {
+        const chainWithHistory = new RunnableWithMessageHistory({
+          runnable: chain,
+          getMessageHistory: (sessionId) =>
+            new ChatMessageHistory({
+              sessionId,
+            }),
+          inputMessagesKey: "question",
+          historyMessagesKey: "history",
+        });
+
         const codeBefore = inputCode.slice(0, location.index);
-        const replacedCodeBefore = codeBefore.replace(commentPlaceholder, "");
+        const replacedCodeBefore = codeBefore.replace(commentPlaceholderRegex, "");
 
         const codeAfter = inputCode.slice(location.index + commentPlaceholder.length);
-        const replacedCodeAfter = codeAfter.replace(commentPlaceholder, "");
+        const replacedCodeAfter = codeAfter.replace(commentPlaceholderRegex, "");
 
         const focusedInputCode = replacedCodeBefore + commentPlaceholder + replacedCodeAfter
 
         console.log(`Generating documentation... ${index}/${allLocationsOfPlaceholderInInputCode.length}`);
 
-        let result = await chain.invoke({ code: focusedInputCode });
+        let result = "";
+        const stream = await chain.stream({ code: focusedInputCode });
+
+        for await (const chunk of stream) {
+            result += chunk;
+          console.log(`${typeof(chunk)}!${chunk}`)
+        }
+
         console.log(result)
 
         if (result.indexOf("</think>") != -1) {

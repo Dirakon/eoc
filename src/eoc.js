@@ -371,6 +371,8 @@ program.command('generate_comments')
   .option('--comment_placeholder <placholder>', 'A string placeholder, each instance of which will be replaced with a generated comment', '<COMMENT-TO-BE-ADDED>')
   .option('--output <path>', 'Output file path - the file will contain the replacment mapping', 'out.json')
   .requiredOption('--prompt_template <path>', 'Path to prompt template file, where `{code}` placholder will be replaced with the code given by the user')
+  .option('--allow_continuations <limit>', 'If LLM provider can cutoff message due to size: allow this number of continuations using previous responses as history.')
+  // WHAT TO DO ABOUT REASONING
   .action((str, opts) => {
     coms().generate_comments({...program.opts(), ...str});
   });
