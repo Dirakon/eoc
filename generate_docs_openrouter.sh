@@ -17,11 +17,13 @@ find ./runs_temp -mindepth 1 -maxdepth 1 -type d | while read -r dir; do
     # Process each model for the current directory
     for model in "${MODELS[@]}"; do
 	# Sanitize model name for filename by replacing ':' with '-'
-	safe_model=$(sanitize model)
+	safe_model=$(sanitize "$model")
 	
 	# Construct paths with proper quoting
-	output_file="${dir}/out_${safe_model}.json"
 	prompt_template="${dir}/prompt.txt"
+	output_dir="${dir}/out_${safe_model}"
+	output_file="${output_dir}/mapping.json"
+	mkdir -p "$output_dir"
 	
 	# Run the command if prompt template exists
 	if [ -f "$prompt_template" ]; then
@@ -35,6 +37,7 @@ find ./runs_temp -mindepth 1 -maxdepth 1 -type d | while read -r dir; do
 		--output "$output_file" \
 		--comment_placeholder "<STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>"\
 		--prompt_template "$prompt_template"
+	    ./check_doctest.py app.eo "$output_file" "# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>"
 	else
 	    echo "Warning: Missing prompt template in ${dir}"
 	fi

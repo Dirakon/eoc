@@ -24,12 +24,11 @@
 
 const { FakeListChatModel } = require("@langchain/core/utils/testing");
 const { PromptTemplate } = require("@langchain/core/prompts");
-const { RunnableSequence, RunnableWithMessageHistory } = require("@langchain/core/runnables");
+const { RunnableSequence } = require("@langchain/core/runnables");
 const { StringOutputParser } = require("@langchain/core/output_parsers");
 const { ChatOllama } = require('@langchain/ollama');
 const { ChatOpenAI } = require('@langchain/openai');
 const { HuggingFaceInference } = require("@langchain/community/llms/hf");
-const { ChatMessageHistory } = require("langchain/memory");
 const { readFileSync, writeFileSync } = require('fs');
 
 function makeModel(opts) {
@@ -86,16 +85,14 @@ function escapeRegExp(string) {
  * @param {Hash} opts - All options
  */
 module.exports = async function(opts) {
-    const model = makeModel(opts);
-
-    const initialInstruction = readFileSync(opts.prompt_template, 'utf-8');
-    const continueInstruction = "";
+     const model = makeModel(opts);
+     const prompt = new PromptTemplate({
+         template: readFileSync(opts.prompt_template, 'utf-8'),
+         inputVariables: ["code"],
+     });
 
     const chain = RunnableSequence.from([
-        new PromptTemplate({
-            template: "{instruction}",
-            inputVariables: ["instruction"],
-        }),
+        prompt,
         model,
         new StringOutputParser(),
     ]);
@@ -110,16 +107,6 @@ module.exports = async function(opts) {
     let index = 0;
 
     for (const location of allLocationsOfPlaceholderInInputCode) {
-        const chainWithHistory = new RunnableWithMessageHistory({
-          runnable: chain,
-          getMessageHistory: (sessionId) =>
-            new ChatMessageHistory({
-              sessionId,
-            }),
-          inputMessagesKey: "question",
-          historyMessagesKey: "history",
-        });
-
         const codeBefore = inputCode.slice(0, location.index);
         const replacedCodeBefore = codeBefore.replace(commentPlaceholderRegex, "");
 
@@ -130,23 +117,18 @@ module.exports = async function(opts) {
 
         console.log(`Generating documentation... ${index}/${allLocationsOfPlaceholderInInputCode.length}`);
 
-        let result = "";
-        const stream = await chain.stream({ code: focusedInputCode });
+        let result = 
+            //await chain.invoke({ code: focusedInputCode });
+            "<explanation>\nProvides external IO operations for logging, file handling, version retrieval, and command communication. Includes methods for sending commands, reading/writing files with line counting, and interacting with external services through a standardized request protocol.\n</explanation>\n<doctest-code>\n[] > doctest\n < external.log > @\n    \"Test message\\nSecond line\"\n</doctest-code>\n<doctest-output>\nLog:\n(lines: 2)\nTest message\nSecond line\n</doctest-output>";
 
-        for await (const chunk of stream) {
-            result += chunk;
-          console.log(`${typeof(chunk)}!${chunk}`)
+        // reasoning-model specific
+        const reasoningEndMark = "</think>";
+        if (result.indexOf(reasoningEndMark) != -1) {
+            const thinkEnd = result.indexOf(reasoningEndMark)
+            result = result.slice(thinkEnd + reasoningEndMark.length + 1).trim()
         }
 
-        console.log(result)
-
-        if (result.indexOf("</think>") != -1) {
-            // deepseek (reasoning-model) specific. TODO: figure out how to make this more general
-            const thinkEnd = result.indexOf("</think>")
-            result = result.slice(thinkEnd + "</think>".length + 1).trim()
-        }
         results.push(result)
-
         index++;
     }
 
