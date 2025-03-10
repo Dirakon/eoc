@@ -1,0 +1,11 @@
+Request: read-file|||state-dir/branch-name/program-name
+Rss:
+(lines: 10)
+<?xml version="1.0" encoding="UTF-8" ?><rss version="2.0">
+
+<channel>
+  <title>program-name versions</title>
+  <link>https://search.nixos.org/packages?channel=branch-name&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=program-name</link>
+  <description>History of versions</description></channel>
+
+</rss>

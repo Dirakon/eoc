@@ -6,7 +6,11 @@ import subprocess
 import multiprocessing
 import time
 from pathlib import Path
+from colorama import init as colorama_init
+from colorama import Fore
+from colorama import Style
 
+colorama_init()
 def try_extract_meaningful_output(original_text: str, path: Path) -> str:
     segment_start = original_text.find("<START>")
     segment_end = original_text.find("<END>")
@@ -31,26 +35,43 @@ def process_single_doctest(dir_path: Path):
     subprocess.run([
         "npx", "eoc", "clean", "--global"
     ], 
-                   check=True,
+                   check=False,
                    cwd=dir_path)
 
-    subprocess.run([
+    link_result = subprocess.run([
         "npx", "eoc", "link"
     ], 
-                   check=True,
-                   cwd=dir_path)
-    result = subprocess.run([
+                                 check=False,
+                                 cwd=dir_path,
+                                 capture_output=True,
+                                 text=True)
+    dataize_result = subprocess.run([
         "npx", "eoc", "dataize", "--alone", "doctest-entry"
     ], 
-                            check=True,
-                            cwd=dir_path,
-                            capture_output=True,
-                            text=True)
-    print(result.stdout)
-    open(output_file, 'w').write(try_extract_meaningful_output(result.stdout, output_file))
+                                    check=False,
+                                    cwd=dir_path,
+                                    capture_output=True,
+                                    text=True)
+    print(dataize_result.stdout)
+    if dataize_result.stderr is not None:
+        print(Fore.RED + dataize_result.stderr + Style.RESET_ALL)
+    if link_result.stderr is not None:
+        print(Fore.RED + link_result.stderr + Style.RESET_ALL)
+    open(output_file, 'w').write(
+        try_extract_meaningful_output(
+            link_result.stdout + 
+                ("" if link_result.stderr is None else f'\n{link_result.stderr}') +
+                '\n' +
+                dataize_result.stdout + 
+                ("" if dataize_result.stderr is None else f'\n{dataize_result.stderr}'),
+            output_file))
 
 def non_excluded_subdirectories(dir_path: Path)-> list[Path]:
-    return [i for i in dir_path.iterdir() if i.is_dir() and ('node_modules' not in i.name)]
+    return [i for i in dir_path.iterdir() if 
+        i.is_dir() 
+        and ('node_modules' not in i.name)
+        and (not i.name.startswith("."))
+    ]
 
 def main():
     runs_temp = Path("./runs_temp")
@@ -67,6 +88,7 @@ def main():
 
                     # If thread is still active
                     if p.is_alive():
+                        print("KILLING PROCESS")
                         p.kill()
                 except Exception as e:
                     print(f"Error processing {single_doctest_dir}: {e}")

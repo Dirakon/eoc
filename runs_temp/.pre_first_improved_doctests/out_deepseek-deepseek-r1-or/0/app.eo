@@ -1,4 +1,4 @@
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# Facilitates communication with external systems by sending commands and handling responses. It includes methods for logging, file I/O, version checking, and program metadata retrieval through a structured command protocol.
 [args] > app
   QQ.fs.path > state-path
     args.at 0
@@ -331,3 +331,22 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  seq > @
+    *
+      external.program-name
+      QQ.io.stdout > @
+        QQ.txt.sprintf "%s"
+          * external.program-name

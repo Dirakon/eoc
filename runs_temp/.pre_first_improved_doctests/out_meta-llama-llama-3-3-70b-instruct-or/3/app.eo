@@ -189,7 +189,7 @@
         QQ.io.stdout
           "\n"
 
-  # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+  # Function to update (actualize) the program data with a new version. If the new version is already the latest version, the function returns the existing versions list; otherwise, it adds the new version to the list.
   [new-version] > actualized
     program-data > @
       branch
@@ -331,3 +331,24 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  program-data > data
+    "stable"
+    "my-program"
+  external.log > @
+    data.actualized
+      program-version
+        "1.0"
+        1643723400

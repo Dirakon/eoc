@@ -1,0 +1,8 @@
+Rss:
+  <item>
+    <title>1.0</title>
+    <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>
+    <description>New version at 1643723400</description>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,26 @@
+Log:
+Reading...
+Log:
+Getting current version
+Log:
+Writing...
+Log:
+3.10.12|||1698765432
+
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>python versions</title>
+  <link>https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=python</link>
+  <description>History of versions</description>
+  <item>
+    <title>3.10.12</title>
+    <link>https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=python</link>
+    <description>New version at 1698765432</description>
+  </item>
+</channel>
+
+</rss>

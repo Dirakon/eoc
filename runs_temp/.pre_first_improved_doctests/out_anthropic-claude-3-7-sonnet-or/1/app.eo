@@ -56,7 +56,12 @@
         "gettimeofday"
         * QQ.sys.posix.timeval
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# The `program-data-storage` object manages reading and writing of program version data to the filesystem. It provides functionality to:
+# 1. Create a file structure for storing program version information
+# 2. Read version history from files
+# 3. Write updated version information back to files
+# 
+# It takes a state path parameter which defines where data will be stored, and organizes files by branch and program name.
 [state-path] > program-data-storage
   state-path > @
   [branch program-name] > data-file
@@ -331,3 +336,31 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  QQ.fs.path > test-path
+    "test-state"
+  
+  program-data-storage > storage
+    test-path
+    
+  storage.data-file > file
+    "nixos-unstable"
+    "curl"
+    
+  QQ.io.stdout > @
+    QQ.txt.sprintf
+      "Data file path: %s"
+      *
+        file.path.as-string

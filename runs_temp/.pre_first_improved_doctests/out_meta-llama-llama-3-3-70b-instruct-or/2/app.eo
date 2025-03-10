@@ -150,7 +150,7 @@
           serialized-versions
         program-data-instance
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# The `program-data` function creates a data structure to store information about a program, including its name, branch, and versions. It takes three arguments: `branch`, `program-name`, and `versions`. The function returns the `program-name`. It also has two sub-functions: `output-as-rss` and `actualized`. The `output-as-rss` function generates an RSS feed string based on the program's versions, and the `actualized` function updates the program's versions by adding a new version if it is the latest one.
 [branch program-name versions] > program-data
   program-name > @
 
@@ -331,3 +331,24 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  QQ.io.stdout > @
+    program-data
+      "stable"
+      "my-program"
+      [
+        [program-version "1.0" 1643723400]
+        [program-version "1.1" 1643723401]
+      ].output-as-rss

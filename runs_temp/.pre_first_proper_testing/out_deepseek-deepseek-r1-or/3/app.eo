@@ -189,7 +189,7 @@
         QQ.io.stdout
           "\n"
 
-  # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+  # Appends a new version to the list only if it's not already the latest entry, preventing duplicate consecutive versions.
   [new-version] > actualized
     program-data > @
       branch
@@ -331,3 +331,26 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  program-data > initial
+    "main"
+    "testapp"
+    QQ.structs.list
+      program-version "1.0" 1000
+  initial.actualized > updated
+    program-version "1.0" 1000
+  updated.actualized > final
+    program-version "2.0" 2000
+  final.versions.length > @

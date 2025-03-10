@@ -1,4 +1,0 @@
-Log:
-(lines: 2)
-Test message
-Second line

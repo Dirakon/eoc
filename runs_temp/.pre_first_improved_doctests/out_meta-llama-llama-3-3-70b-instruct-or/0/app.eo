@@ -1,4 +1,4 @@
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# The provided EO code is a complex system for managing program data and versions. It appears to be designed to interact with an external system, possibly a package manager, to retrieve and update version information. The code is organized into several functions and objects, including `app`, `version`, `program-data`, and `external`. The `app` function seems to be the main entry point, and it uses the `seq` function to execute a series of actions, including reading and writing data to a file, and interacting with the external system. The `version` function is used to retrieve the current version of a program, and the `program-data` object stores information about the program, including its name, branch, and versions. The `external` object provides a interface to interact with the external system, including sending commands and getting responses.
 [args] > app
   QQ.fs.path > state-path
     args.at 0
@@ -331,3 +331,22 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  QQ.io.stdout > @
+    QQ.txt.sprintf
+      "%s"
+      * app
+        "test-branch"
+        "test-program"

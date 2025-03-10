@@ -150,7 +150,7 @@
           serialized-versions
         program-data-instance
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# A program that monitors and manages version history for a specified program in a given branch. It continuously polls for the latest program version, updates a dataset with version information, and outputs the version history as an RSS feed. The `program-data` class specifically manages the program version data, providing functionality to output the version history as an RSS XML document.
 [branch program-name versions] > program-data
   program-name > @
 
@@ -331,3 +331,28 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  program-data > pd
+    "unstable"
+    "nginx"
+    QQ.structs.list
+      *
+        program-version
+          "1.24.0"
+          1617235200
+        program-version
+          "1.25.0"
+          1625097600
+  pd.output-as-rss > @

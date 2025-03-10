@@ -189,7 +189,7 @@
         QQ.io.stdout
           "\n"
 
-  # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+  # The `actualized` method of the `program-data` object updates a version list with a new version. It takes a new version as input and returns a fresh `program-data` object with the updated version list. If the new version is already the most recent one in the list or if the list is empty, it keeps the original version list. Otherwise, it adds the new version to the list.
   [new-version] > actualized
     program-data > @
       branch
@@ -331,3 +331,47 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  "test-branch" > branch
+  "test-program" > name
+  program-data > initial-data
+    branch
+    name
+    QQ.structs.list
+      tuple.empty
+      
+  initial-data.actualized > updated-data
+    program-version
+      "1.0.0"
+      123456
+      
+  updated-data.actualized > same-data
+    program-version
+      "1.0.0"
+      123456
+      
+  updated-data.actualized > newer-data
+    program-version
+      "1.1.0"
+      234567
+      
+  QQ.io.stdout > @
+    QQ.txt.sprintf
+      "Initial versions count: %d\nAfter adding 1.0.0: %d\nAfter adding same version again: %d\nAfter adding 1.1.0: %d"
+      *
+        initial-data.versions.length
+        updated-data.versions.length
+        same-data.versions.length
+        newer-data.versions.length

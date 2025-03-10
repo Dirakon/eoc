@@ -210,7 +210,16 @@
 [version-number timestamp] > program-version
   version-number > @
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# The `external` class provides methods for interacting with external systems through a command-line interface. It facilitates logging, file operations, and retrieving information about program versions. The class uses a request-response pattern where commands are sent to stdout and responses are read from stdin.
+# 
+# Key functionality includes:
+# - Logging messages to output
+# - Reading and writing files
+# - Retrieving program version information
+# - Getting branch and program name information
+# - Command formatting with separators
+# 
+# All operations follow a protocol where requests are prefixed, commands are sent, and responses are read from standard input.
 [] > external
   "" > @
   "|||" > command-separator
@@ -331,3 +340,18 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  external.log > @
+    "Testing external logger"

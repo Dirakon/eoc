@@ -206,7 +206,7 @@
         versions
         versions.with new-version
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# The `program-version` object creates a version instance with a version number and timestamp. It's a simple data structure that serves as the basic building block for tracking program versions. The object returns the version number when evaluated.
 [version-number timestamp] > program-version
   version-number > @
 
@@ -331,3 +331,25 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  QQ.io.stdout > @
+    QQ.txt.sprintf
+      "Version: %s, created at timestamp: %d"
+      *
+        program-version > version
+          "1.2.3"
+          1698765432
+        version
+        version.timestamp

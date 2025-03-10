@@ -206,7 +206,7 @@
         versions
         versions.with new-version
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# Represents a program version with a version number and timestamp. Evaluates to the version number.
 [version-number timestamp] > program-version
   version-number > @
 
@@ -331,3 +331,19 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  program-version > @
+    "1.0"
+    1234567890

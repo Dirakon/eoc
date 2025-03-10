@@ -150,7 +150,7 @@
           serialized-versions
         program-data-instance
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# Represents program version data, constructs an RSS feed from versions, and manages version history updates. Contains branch name, program name, and version list. The output-as-rss method generates XML feed with version entries, while actualized method adds new versions if not duplicate.
 [branch program-name versions] > program-data
   program-name > @
 
@@ -331,3 +331,27 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  program-data > @
+    "nixos-unstable"
+    "firefox"
+    *
+      program-version
+        "121.0"
+        1704067200
+      program-version
+        "122.0"
+        1706745600
+  output-as-rss > @

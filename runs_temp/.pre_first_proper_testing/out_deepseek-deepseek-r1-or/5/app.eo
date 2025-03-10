@@ -210,7 +210,7 @@
 [version-number timestamp] > program-version
   version-number > @
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# Interface for external interactions (I/O, commands, versioning). Handles logging, file operations, command sequencing, and version data retrieval through formatted protocol messages using "|||" separators. Simulates system calls with structured request/response patterns.
 [] > external
   "" > @
   "|||" > command-separator
@@ -331,3 +331,18 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  external.log > @
+    "Sample log message"

@@ -1,4 +1,6 @@
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# This is a version tracking application that monitors and logs changes in software versions, generating an RSS feed for tracking history. It interacts with external systems to check for version updates, stores version information in files organized by branch and program name, and outputs the version history as RSS.
+# Hello
+# The application continuously runs in a loop, checking for new versions of specified programs, storing the version data in a file structure, and generating an RSS feed of version history.
 [args] > app
   QQ.fs.path > state-path
     args.at 0
@@ -331,3 +333,19 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  app > @
+    *
+      "/tmp"

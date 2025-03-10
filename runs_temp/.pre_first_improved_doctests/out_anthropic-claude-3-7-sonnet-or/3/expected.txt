@@ -1,0 +1,4 @@
+Initial versions count: 0
+After adding 1.0.0: 1
+After adding same version again: 1
+After adding 1.1.0: 2

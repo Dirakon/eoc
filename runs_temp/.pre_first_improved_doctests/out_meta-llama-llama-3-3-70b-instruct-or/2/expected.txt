@@ -1,0 +1,19 @@
+Rss:
+&amp;lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&amp;lt;rss version="2.0"&gt;
+&amp;lt;channel&gt;
+  &amp;lt;title&gt;my-program versions&amp;lt;/title&gt;
+  &amp;lt;link&gt;https://search.nixos.org/packages?channel=stable&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=my-program&amp;lt;/link&gt;
+  &amp;lt;description&gt;History of versions&amp;lt;/description&gt;
+  &amp;lt;item&gt;
+    &amp;lt;title&gt;1.0&amp;lt;/title&gt;
+    &amp;lt;link&gt;https://search.nixos.org/packages?channel=stable&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=my-program&amp;lt;/link&gt;
+    &amp;lt;description&gt;New version at 1643723400&amp;lt;/description&gt;
+  &amp;lt;/item&gt;
+  &amp;lt;item&gt;
+    &amp;lt;title&gt;1.1&amp;lt;/title&gt;
+    &amp;lt;link&gt;https://search.nixos.org/packages?channel=stable&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=my-program&amp;lt;/link&gt;
+    &amp;lt;description&gt;New version at 1643723401&amp;lt;/description&gt;
+  &amp;lt;/item&gt;
+&amp;lt;/channel&gt;
+&amp;lt;/rss&gt;

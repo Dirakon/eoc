@@ -56,7 +56,7 @@
         "gettimeofday"
         * QQ.sys.posix.timeval
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# Handles persistent storage and retrieval of program data in a structured directory, including reading from and writing to files with versioned data.
 [state-path] > program-data-storage
   state-path > @
   [branch program-name] > data-file
@@ -331,3 +331,22 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  program-data-storage > storage
+    "state-dir"
+  storage.read > data
+    "branch-name"
+    "program-name"
+  data.output-as-rss > @

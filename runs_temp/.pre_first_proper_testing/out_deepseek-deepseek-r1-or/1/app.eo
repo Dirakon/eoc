@@ -56,7 +56,7 @@
         "gettimeofday"
         * QQ.sys.posix.timeval
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# Manages storage and retrieval of program version data in a structured file format. Handles file paths, reads existing data (parsing version history), and writes updated data with serialization. Integrates with external commands for IO operations.
 [state-path] > program-data-storage
   state-path > @
   [branch program-name] > data-file
@@ -331,3 +331,21 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  program-data-storage > storage
+    "/tmp"
+  storage.read > @
+    "unstable"
+    "nginx"

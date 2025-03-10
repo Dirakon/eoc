@@ -1,0 +1,22 @@
+Rss:
+(lines: 20)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>nginx versions</title>
+  <link>https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=nginx</link>
+  <description>History of versions</description>
+  <item>
+    <title>1.24.0</title>
+    <link>https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=nginx</link>
+    <description>New version at 1617235200</description>
+  </item>
+  <item>
+    <title>1.25.0</title>
+    <link>https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=nginx</link>
+    <description>New version at 1625097600</description>
+  </item>
+</channel>
+
+</rss>

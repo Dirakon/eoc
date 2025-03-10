@@ -1,0 +1,21 @@
+Rss:
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>firefox versions</title>
+  <link>https://search.nixos.org/packages?channel=nixos-unstable&from=0&size=50&sort=relevance&type=packages&query=firefox</link>
+  <description>History of versions</description>
+  <item>
+    <title>121.0</title>
+    <link>https://search.nixos.org/packages?channel=nixos-unstable&from=0&size=50&sort=relevance&type=packages&query=firefox</link>
+    <description>New version at 1704067200</description>
+  </item>
+  <item>
+    <title>122.0</title>
+    <link>https://search.nixos.org/packages?channel=nixos-unstable&from=0&size=50&sort=relevance&type=packages&query=firefox</link>
+    <description>New version at 1706745600</description>
+  </item>
+</channel>
+
+</rss>

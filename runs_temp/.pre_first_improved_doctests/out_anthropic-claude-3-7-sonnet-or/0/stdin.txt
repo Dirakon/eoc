@@ -1,0 +1,33 @@
+Request: branch
+unstable
+Request: program-name
+python
+Request: Log:
+Reading...
+Request: read-file|||/tmp/unstable/python
+(lines: 0)
+Request: get-version|||unstable|||python
+3.10.12
+Log:
+3.10.12|||1698765432
+
+Request: write-file|||/tmp/unstable/python
+3.10.12|||1698765432
+
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>python versions</title>
+  <link>https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=python</link>
+  <description>History of versions</description>
+  <item>
+    <title>3.10.12</title>
+    <link>https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=python</link>
+    <description>New version at 1698765432</description>
+  </item>
+</channel>
+
+</rss>

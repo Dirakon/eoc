@@ -1,4 +1,4 @@
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# The `external` object handles interactions with external systems, including logging, file I/O, version checking, and command execution. It provides structured communication through formatted command strings and maintains input/output sequencing. Key operations include sending commands prefixed with "Request:", reading responses from stdin, writing files with confirmation flow, and logging with line counting.
 [args] > app
   QQ.fs.path > state-path
     args.at 0
@@ -331,3 +331,18 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  external.log > @
+    "Test message\nSecond line"

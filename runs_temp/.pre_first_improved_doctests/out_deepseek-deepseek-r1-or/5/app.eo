@@ -210,7 +210,7 @@
 [version-number timestamp] > program-version
   version-number > @
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# Facade for external interactions, handling commands, logging, file I/O, and version/branch/program name retrieval through standardized input/output communication.
 [] > external
   "" > @
   "|||" > command-separator
@@ -331,3 +331,18 @@
         send-command
           program-name
         get-response
+
+# Doctest
+[] > doctest-entry
+  seq > @
+    *
+      QQ.io.stdout
+        "<START>"
+      doctest
+      QQ.io.stdout
+        "<END>"
+
+# Doctest
+[] > doctest
+  external.log > @
+    "Test message"
