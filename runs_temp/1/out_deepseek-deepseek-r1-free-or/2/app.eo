@@ -1,25 +1,4 @@
 # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
-[state-path] > program-data-storage
-  state-path > @
-  [branch program-name] > data-file
-    QQ.fs.file > file
-      QQ.fs.path.joined
-        *
-          state-path
-          QQ.fs.path
-            branch
-          QQ.fs.path
-            program-name
-    QQ.fs.dir > directory
-      QQ.fs.file
-        QQ.fs.path
-          file.dirname
-    seq > @
-      *
-        directory.made
-        file
-
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
 [args] > app
   QQ.fs.path > state-path
     args.at 0
@@ -76,6 +55,27 @@
       QQ.sys.posix
         "gettimeofday"
         * QQ.sys.posix.timeval
+
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+[state-path] > program-data-storage
+  state-path > @
+  [branch program-name] > data-file
+    QQ.fs.file > file
+      QQ.fs.path.joined
+        *
+          state-path
+          QQ.fs.path
+            branch
+          QQ.fs.path
+            program-name
+    QQ.fs.dir > directory
+      QQ.fs.file
+        QQ.fs.path
+          file.dirname
+    seq > @
+      *
+        directory.made
+        file
 
   [branch program-name] > read
     data-file > file
@@ -150,7 +150,7 @@
           serialized-versions
         program-data-instance
 
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+# Provides external IO operations for logging, file handling, version retrieval, and command communication. Includes methods for sending commands, reading/writing files with line counting, and interacting with external services through a standardized request protocol.
 [branch program-name versions] > program-data
   program-name > @
 
@@ -209,7 +209,7 @@
 [version-number timestamp] > program-version
   version-number > @
 
-# Provides external IO operations for logging, file handling, version retrieval, and command communication. Includes methods for sending commands, reading/writing files with line counting, and interacting with external services through a standardized request protocol.
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
 [] > external
   "" > @
   "|||" > command-separator
@@ -343,5 +343,5 @@
 
 # Doctest
 [] > doctest
- < external.log > @
+  external.log > @
     "Test message\nSecond line"

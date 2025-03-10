@@ -119,7 +119,7 @@ module.exports = async function(opts) {
 
         let result = 
             //await chain.invoke({ code: focusedInputCode });
-            "<explanation>\nProvides external IO operations for logging, file handling, version retrieval, and command communication. Includes methods for sending commands, reading/writing files with line counting, and interacting with external services through a standardized request protocol.\n</explanation>\n<doctest-code>\n[] > doctest\n < external.log > @\n    \"Test message\\nSecond line\"\n</doctest-code>\n<doctest-output>\nLog:\n(lines: 2)\nTest message\nSecond line\n</doctest-output>";
+            "<explanation>\nProvides external IO operations for logging, file handling, version retrieval, and command communication. Includes methods for sending commands, reading/writing files with line counting, and interacting with external services through a standardized request protocol.\n</explanation>\n<doctest-code>\n[] > doctest\n  external.log > @\n    \"Test message\\nSecond line\"\n</doctest-code>\n<doctest-output>\nLog:\n(lines: 2)\nTest message\nSecond line\n</doctest-output>";
 
         // reasoning-model specific
         const reasoningEndMark = "</think>";

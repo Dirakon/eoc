@@ -1,25 +1,4 @@
 # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
-[state-path] > program-data-storage
-  state-path > @
-  [branch program-name] > data-file
-    QQ.fs.file > file
-      QQ.fs.path.joined
-        *
-          state-path
-          QQ.fs.path
-            branch
-          QQ.fs.path
-            program-name
-    QQ.fs.dir > directory
-      QQ.fs.file
-        QQ.fs.path
-          file.dirname
-    seq > @
-      *
-        directory.made
-        file
-
-# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
 [args] > app
   QQ.fs.path > state-path
     args.at 0
@@ -76,6 +55,27 @@
       QQ.sys.posix
         "gettimeofday"
         * QQ.sys.posix.timeval
+
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+[state-path] > program-data-storage
+  state-path > @
+  [branch program-name] > data-file
+    QQ.fs.file > file
+      QQ.fs.path.joined
+        *
+          state-path
+          QQ.fs.path
+            branch
+          QQ.fs.path
+            program-name
+    QQ.fs.dir > directory
+      QQ.fs.file
+        QQ.fs.path
+          file.dirname
+    seq > @
+      *
+        directory.made
+        file
 
   [branch program-name] > read
     data-file > file
