@@ -1,0 +1,515 @@
+<ALL-OUTPUT-START>[eo:register] 0ms; 0 files generated so far...[0K[1G[eo:register] 2s; 0 files generated so far...[0K[1G[eo:register] 3s; 0 files generated so far...[0K[1G[2KEO objects registered in .eoc/eo-foreign.json
+[eo:assemble] 0ms; 1 files generated so far...[0K[1G[eo:assemble] 786ms; 1 files generated so far...[0K[1G[eo:assemble] 2s; 1 files generated so far...[0K[1G[eo:assemble] 2s; 1 files generated so far...[0K[1G[eo:assemble] 3s; 1 files generated so far...[0K[1G[eo:assemble] 3s; 1 files generated so far...[0K[1G[eo:assemble] 4s; 1 files generated so far...[0K[1G[eo:assemble] 4s; 1 files generated so far...[0K[1G[eo:assemble] 5s; 1 files generated so far...[0K[1G[eo:assemble] 5s; 1 files generated so far...[0K[1G[eo:assemble] 6s; 1 files generated so far...[0K[1G[eo:assemble] 6s; 1 files generated so far...[0K[1G[eo:assemble] 7s; 1 files generated so far...[0K[1G[eo:assemble] 7s; 1 files generated so far...[0K[1G[eo:assemble] 8s; 1 files generated so far...[0K[1G[eo:assemble] 8s; 3 files generated so far...[0K[1G[eo:assemble] 9s; 3 files generated so far...[0K[1G[eo:assemble] 9s; 4 files generated so far...[0K[1G[eo:assemble] 10s; 4 files generated so far...[0K[1G[eo:assemble] 10s; 5 files generated so far...[0K[1G[eo:assemble] 11s; 5 files generated so far...[0K[1G[eo:assemble] 11s; 13 files generated so far...[0K[1G[eo:assemble] 12s; 15 files generated so far...[0K[1G[eo:assemble] 12s; 22 files generated so far...[0K[1G[eo:assemble] 13s; 23 files generated so far...[0K[1G[eo:assemble] 13s; 23 files generated so far...[0K[1G[eo:assemble] 14s; 23 files generated so far...[0K[1G[eo:assemble] 14s; 24 files generated so far...[0K[1G[eo:assemble] 15s; 30 files generated so far...[0K[1G[eo:assemble] 15s; 779 files generated so far...[0K[1G[eo:assemble] 16s; 781 files generated so far...[0K[1G[eo:assemble] 16s; 785 files generated so far...[0K[1G[eo:assemble] 17s; 787 files generated so far...[0K[1G[eo:assemble] 17s; 787 files generated so far...[0K[1G[eo:assemble] 18s; 787 files generated so far...[0K[1G[eo:assemble] 18s; 790 files generated so far...[0K[1G[eo:assemble] 19s; 790 files generated so far...[0K[1G[eo:assemble] 19s; 791 files generated so far...[0K[1G[eo:assemble] 20s; 792 files generated so far...[0K[1G[eo:assemble] 20s; 804 files generated so far...[0K[1G[eo:assemble] 21s; 807 files generated so far...[0K[1G[eo:assemble] 21s; 825 files generated so far...[0K[1G[eo:assemble] 22s; 827 files generated so far...[0K[1G[eo:assemble] 22s; 828 files generated so far...[0K[1G[eo:assemble] 23s; 828 files generated so far...[0K[1G[eo:assemble] 23s; 837 files generated so far...[0K[1G[eo:assemble] 24s; 838 files generated so far...[0K[1G[eo:assemble] 24s; 847 files generated so far...[0K[1G[eo:assemble] 25s; 849 files generated so far...[0K[1G[eo:assemble] 25s; 857 files generated so far...[0K[1G[eo:assemble] 26s; 859 files generated so far...[0K[1G[eo:assemble] 26s; 868 files generated so far...[0K[1G[eo:assemble] 27s; 870 files generated so far...[0K[1G[eo:assemble] 28s; 897 files generated so far...[0K[1G[eo:assemble] 28s; 903 files generated so far...[0K[1G[eo:assemble] 29s; 908 files generated so far...[0K[1G[eo:assemble] 29s; 909 files generated so far...[0K[1G[eo:assemble] 30s; 911 files generated so far...[0K[1G[eo:assemble] 30s; 911 files generated so far...[0K[1G[eo:assemble] 31s; 913 files generated so far...[0K[1G[eo:assemble] 31s; 917 files generated so far...[0K[1G[eo:assemble] 32s; 950 files generated so far...[0K[1G[eo:assemble] 32s; 954 files generated so far...[0K[1G[eo:assemble] 33s; 995 files generated so far...[0K[1G[eo:assemble] 33s; 996 files generated so far...[0K[1G[eo:assemble] 34s; 996 files generated so far...[0K[1G[eo:assemble] 34s; 996 files generated so far...[0K[1G[2KEO program assembled in .eoc
+[eo:lint] 0ms; 996 files generated so far...[0K[1G[eo:lint] 582ms; 996 files generated so far...[0K[1G[eo:lint] 734ms; 996 files generated so far...[0K[1G[eo:lint] 2s; 996 files generated so far...[0K[1G[eo:lint] 2s; 996 files generated so far...[0K[1G[eo:lint] 2s; 996 files generated so far...[0K[1G[eo:lint] 3s; 996 files generated so far...[0K[1G[eo:lint] 3s; 996 files generated so far...[0K[1G[eo:lint] 3s; 996 files generated so far...[0K[1G[eo:lint] 4s; 996 files generated so far...[0K[1G[eo:lint] 4s; 996 files generated so far...[0K[1G[eo:lint] 4s; 996 files generated so far...[0K[1G[eo:lint] 5s; 996 files generated so far...[0K[1G[eo:lint] 5s; 996 files generated so far...[0K[1G[eo:lint] 5s; 996 files generated so far...[0K[1G[eo:lint] 6s; 996 files generated so far...[0K[1G[eo:lint] 6s; 1008 files generated so far...[0K[1G[eo:lint] 6s; 1009 files generated so far...[0K[1G[eo:lint] 7s; 1009 files generated so far...[0K[1G[eo:lint] 7s; 1019 files generated so far...[0K[1G[eo:lint] 7s; 1020 files generated so far...[0K[1G[eo:lint] 8s; 1021 files generated so far...[0K[1G[eo:lint] 8s; 1033 files generated so far...[0K[1G[eo:lint] 8s; 1034 files generated so far...[0K[1G[eo:lint] 9s; 1037 files generated so far...[0K[1G[eo:lint] 9s; 1049 files generated so far...[0K[1G[eo:lint] 9s; 1052 files generated so far...[0K[1G[eo:lint] 10s; 1057 files generated so far...[0K[1G[2KEO program linted in .eoc
+[eo:transpile] 0ms; 1057 files generated so far...[0K[1G[eo:transpile] 564ms; 1057 files generated so far...[0K[1G[eo:transpile] 723ms; 1057 files generated so far...[0K[1G[eo:transpile] 954ms; 1057 files generated so far...[0K[1G[eo:transpile] 2s; 1057 files generated so far...[0K[1G[eo:transpile] 2s; 1057 files generated so far...[0K[1G[eo:transpile] 2s; 1057 files generated so far...[0K[1G[eo:transpile] 2s; 1057 files generated so far...[0K[1G[eo:transpile] 3s; 1057 files generated so far...[0K[1G[eo:transpile] 3s; 1057 files generated so far...[0K[1G[eo:transpile] 3s; 1057 files generated so far...[0K[1G[eo:transpile] 3s; 1057 files generated so far...[0K[1G[eo:transpile] 4s; 1057 files generated so far...[0K[1G[eo:transpile] 4s; 1065 files generated so far...[0K[1G[eo:transpile] 4s; 1072 files generated so far...[0K[1G[eo:transpile] 4s; 1085 files generated so far...[0K[1G[eo:transpile] 5s; 1088 files generated so far...[0K[1G[eo:transpile] 5s; 1149 files generated so far...[0K[1G[eo:transpile] 5s; 1157 files generated so far...[0K[1G[eo:transpile] 5s; 1161 files generated so far...[0K[1G[eo:transpile] 6s; 1161 files generated so far...[0K[1G[eo:transpile] 6s; 1235 files generated so far...[0K[1G[eo:transpile] 6s; 1244 files generated so far...[0K[1G[eo:transpile] 7s; 1267 files generated so far...[0K[1G[eo:transpile] 7s; 1268 files generated so far...[0K[1G[eo:transpile] 7s; 1343 files generated so far...[0K[1G[eo:transpile] 7s; 1359 files generated so far...[0K[1G[eo:transpile] 8s; 1391 files generated so far...[0K[1G[eo:transpile] 8s; 1401 files generated so far...[0K[1G[eo:transpile] 8s; 1497 files generated so far...[0K[1G[eo:transpile] 8s; 1509 files generated so far...[0K[1G[eo:transpile] 9s; 1536 files generated so far...[0K[1G[eo:transpile] 9s; 1548 files generated so far...[0K[1G[eo:transpile] 9s; 1646 files generated so far...[0K[1G[eo:transpile] 9s; 1663 files generated so far...[0K[1G[eo:transpile] 10s; 1684 files generated so far...[0K[1G[eo:transpile] 10s; 1695 files generated so far...[0K[1G[eo:transpile] 10s; 1808 files generated so far...[0K[1G[eo:transpile] 10s; 1831 files generated so far...[0K[1G[eo:transpile] 11s; 1861 files generated so far...[0K[1G[eo:transpile] 11s; 1867 files generated so far...[0K[1G[eo:transpile] 11s; 1930 files generated so far...[0K[1G[eo:transpile] 12s; 1946 files generated so far...[0K[1G[eo:transpile] 12s; 1946 files generated so far...[0K[1G[eo:transpile] 12s; 1946 files generated so far...[0K[1G[eo:transpile] 12s; 1955 files generated so far...[0K[1G[eo:transpile] 13s; 1955 files generated so far...[0K[1G[eo:transpile] 13s; 1955 files generated so far...[0K[1G[eo:transpile] 13s; 1955 files generated so far...[0K[1G[eo:transpile] 13s; 2023 files generated so far...[0K[1G[eo:transpile] 14s; 2051 files generated so far...[0K[1G[eo:transpile] 14s; 2051 files generated so far...[0K[1G[eo:transpile] 14s; 2051 files generated so far...[0K[1G[2KJava sources generated in .eoc/generated-sources
+[compiler:compile] 0ms; 2094 files generated so far...[0K[1G[compiler:compile] 223ms; 2094 files generated so far...[0K[1G[compiler:compile] 324ms; 2094 files generated so far...[0K[1G[compiler:compile] 481ms; 2094 files generated so far...[0K[1G[compiler:compile] 572ms; 2094 files generated so far...[0K[1G[compiler:compile] 2s; 2094 files generated so far...[0K[1G[compiler:compile] 2s; 2094 files generated so far...[0K[1G[compiler:compile] 2s; 2094 files generated so far...[0K[1G[compiler:compile] 2s; 2094 files generated so far...[0K[1G[compiler:compile] 2s; 2094 files generated so far...[0K[1G[compiler:compile] 3s; 2094 files generated so far...[0K[1G[compiler:compile] 3s; 2094 files generated so far...[0K[1G[compiler:compile] 3s; 2094 files generated so far...[0K[1G[compiler:compile] 3s; 2094 files generated so far...[0K[1G[compiler:compile] 3s; 2094 files generated so far...[0K[1G[compiler:compile] 4s; 2094 files generated so far...[0K[1G[compiler:compile] 4s; 2094 files generated so far...[0K[1G[compiler:compile] 4s; 2094 files generated so far...[0K[1G[compiler:compile] 4s; 2097 files generated so far...[0K[1G[compiler:compile] 4s; 2099 files generated so far...[0K[1G[compiler:compile] 5s; 2113 files generated so far...[0K[1G[compiler:compile] 5s; 2127 files generated so far...[0K[1G[compiler:compile] 5s; 2134 files generated so far...[0K[1G[compiler:compile] 5s; 2151 files generated so far...[0K[1G[compiler:compile] 5s; 2160 files generated so far...[0K[1G[compiler:compile] 6s; 2213 files generated so far...[0K[1G[compiler:compile] 6s; 2260 files generated so far...[0K[1G[compiler:compile] 6s; 2272 files generated so far...[0K[1G[compiler:compile] 6s; 2315 files generated so far...[0K[1G[compiler:compile] 6s; 2332 files generated so far...[0K[1G[compiler:compile] 7s; 2438 files generated so far...[0K[1G[compiler:compile] 7s; 2509 files generated so far...[0K[1G[compiler:compile] 7s; 2523 files generated so far...[0K[1G[2KJava .class files compiled into .eoc
+[jar:jar] 0ms; 2523 files generated so far...[0K[1G[jar:jar] 116ms; 2523 files generated so far...[0K[1G[jar:jar] 212ms; 2523 files generated so far...[0K[1G[jar:jar] 633ms; 2523 files generated so far...[0K[1G[jar:jar] 891ms; 2523 files generated so far...[0K[1G[jar:jar] 944ms; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2523 files generated so far...[0K[1G[jar:jar] 3s; 2524 files generated so far...[0K[1G[jar:jar] 3s; 2524 files generated so far...[0K[1G[jar:jar] 3s; 2524 files generated so far...[0K[1G[jar:jar] 3s; 2524 files generated so far...[0K[1G[jar:jar] 3s; 2525 files generated so far...[0K[1G[jar:jar] 3s; 2525 files generated so far...[0K[1G[2KExecutable JAR created at .eoc/eoc.jar
+
+
+<MEANINGFUL-OUTPUT-START>Request: branch
+Request: program-name
+Log:
+(lines: 1)
+Reading...
+Log:
+(lines: 1)
+Getting current version
+Request: get-version|||Request: branch|||nixos-unstable
+Log:
+(lines: 1)
+Writing...
+Log:
+(lines: 2)
+Request: program-name|||1741787394
+
+Request: write-file|||/tmp/state/Request: branch/nixos-unstable
+(lines: 2)
+Request: program-name|||1741787394
+
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>nixos-unstable versions</title>
+  <link>https://search.nixos.org/packages?channel=Request: branch&from=0&size=50&sort=relevance&type=packages&query=nixos-unstable</link>
+  <description>History of versions</description>
+  <item>
+    <title>Request: program-name</title>
+    <link>https://search.nixos.org/packages?channel=Request: branch&from=0&size=50&sort=relevance&type=packages&query=nixos-unstable</link>
+    <description>New version at 1741787394</description>
+  </item>
+</channel>
+
+</rss>
+Request: branch
+Request: program-name
+Log:
+(lines: 1)
+Reading...
+Log:
+(lines: 1)
+Getting current version
+Request: get-version|||Request: get-version|||nixos-unstable|||firefox|||114.0.2
+Log:
+(lines: 1)
+Writing...
+Log:
+(lines: 2)
+Request: gettimeofday|||1741787432
+
+Request: write-file|||/tmp/state/Request: get-version|||nixos-unstable|||firefox/114.0.2
+(lines: 2)
+Request: gettimeofday|||1741787432
+
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>114.0.2 versions</title>
+  <link>https://search.nixos.org/packages?channel=Request: get-version|||nixos-unstable|||firefox&from=0&size=50&sort=relevance&type=packages&query=114.0.2</link>
+  <description>History of versions</description>
+  <item>
+    <title>Request: gettimeofday</title>
+    <link>https://search.nixos.org/packages?channel=Request: get-version|||nixos-unstable|||firefox&from=0&size=50&sort=relevance&type=packages&query=114.0.2</link>
+    <description>New version at 1741787432</description>
+  </item>
+</channel>
+
+</rss>
+Request: branch
+Request: program-name
+Log:
+(lines: 1)
+Reading...
+Request: read-file|||/tmp/state/
+
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢  1) Error in the "Φ.org.eolang.dataized.φ.α0.Δ" attribute at 58:4
+  ⇢  2) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ.α0.Δ" attribute at 47:26
+  ⇢  3) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢  4) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢  5) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  6) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  7) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢  8) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  9) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 10) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 11) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 12) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢ 13) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢ 14) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 15) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 16) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 17) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢ 18) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢ 19) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 20) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 21) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 22) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢ 23) Error in the "Φ.external$read.line-count.Δ" attribute at 275:46
+  ⇢ 24) Error in the "Φ.org.eolang.tuple$empty.at.Δ" attribute at 35:4
+  ⇢ 25) Error in the "Φ.org.eolang.tuple$empty$at.φ.Δ" attribute at 35:4
+  ⇢ 26) "Can't get an object from the empty tuple"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢ 1) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 2) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 3) "Can't get an object from the empty tuple"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢  1) Error in the "Φ.org.eolang.dataized.φ.α0.Δ" attribute at 58:4
+  ⇢  2) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ.α0.Δ" attribute at 47:26
+  ⇢  3) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢  4) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢  5) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  6) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  7) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢  8) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  9) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 10) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 11) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 12) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢ 13) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢ 14) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 15) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 16) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 17) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢ 18) Error in the "Φ.program-data-storage$read.content.Δ" attribute at 93:22
+  ⇢ 19) Error in the "Φ.external.read.Δ" attribute at 258:2
+  ⇢ 20) Error in the "Φ.external$read.φ.Δ" attribute at 269:4
+  ⇢ 21) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢ 22) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 23) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 24) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢ 25) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 26) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢ 27) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 28) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 29) Error in the "Φ.org.eolang.seq$loop.φ.α0.Δ" attribute at 49:7
+  ⇢ 30) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 31) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢ 32) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 33) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 34) Error in the "Φ.org.eolang.seq$loop.φ.α0.Δ" attribute at 49:7
+  ⇢ 35) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 36) Error in the "Φ.org.eolang.seq$loop.φ" attribute at 43:4
+  ⇢ 37) Error in the "Φ.org.eolang.seq$loop.φ.ρ" attribute at 44:6
+  ⇢ 38) Error in the "Φ.org.eolang.true.and" attribute at 38:2
+  ⇢ 39) Error in the "Φ.org.eolang.true$and.φ" attribute at 38:5
+  ⇢ 40) Error in the "Φ.org.eolang.bytes.eq" attribute at 61:2
+  ⇢ 41) Error in the "Φ.org.eolang.true$and.φ.α0" attribute at 38:9
+  ⇢ 42) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0" attribute at 46:8
+  ⇢ 43) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ" attribute at 47:37
+  ⇢ 44) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ" attribute at 47:11
+  ⇢ 45) Error in the "Φ.org.eolang.dataized.φ" attribute at 57:2
+  ⇢ 46) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 47) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 48) "Can't get an object from the empty tuple"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢ 1) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 2) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 3) "Can't get an object from the empty tuple"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢   1) Error in the "Φ.org.eolang.dataized.φ.α0.Δ" attribute at 58:4
+  ⇢   2) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ.α0.Δ" attribute at 47:26
+  ⇢   3) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢   4) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢   5) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢   6) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢   7) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢   8) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢   9) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  10) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  11) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  12) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢  13) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  14) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  15) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  16) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  17) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢  18) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  19) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  20) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  21) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  22) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢  23) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  24) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  25) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  26) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  27) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢  28) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  29) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  30) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  31) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  32) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢  33) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  34) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  35) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  36) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  37) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢  38) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  39) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  40) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  41) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  42) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢  43) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  44) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  45) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  46) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  47) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢  48) Error in the "Φ.app$auto-named-attr-at-9-11.data.Δ" attribute at 16:14
+  ⇢  49) Error in the "Φ.app.currently-saved-data.Δ" attribute at 44:2
+  ⇢  50) Error in the "Φ.app$currently-saved-data.φ.Δ" attribute at 45:4
+  ⇢  51) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢  52) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  53) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  54) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢  55) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢  56) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢  57) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  58) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  59) Error in the "Φ.org.eolang.seq$loop.φ.α0.Δ" attribute at 49:7
+  ⇢  60) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢  61) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢  62) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  63) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  64) Error in the "Φ.org.eolang.seq$loop.φ.α1.Δ" attribute at 51:11
+  ⇢  65) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢  66) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢  67) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  68) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  69) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢  70) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  71) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  72) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  73) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  74) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢  75) Error in the "Φ.app$currently-saved-data.data.Δ" attribute at 49:15
+  ⇢  76) Error in the "Φ.program-data-storage.read.Δ" attribute at 80:2
+  ⇢  77) Error in the "Φ.program-data-storage$read.φ.Δ" attribute at 85:4
+  ⇢  78) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢  79) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  80) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  81) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢  82) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢  83) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢  84) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  85) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  86) Error in the "Φ.org.eolang.seq$loop.φ.α1.Δ" attribute at 51:11
+  ⇢  87) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢  88) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢  89) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  90) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  91) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢  92) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  93) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  94) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  95) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  96) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢  97) Error in the "Φ.program-data-storage$read.φ.α0.α1.Δ" attribute at 87:8
+  ⇢  98) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  99) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 100) Error in the "Φ.program-data-storage$read.φ.α0.α1.α0.Δ" attribute at 91:10
+  ⇢ 101) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢ 102) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 103) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 104) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢ 105) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 106) Error in the "Φ.org.eolang.seq$loop.φ" attribute at 43:4
+  ⇢ 107) Error in the "Φ.org.eolang.seq$loop.φ.ρ" attribute at 44:6
+  ⇢ 108) Error in the "Φ.org.eolang.true.and" attribute at 38:2
+  ⇢ 109) Error in the "Φ.org.eolang.true$and.φ" attribute at 38:5
+  ⇢ 110) Error in the "Φ.org.eolang.bytes.eq" attribute at 61:2
+  ⇢ 111) Error in the "Φ.org.eolang.true$and.φ.α0" attribute at 38:9
+  ⇢ 112) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0" attribute at 46:8
+  ⇢ 113) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ" attribute at 47:37
+  ⇢ 114) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ" attribute at 47:11
+  ⇢ 115) Error in the "Φ.org.eolang.dataized.φ" attribute at 57:2
+  ⇢ 116) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 117) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 118) "Can't get an object from the empty tuple"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢ 1) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 2) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 3) "Can't get an object from the empty tuple"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢  1) Error in the "Φ.org.eolang.dataized.φ.α0.Δ" attribute at 58:4
+  ⇢  2) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ.α0.Δ" attribute at 47:26
+  ⇢  3) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢  4) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢  5) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  6) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  7) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢  8) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  9) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 10) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 11) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 12) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢ 13) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢ 14) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 15) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 16) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 17) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢ 18) Error in the "Φ.org.eolang.while$loop.φ.α0.α0.α0.α1.Δ" attribute at 68:10
+  ⇢ 19) Error in the "Φ.org.eolang.while$loop.current.Δ" attribute at 63:4
+  ⇢ 20) Error in the "Φ.app.auto-named-attr-at-9-11.Δ" attribute at 9:8
+  ⇢ 21) Error in the "Φ.app$auto-named-attr-at-9-11.φ.Δ" attribute at 10:10
+  ⇢ 22) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢ 23) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 24) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 25) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢ 26) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 27) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢ 28) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 29) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 30) Error in the "Φ.org.eolang.seq$loop.φ.α0.Δ" attribute at 49:7
+  ⇢ 31) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 32) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢ 33) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 34) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 35) Error in the "Φ.org.eolang.seq$loop.φ.α0.Δ" attribute at 49:7
+  ⇢ 36) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 37) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢ 38) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 39) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 40) Error in the "Φ.org.eolang.seq$loop.φ.α0.Δ" attribute at 49:7
+  ⇢ 41) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 42) Error in the "Φ.org.eolang.seq$loop.φ" attribute at 43:4
+  ⇢ 43) Error in the "Φ.org.eolang.seq$loop.φ.ρ" attribute at 44:6
+  ⇢ 44) Error in the "Φ.org.eolang.true.and" attribute at 38:2
+  ⇢ 45) Error in the "Φ.org.eolang.true$and.φ" attribute at 38:5
+  ⇢ 46) Error in the "Φ.org.eolang.bytes.eq" attribute at 61:2
+  ⇢ 47) Error in the "Φ.org.eolang.true$and.φ.α0" attribute at 38:9
+  ⇢ 48) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0" attribute at 46:8
+  ⇢ 49) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ" attribute at 47:37
+  ⇢ 50) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ" attribute at 47:11
+  ⇢ 51) Error in the "Φ.org.eolang.dataized.φ" attribute at 57:2
+  ⇢ 52) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 53) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 54) "Can't get an object from the empty tuple"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢ 1) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 2) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 3) "Can't get an object from the empty tuple"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢   1) Error in the "Φ.org.eolang.dataized.φ.α0.Δ" attribute at 58:4
+  ⇢   2) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ.α0.Δ" attribute at 47:26
+  ⇢   3) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢   4) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢   5) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢   6) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢   7) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢   8) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢   9) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  10) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  11) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  12) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢  13) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  14) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  15) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  16) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  17) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢  18) Error in the "Φ.doctest-entry.φ.α0.α0.α1.Δ" attribute at 341:6
+  ⇢  19) Error in the "Φ.doctest.φ.Δ" attribute at 347:2
+  ⇢  20) Error in the "Φ.app.φ.Δ" attribute at 5:2
+  ⇢  21) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢  22) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  23) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  24) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢  25) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢  26) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢  27) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  28) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  29) Error in the "Φ.org.eolang.seq$loop.φ.α1.Δ" attribute at 51:11
+  ⇢  30) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢  31) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢  32) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  33) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  34) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢  35) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  36) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  37) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  38) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  39) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢  40) Error in the "Φ.app.φ.α0.α1.Δ" attribute at 7:6
+  ⇢  41) Error in the "Φ.org.eolang.while.φ.Δ" attribute at 53:2
+  ⇢  42) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  43) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  44) Error in the "Φ.org.eolang.while.φ.α0.Δ" attribute at 55:4
+  ⇢  45) Error in the "Φ.org.eolang.while.loop.Δ" attribute at 62:2
+  ⇢  46) Error in the "Φ.org.eolang.while$loop.φ.Δ" attribute at 64:4
+  ⇢  47) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  48) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  49) Error in the "Φ.org.eolang.while$loop.φ.α0.Δ" attribute at 66:6
+  ⇢  50) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢  51) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  52) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  53) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢  54) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢  55) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢  56) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  57) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  58) Error in the "Φ.org.eolang.seq$loop.φ.α0.Δ" attribute at 49:7
+  ⇢  59) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢  60) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢  61) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  62) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  63) Error in the "Φ.org.eolang.seq$loop.φ.α1.Δ" attribute at 51:11
+  ⇢  64) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢  65) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢  66) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  67) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  68) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢  69) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  70) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢  71) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  72) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  73) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢  74) Error in the "Φ.org.eolang.while$loop.φ.α0.α0.α1.Δ" attribute at 69:11
+  ⇢  75) Error in the "Φ.org.eolang.while.loop.Δ" attribute at 62:2
+  ⇢  76) Error in the "Φ.org.eolang.while$loop.φ.Δ" attribute at 64:4
+  ⇢  77) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  78) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  79) Error in the "Φ.org.eolang.while$loop.φ.α0.Δ" attribute at 66:6
+  ⇢  80) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢  81) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  82) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  83) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢  84) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢  85) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢  86) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  87) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢  88) Error in the "Φ.org.eolang.seq$loop.φ.α0.Δ" attribute at 49:7
+  ⇢  89) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢  90) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢  91) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  92) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  93) Error in the "Φ.org.eolang.seq$loop.φ.α1.Δ" attribute at 51:11
+  ⇢  94) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢  95) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢  96) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  97) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  98) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢  99) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢ 100) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 101) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 102) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 103) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢ 104) Error in the "Φ.org.eolang.while$loop.φ.α0.α0.α1.Δ" attribute at 69:11
+  ⇢ 105) Error in the "Φ.org.eolang.while.loop.Δ" attribute at 62:2
+  ⇢ 106) Error in the "Φ.org.eolang.while$loop.φ.Δ" attribute at 64:4
+  ⇢ 107) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 108) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 109) Error in the "Φ.org.eolang.while$loop.φ.α0.Δ" attribute at 66:6
+  ⇢ 110) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢ 111) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 112) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 113) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢ 114) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 115) Error in the "Φ.org.eolang.seq$loop.φ" attribute at 43:4
+  ⇢ 116) Error in the "Φ.org.eolang.seq$loop.φ.ρ" attribute at 44:6
+  ⇢ 117) Error in the "Φ.org.eolang.true.and" attribute at 38:2
+  ⇢ 118) Error in the "Φ.org.eolang.true$and.φ" attribute at 38:5
+  ⇢ 119) Error in the "Φ.org.eolang.bytes.eq" attribute at 61:2
+  ⇢ 120) Error in the "Φ.org.eolang.true$and.φ.α0" attribute at 38:9
+  ⇢ 121) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0" attribute at 46:8
+  ⇢ 122) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ" attribute at 47:37
+  ⇢ 123) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ" attribute at 47:11
+  ⇢ 124) Error in the "Φ.org.eolang.dataized.φ" attribute at 57:2
+  ⇢ 125) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 126) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 127) "Can't get an object from the empty tuple"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢ 1) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 2) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 3) "Can't get an object from the empty tuple"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢  1) Error in the "Φ.doctest-entry.φ.Δ" attribute at 337:2
+  ⇢  2) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢  3) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  4) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  5) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢  6) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢  7) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢  8) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  9) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 10) Error in the "Φ.org.eolang.seq$loop.φ.α0.Δ" attribute at 49:7
+  ⇢ 11) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 12) Error in the "Φ.org.eolang.seq$loop.φ" attribute at 43:4
+  ⇢ 13) Error in the "Φ.org.eolang.seq$loop.φ.ρ" attribute at 44:6
+  ⇢ 14) Error in the "Φ.org.eolang.true.and" attribute at 38:2
+  ⇢ 15) Error in the "Φ.org.eolang.true$and.φ" attribute at 38:5
+  ⇢ 16) Error in the "Φ.org.eolang.bytes.eq" attribute at 61:2
+  ⇢ 17) Error in the "Φ.org.eolang.true$and.φ.α0" attribute at 38:9
+  ⇢ 18) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0" attribute at 46:8
+  ⇢ 19) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ" attribute at 47:37
+  ⇢ 20) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ" attribute at 47:11
+  ⇢ 21) Error in the "Φ.org.eolang.dataized.φ" attribute at 57:2
+  ⇢ 22) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 23) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 24) "Can't get an object from the empty tuple"
+<Φ.org.eolang.dataized$t1$a1.φ.α0:59:10>EOorg.EOeolang.EOdataized$EOt1$EOa1ν1905290947.ex(Δ = [0x43616E27-74206765-7420616E-206F626A-65637420-66726F6D-20746865-20656D70-74792074-75706C65-] = "Can't get an object from the empty tuple")
+JVM failed with exit code #1
+<ALL-OUTPUT-END>

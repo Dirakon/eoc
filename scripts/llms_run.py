@@ -25,8 +25,10 @@ class OpenRouterModelSetup(ModelSetup):
             "OR")
 
 MODELS: list[ModelSetup] = [
-    # OpenRouterModelSetup("deepseek/deepseek-r1"),
-    # OpenRouterModelSetup("anthropic/claude-3.7-sonnet"),
+    OpenRouterModelSetup("deepseek/deepseek-r1"),
+    OpenRouterModelSetup("anthropic/claude-3.7-sonnet"),
+    OpenRouterModelSetup("openai/o3-mini"),
+    OpenRouterModelSetup("openai/gpt-4o-mini"),
     OpenRouterModelSetup("meta-llama/llama-3.3-70b-instruct"),
     OpenRouterModelSetup("qwen/qwq-32b"),
     OpenRouterModelSetup("google/gemini-2.0-flash-lite-001"),

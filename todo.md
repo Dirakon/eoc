@@ -9,6 +9,7 @@
 6.2. Note different LLM muscules for writing code and documenting/understanding/explaining it
 6.3. Note the overexplaining
 6.4. Note the cost/time and shit by the by.
+6.5. Note that some LLMs decide to document all functions, which opens more potential for factual errors.
 7. [DONE] Parallel requests to openrouter
 8. [DONE] Other models
 9. [DONE] Also print stderr with RED

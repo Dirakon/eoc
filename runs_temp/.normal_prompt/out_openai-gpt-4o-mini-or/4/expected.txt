@@ -1,0 +1,17 @@
+Reading... Getting current version Writing...
+Rss:
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>sampleBranch versions</title>
+  <link>https://search.nixos.org/packages?channel=sampleBranch&from=0&size=50&sort=relevance&type=packages&query=sampleBranch</link>
+  <description>History of versions</description>
+  <item>
+    <title>1.0.0</title>
+    <link>https://search.nixos.org/packages?channel=sampleBranch&from=0&size=50&sort=relevance&type=packages&query=sampleBranch</link>
+    <description>New version at 1638374400</description>
+  </item>
+</channel>
+
+</rss>

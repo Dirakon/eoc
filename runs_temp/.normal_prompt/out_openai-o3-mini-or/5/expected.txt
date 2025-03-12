@@ -1,0 +1,4 @@
+Log:
+(lines: 2)
+Hello
+World

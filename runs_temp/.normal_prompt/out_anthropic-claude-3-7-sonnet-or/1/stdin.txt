@@ -1,0 +1,12 @@
+Log:
+91.0|||1628000000
+92.0|||1630000000
+
+(lines: 2)
+Request: write-file|||test_storage/stable/firefox
+(lines: 2)
+ok
+Request: read-file|||test_storage/stable/firefox
+(lines: 2)
+91.0|||1628000000
+92.0|||1630000000

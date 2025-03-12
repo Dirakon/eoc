@@ -1,0 +1,11 @@
+Accuracy: 2
+Accuracy-note: 'mocked' external functions - false.
+Completeness: 2
+Completeness-note: Mentions 'mocked' ext. Mentions assumption about argv.
+Relevance: 1
+Relevance-note: Describes whole code, not the given structure
+Understandability: 2
+Understandability-note: x
+Formatting: 3
+Formatting-note: MD
+General-note: Uses likely. 

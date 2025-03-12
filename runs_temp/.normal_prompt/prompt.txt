@@ -1,0 +1,230 @@
+# Explanation of the EO programming languge
+
+## Overview
+
+All the following code will be written in EO programming language. It is minimalistic functional programming language. It goes like this:
+
+```eo
+[object-arg1 object-arg2] > object
+  print-hello-world > @
+
+  print-something > print-hello-world
+    "hello world"
+
+  [function-arg] > print-something
+    QQ.io.stdout > @
+      function-arg
+```
+
+`@` is a special function, defining which value object evaluates to.
+
+## Creating functions
+
+There are 2 different ways to define a function inside an object:
+
+1. Function with parameters
+An example is the above `print-something` function. It takes argument, and it also defines subfunction `@`, which similarly to the class describes the result the actual function.
+2. Parameterless function
+If a function has no parameters, the code can be simplified and to the left of `> function-name` instead of arguments we write the first part of the output.
+
+e.g. this parameterless function:
+```eo
+print-something > print-hello-world
+  "hello world"
+```
+
+can be rewritten as this function with empty list of parameters:
+```eo
+[] > print-hello-world
+  print-something > @ 
+    "hello world"
+```
+
+## Calling functions
+
+Parameters are passed through indentation - each indented line under a function call becomes a separate argument. Lines with further indentation become arguments of the previous argument.
+
+This is a function named `print-hello-world` that takes 0 arguments (hence empty square brackets) and calls function `print-something` with argument `"hello world"`:
+
+```eo
+[] > print-hello-world
+  print-something > @ 
+    "hello world"
+```
+
+If you want to pass multiple arguments, each would take a separate line like this:
+```eo
+[] > print-hello-world
+  print-something > @ 
+    "line to print 1"
+    "line to print 2"
+```
+
+If you want to pass the result of another function, you would nest the call, the indentation would decide which parameter goes to which function, like this:
+```eo
+[] > entry-function
+  subfunction1 > @ 
+    "param1 to subfunction1"
+    subfunction2
+      "param1 to subfunction2"
+      "param2 to subfunction2"
+    "param3 to subfunction1"
+```
+
+Or you can give a name to expression like this (i.e. make it into a parameterless function):
+
+```eo
+[] > entry-function
+  subfunction1 > @ 
+    "param1 to subfunction1"
+    saved-parameter-2
+    "param3 to subfunction1"
+
+  subfunction2 > saved-parameter-2
+    "param1 to subfunction2"
+    "param2 to subfunction2"
+```
+
+Note that two code blocks above produce identical results when executed.
+
+Arrays are created using the `*` function, which collects indented parameters into a list. The `seq` function executes array elements sequentially (like it would happen in Haskell with IO monad).
+
+There are also a few ways of calling a function of an object.
+
+You can either just put 'object.function' in one line like this:
+
+```eo
+[] > object
+  [who-to-greet] > say-hello
+    QQ.io.stdout > @
+      QQ.txt.sprintf
+        "Hello %s\n"
+        *
+          who-to-greet
+
+[] > entry-function
+  object.say-hello > @ 
+    "param1"
+```
+
+Or you can put the function first with dot at the end (the first argument becomes the object in this calling style) like this:
+
+```eo
+[] > entry-function
+  say-hello. > @ 
+    object
+    "param1"
+```
+
+# Task explanation
+
+You are LLM, and your goal is to create documentation for undocumented code. Your task is to write a concise explanation of the code structure marked by <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED> mark. That structure can be either class or a function.
+
+Your answer should have four sections: explanation, doctest-code, doctest-stdin, doctest-output. Doctest should define object named specifically `doctest`, which should output some values to stdout. Doctest-stdin should describe expected user input for test to run properly (it will be directly fed into stdin of the doctest to automatically check the correctness of it, so do not provide any unnecessary text there). Doctest-output should provide the expected output of evaluated doctest.
+
+Do not add any additional text besides the required format. You will be provided three interaction examples so that you become familiar with the format. There is no need to explain them - they are just here to show how you should answer queries. After that, you will receive the actual user input - THAT is what you should explain.
+
+# Interaction examples (DO NOT EXPLAIN THEM)
+
+Input:
+```eo
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+[a b] > app
+  plus. > @
+    a
+    b
+```
+Output: 
+```
+<explanation>
+Object that adds two numbers together.
+</explanation>
+<doctest-code>
+[] > doctest
+  QQ.io.stdout > @
+    QQ.txt.sprintf
+      "%d"
+      *
+        app
+          1
+          2
+</doctest-code>
+<doctest-stdin>
+</doctest-stdin>
+<doctest-output>
+3
+</doctest-output>
+```
+
+Input:
+```eo
+# Built-in string structure, which is
+# an abstraction of a text string, which internally is a chain of bytes.
+[as-bytes] > string
+  as-bytes > @
+
+  # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+  [] > length
+    # Function is built-in in the EO language, so the code is ommited
+
+  # Takes a piece of a string as another string.
+  [start len] > slice
+    # Function is built-in in the EO language, so the code is ommited
+```
+Output: 
+```
+<explanation>
+Get the length of it.
+</explanation>
+<doctest-code>
+[] > doctest
+  QQ.io.stdout > @
+    QQ.txt.sprintf
+      "%d"
+      *
+        "hello".length
+</doctest-code>
+<doctest-stdin>
+</doctest-stdin>
+<doctest-output>
+5
+</doctest-output>
+```
+
+Input:
+```eo
+# Interactions with IO.
+[] > io-utils
+  # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+  [] > parrot
+    seq > @
+      *
+        QQ.io.stdout "Say something: "
+        QQ.io.stdin.next-line > line
+        QQ.io.stdout "You said:\n"
+        QQ.io.stdout line
+```
+Output: 
+```
+<explanation>
+Interactively outputs to stdout the copy of the line received through stdin.
+</explanation>
+<doctest-code>
+[] > doctest
+  io-utils.parrot > @
+</doctest-code>
+<doctest-stdin>
+hello world
+</doctest-stdin>
+<doctest-output>
+Say something: You said:
+hello world
+</doctest-output>
+```
+
+# The actual user input to be documented (THAT IS WHAT YOU SHOULD EXPLAIN)
+
+Input:
+```eo
+{code}
+```

@@ -33,10 +33,16 @@ def main():
             if not manual_grade_file.exists():
                 default_manual_grade_file = \
                     "Accuracy: x\n" + \
+                    "Accuracy-note: x\n" + \
                     "Completeness: x\n" + \
+                    "Completeness-note: x\n" + \
                     "Relevance: x\n" + \
+                    "Relevance-note: x\n" + \
                     "Understandability: x\n" + \
-                    "Formatting: x\n"
+                    "Understandability-note: x\n" + \
+                    "Formatting: x\n" + \
+                    "Formatting-note: x\n" + \
+                    "General-note: x\n"
                 os.makedirs(manual_grade_file.parent, exist_ok=True)
                 open(manual_grade_file, 'w').write(default_manual_grade_file)
 

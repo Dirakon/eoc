@@ -1,0 +1,4 @@
+Wrote data successfully
+Program: firefox
+Versions: 2
+First version: 91.0 (timestamp: 1628000000)

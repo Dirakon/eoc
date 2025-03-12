@@ -1,0 +1,6 @@
+Request: write-file|||state_dir/nixos-unstable/mypkg
+Log:
+write-file|||state_dir/nixos-unstable/mypkg
+1.0|||1234567890
+
+Storage updated

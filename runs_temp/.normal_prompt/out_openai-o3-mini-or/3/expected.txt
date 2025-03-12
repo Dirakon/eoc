@@ -1,0 +1,2 @@
+Case1 length: 2
+Case2 length: 3

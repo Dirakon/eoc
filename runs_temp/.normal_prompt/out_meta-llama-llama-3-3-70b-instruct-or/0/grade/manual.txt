@@ -1,0 +1,11 @@
+Accuracy: 1
+Accuracy-note: networking???
+Completeness: 2
+Completeness-note: stdout-powered IO not mentioned...
+Relevance: 1
+Relevance-note: Whole code again???
+Understandability: 2
+Understandability-note: Mixes together top-level objects and local functions...
+Formatting: 3
+Formatting-note: x
+General-note: x

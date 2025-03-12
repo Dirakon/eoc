@@ -1,5 +1,0 @@
-Accuracy: x
-Completeness: x
-Relevance: x
-Understandability: x
-Formatting: x

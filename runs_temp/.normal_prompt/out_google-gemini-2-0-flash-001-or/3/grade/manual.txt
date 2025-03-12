@@ -1,0 +1,11 @@
+Accuracy: 3
+Accuracy-note: x
+Completeness: 3
+Completeness-note: x
+Relevance: 3
+Relevance-note: x
+Understandability: 2
+Understandability-note: inconsistency - object or function?
+Formatting: 3
+Formatting-note: x
+General-note: x

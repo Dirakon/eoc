@@ -1,0 +1,18 @@
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>MyProgram versions</title>
+  <link>https://search.nixos.org/packages?channel=stable&from=0&size=50&sort=relevance&type=packages&query=MyProgram</link>
+  <description>History of versions</description>
+  <item>
+    <title>1.0</title>
+    <link>https://search.nixos.org/packages?channel=stable&from=0&size=50&sort=relevance&type=packages&query=MyProgram</link>
+    <description>New version at 123456</description>
+  </item>
+
+</channel>
+
+</rss>

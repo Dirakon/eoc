@@ -15,11 +15,11 @@ def without_ansi_marks(text: str) -> str:
     return re.sub(ansi_re, '', text)
 
 def non_excluded_subdirectories(dir_path: Path)-> list[Path]:
-    return [i for i in dir_path.iterdir() if 
+    return list([i for i in dir_path.iterdir() if 
         i.is_dir() 
         and ('node_modules' not in i.name)
         and (not i.name.startswith("."))
-    ]
+    ])
 
 def get_all_model_subdirectories() -> list[Path]:
     directories = []

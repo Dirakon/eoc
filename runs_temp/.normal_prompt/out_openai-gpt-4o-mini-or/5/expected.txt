@@ -1,0 +1,9 @@
+Log:
+Testing external commands.
+(lines: 3)
+Request: get-branch
+(lines: 0)
+Request: program-name
+(lines: 0)
+Request: get-version
+(lines: 1)

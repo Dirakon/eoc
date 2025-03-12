@@ -1,0 +1,11 @@
+Accuracy: 1
+Accuracy-note: from a file = stdin. Returns stored data is just wrong.
+Completeness: 2
+Completeness-note: stdin/stdout.
+Relevance: 3
+Relevance-note: x
+Understandability: 3
+Understandability-note: x
+Formatting: 3
+Formatting-note: x
+General-note: x

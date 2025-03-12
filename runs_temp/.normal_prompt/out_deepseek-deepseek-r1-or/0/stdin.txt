@@ -1,0 +1,8 @@
+Request: branch
+nixos-unstable
+Request: program-name
+firefox
+Request: get-version|||nixos-unstable|||firefox
+114.0.2
+Request: gettimeofday
+1690000000

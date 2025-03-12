@@ -1,0 +1,57 @@
+Request: branch
+nixpkgs
+Request: program-name
+firefox
+Request: get-version|||nixpkgs|||firefox
+115.0.2
+Log:
+Reading...
+(lines: 1)
+Request: read-file|||/tmp/nixpkgs/firefox
+(lines: 1)
+114.0.1|||1688214567
+Log:
+Getting current version
+(lines: 1)
+Log:
+Writing...
+(lines: 1)
+114.0.1|||1688214567
+115.0.2|||1688214567
+
+Request: write-file|||/tmp/nixpkgs/firefox
+114.0.1|||1688214567
+115.0.2|||1688214567
+
+done
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>firefox versions</title>
+  <link>https://search.nixos.org/packages?channel=nixpkgs&from=0&size=50&sort=relevance&type=packages&query=firefox</link>
+  <description>History of versions</description>
+  <item>
+    <title>114.0.1</title>
+    <link>https://search.nixos.org/packages?channel=nixpkgs&from=0&size=50&sort=relevance&type=packages&query=firefox</link>
+    <description>New version at 1688214567</description>
+  </item>
+  <item>
+    <title>115.0.2</title>
+    <link>https://search.nixos.org/packages?channel=nixpkgs&from=0&size=50&sort=relevance&type=packages&query=firefox</link>
+    <description>New version at 1688214567</description>
+  </item>
+</channel>
+
+</rss>
+Request: branch
+nixpkgs
+Request: program-name
+firefox
+Request: get-version|||nixpkgs|||firefox
+115.0.2
+Log:
+Reading...
+(lines: 1)

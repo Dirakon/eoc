@@ -1,0 +1,11 @@
+Accuracy: 3
+Accuracy-note: x
+Completeness: 2
+Completeness-note: stdin/stdout.
+Relevance: 2
+Relevance-note: Specifying logs is not very relevant...
+Understandability: 3
+Understandability-note: x
+Formatting: 1.5
+Formatting-note: weird unicode symbols for lists...
+General-note: x

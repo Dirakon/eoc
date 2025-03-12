@@ -1,0 +1,38 @@
+Request: branch
+Request: program-name
+Log:
+(lines: 1)
+Reading...
+Log:
+(lines: 1)
+Getting current version
+Request: get-version|||main|||myapp
+Log:
+(lines: 1)
+Writing...
+Log:
+(lines: 2)
+v1|||100
+
+Request: write-file|||state/main/myapp
+(lines: 2)
+v1|||100
+
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>myapp versions</title>
+  <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=myapp</link>
+  <description>History of versions</description>
+
+  <item>
+    <title>v1</title>
+    <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=myapp</link>
+    <description>New version at 100</description>
+  </item>
+</channel>
+
+</rss>
