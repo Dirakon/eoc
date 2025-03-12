@@ -1,0 +1,13 @@
+Request: branch
+unstable
+Request: program-name
+test-program
+Request: write-file|||/tmp/test-state/unstable/test-program
+Log:
+1.0.0|||1605123456
+
+(lines: 1)
+OK
+Request: read-file|||/tmp/test-state/unstable/test-program
+(lines: 1)
+1.0.0|||1605123456

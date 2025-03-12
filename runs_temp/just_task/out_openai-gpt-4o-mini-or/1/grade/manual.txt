@@ -1,0 +1,11 @@
+Accuracy: 3
+Accuracy-note: x
+Completeness: 1
+Completeness-note: where info about read/write? stdin/stdout?
+Relevance: 2
+Relevance-note: once again, hard to tell if its even understands which part is suuposed to be docuemnted
+Understandability: 2
+Understandability-note: why is rss human-readable? i mean it is, but it's made to be machine-readable first, no?
+Formatting: 3
+Formatting-note: x
+General-note: x

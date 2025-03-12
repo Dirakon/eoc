@@ -1,0 +1,9 @@
+Log:
+(lines:1)
+Testing external logging.
+Request: branch
+Request: program-name
+Request: get-version|||nixos-22.11|||hello-world
+Log:
+(lines:1)
+Version result: v1.2.3

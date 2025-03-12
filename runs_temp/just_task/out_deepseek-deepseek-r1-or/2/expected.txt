@@ -1,0 +1,22 @@
+Rss:
+(lines: 20)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>hello versions</title>
+  <link>https://search.nixos.org/packages?channel=nixos-unstable&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=hello</link>
+  <description>History of versions</description>
+  <item>
+    <title>1.0</title>
+    <link>https://search.nixos.org/packages?channel=nixos-unstable&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=hello</link>
+    <description>New version at 1620000000</description>
+  </item>
+  <item>
+    <title>2.0</title>
+    <link>https://search.nixos.org/packages?channel=nixos-unstable&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=hello</link>
+    <description>New version at 1625000000</description>
+  </item>
+</channel>
+
+</rss>

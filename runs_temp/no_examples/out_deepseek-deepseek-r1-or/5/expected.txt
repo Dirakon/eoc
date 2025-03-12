@@ -1,0 +1,6 @@
+Log:
+(lines: 2)
+Test log message
+Second line
+Request: get-version|||nixos-unstable|||nginx
+Received version: 1.23.4

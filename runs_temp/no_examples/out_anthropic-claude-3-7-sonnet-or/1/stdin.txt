@@ -1,0 +1,13 @@
+Request: write-file|||./test-state/main/test-program
+1.0.0|||1623456789
+1.1.0|||1623556789
+
+Log:
+(lines: 2)
+1.0.0|||1623456789
+1.1.0|||1623556789
+
+Request: read-file|||./test-state/main/test-program
+(lines: 2)
+1.0.0|||1623456789
+1.1.0|||1623456789

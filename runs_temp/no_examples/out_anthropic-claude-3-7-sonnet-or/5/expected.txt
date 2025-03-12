@@ -1,0 +1,20 @@
+Log:
+(lines: 1)
+Testing external module
+
+Request: write-file|||/tmp/test-file.txt
+(lines: 1)
+Hello, world!
+Request: branch
+Request: program-name
+Log:
+(lines: 1)
+Current branch: nixos-23.05, program: test-program
+
+Request: get-version|||nixos-23.05|||test-program
+Request: read-file|||/tmp/test-file.txt
+(lines: 1)
+Hello, world!
+Log:
+(lines: 1)
+Test completed

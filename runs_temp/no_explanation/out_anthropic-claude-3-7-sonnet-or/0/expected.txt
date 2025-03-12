@@ -1,0 +1,32 @@
+COMMAND: Request: branch
+
+LOG: Reading...
+COMMAND: Request: read-file|||test-state-dir/nixos-unstable/vim
+
+(lines: 0)
+LOG: Getting current version
+COMMAND: Request: get-version|||nixos-unstable|||vim
+
+LOG: Writing...
+COMMAND: Request: write-file|||test-state-dir/nixos-unstable/vim
+
+LOG: 9.0.1678|||0
+
+(lines: 1)
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>vim versions</title>
+  <link>https://search.nixos.org/packages?channel=nixos-unstable&from=0&size=50&sort=relevance&type=packages&query=vim</link>
+  <description>History of versions</description>
+  <item>
+    <title>9.0.1678</title>
+    <link>https://search.nixos.org/packages?channel=nixos-unstable&from=0&size=50&sort=relevance&type=packages&query=vim</link>
+    <description>New version at 0</description>
+  </item>
+</channel>
+
+</rss>

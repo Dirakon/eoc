@@ -1,0 +1,3 @@
+Original versions count: 2
+After adding same version: 2
+After adding new version: 3

@@ -1,0 +1,3 @@
+start
+hello
+WRITE: file.txtcontent

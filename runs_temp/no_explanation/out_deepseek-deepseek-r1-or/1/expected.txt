@@ -1,0 +1,20 @@
+Log:
+(lines: 1)
+v2.1|||1678900000
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>testprog versions</title>
+  <link>https://search.nixos.org/packages?channel=main&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=testprog</link>
+  <description>History of versions</description>
+  <item>
+    <title>v2.1</title>
+    <link>https://search.nixos.org/packages?channel=main&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=testprog</link>
+    <description>New version at 1678900000</description>
+  </item>
+</channel>
+
+</rss>

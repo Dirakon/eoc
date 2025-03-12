@@ -1,0 +1,26 @@
+Log:
+(lines: 1)
+Reading...
+Log:
+(lines: 1)
+Getting current version
+Log:
+(lines: 1)
+Writing...
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>test versions</title>
+  <link>https://search.nixos.org/packages?channel=main&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=test</link>
+  <description>History of versions</description>
+  <item>
+    <title>1.0</title>
+    <link>https://search.nixos.org/packages?channel=main&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=test</link>
+    <description>New version at 0</description>
+  </item>
+</channel>
+
+</rss>

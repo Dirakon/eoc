@@ -1,0 +1,7 @@
+Log:
+(lines: 2)
+Line1
+Line2
+Request: TestCmd
+Response: UserReply
+(lines: 3)

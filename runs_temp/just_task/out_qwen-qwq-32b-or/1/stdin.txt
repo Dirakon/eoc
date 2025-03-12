@@ -1,0 +1,12 @@
+nixos-23.05
+example
+# For external.version response
+v1.2.3
+
+# For read-file command responses (empty)
+(lines:0)
+
+(lines:1)
+(v1.2.3|||1234567890)
+(lines:1)
+v1.2.3|||1234567890

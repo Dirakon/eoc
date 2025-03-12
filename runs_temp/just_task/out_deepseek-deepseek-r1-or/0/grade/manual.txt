@@ -1,0 +1,11 @@
+Accuracy: 3
+Accuracy-note: x
+Completeness: 1
+Completeness-note: cli-arg? stdin/stdout?
+Relevance: 1
+Relevance-note: whole code again.
+Understandability: 3
+Understandability-note: x
+Formatting: 3
+Formatting-note: x
+General-note: x

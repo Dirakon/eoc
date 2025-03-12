@@ -1,0 +1,17 @@
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>firefox versions</title>
+  <link>https://search.nixos.org/packages?channel=nixos-unstable&from=0&size=50&sort=relevance&type=packages&query=firefox</link>
+  <description>History of versions</description>
+  <item>
+    <title>114.0.1</title>
+    <link>https://search.nixos.org/packages?channel=nixos-unstable&from=0&size=50&sort=relevance&type=packages&query=firefox</link>
+    <description>New version at 1688750000</description>
+  </item>
+</channel>
+
+</rss>

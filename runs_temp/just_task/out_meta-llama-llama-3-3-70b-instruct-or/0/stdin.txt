@@ -1,0 +1,12 @@
+branch
+test-branch
+program-name
+test-program
+get-version
+test-branch|||test-program
+1.0
+read-file
+test-state-path/test-branch/test-program
+(lines: 2)
+version1|||1
+version2|||2

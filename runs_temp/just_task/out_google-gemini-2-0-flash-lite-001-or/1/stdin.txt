@@ -1,0 +1,8 @@
+# Simulate file existence check
+yes
+# Simulate file read
+0  # number of lines
+File content
+#Simulate write
+Log:
+test_version|||1234

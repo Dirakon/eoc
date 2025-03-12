@@ -1,0 +1,22 @@
+Rss:
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>test_program versions</title>
+  <link>https://search.nixos.org/packages?channel=test_branch&from=0&size=50&sort=relevance&type=packages&query=test_program</link>
+  <description>History of versions</description>
+</channel>
+
+</rss>
+Rss:
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>test_program versions</title>
+  <link>https://search.nixos.org/packages?channel=test_branch&from=0&size=50&sort=relevance&type=packages&query=test_program</link>
+  <description>History of versions</description>
+</channel>
+
+</rss>

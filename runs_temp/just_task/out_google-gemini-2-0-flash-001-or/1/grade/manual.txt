@@ -1,0 +1,11 @@
+Accuracy: 2
+Accuracy-note: NOT witin app object.
+Completeness: 2
+Completeness-note: not mentions stdin/stdout. no mention of directories being created automatically in data-file
+Relevance: 3
+Relevance-note: x
+Understandability: 3
+Understandability-note: x
+Formatting: 3
+Formatting-note: x
+General-note: x

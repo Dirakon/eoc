@@ -1,0 +1,5 @@
+Log:
+(lines: 1)
+Testing external interface
+Command response simulation:
+Request: branch

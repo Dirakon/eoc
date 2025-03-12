@@ -1,0 +1,34 @@
+Request: get-branch
+test-branch
+Request: program-name
+test-program
+Log:
+Reading...
+Log:
+Getting current version
+Request: get-version|||test-branch|||test-program
+1.2.3
+Log:
+
+Request: write-file|||test_data.txt/test-branch/test-program
+Log:
+1.2.3|||0
+Request: branch
+test-branch
+Request: program-name
+test-program
+Log:
+Running one more time
+Log:
+Reading...
+Log:
+Getting current version
+Request: get-version|||test-branch|||test-program
+1.2.4
+Log:
+
+Request: write-file|||test_data.txt/test-branch/test-program
+Log:
+1.2.3|||0
+1.2.4|||0
+Request:

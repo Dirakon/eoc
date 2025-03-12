@@ -1,0 +1,11 @@
+Accuracy: 3
+Accuracy-note: x
+Completeness: 2
+Completeness-note: unix?types?
+Relevance: x
+Relevance-note: 3
+Understandability: 2
+Understandability-note: tells the contents twice?
+Formatting: 3
+Formatting-note: x
+General-note: x

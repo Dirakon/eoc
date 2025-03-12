@@ -1,0 +1,333 @@
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+[args] > app
+  QQ.fs.path > state-path
+    args.at 0
+  seq > @
+    *
+      while
+        true > [i] >>
+        [i] >>
+          seq > @
+            *
+              external.branch > branch
+              external.program-name > program-name
+              external.log
+                "Reading..."
+              currently-saved-data > data
+                branch
+                program-name
+              external.log
+                "Getting current version"
+              version > current-version
+                branch
+                program-name
+              data.actualized > new-data
+                current-version
+              program-data-storage > storage
+                state-path
+              external.log
+                "Writing..."
+              storage.write
+                new-data
+              new-data.output-as-rss
+
+  [branch program-name] > version
+    seq > @
+      *
+        external.version > version-number
+          branch
+          program-name
+        program-version
+          version-number
+          current-time.tv-sec
+
+  [branch program-name] > currently-saved-data
+    seq > @
+      *
+        program-data-storage > storage
+          state-path
+        storage.read > data
+          branch
+          program-name
+
+  [] > current-time
+    output. > @
+      QQ.sys.posix
+        "gettimeofday"
+        * QQ.sys.posix.timeval
+
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+[state-path] > program-data-storage
+  state-path > @
+  [branch program-name] > data-file
+    QQ.fs.file > file
+      QQ.fs.path.joined
+        *
+          state-path
+          QQ.fs.path
+            branch
+          QQ.fs.path
+            program-name
+    QQ.fs.dir > directory
+      QQ.fs.file
+        QQ.fs.path
+          file.dirname
+    seq > @
+      *
+        directory.made
+        file
+
+  [branch program-name] > read
+    data-file > file
+      branch
+      program-name
+    file.path > src
+    seq > @
+      *
+        if.
+          exists.
+            QQ.fs.file
+              src
+          seq
+            *
+              external.read > content
+                file
+              program-data
+                branch
+                program-name
+                mapped.
+                  QQ.structs.list
+                    split.
+                      content
+                      "\n"
+                  [line] >>
+                    program-version > @
+                      at.
+                        QQ.txt.sscanf
+                          "%s|||%d"
+                          line
+                        0
+                      at.
+                        QQ.txt.sscanf
+                          "%s|||%d"
+                          line
+                        1
+          seq
+            *
+              program-data
+                branch
+                program-name
+                QQ.structs.list
+                  tuple.empty
+
+  [program-data-instance] > write
+    data-file > file
+      program-data-instance.branch
+      program-data-instance.program-name
+    seq > @
+      *
+        program-data-instance.versions.reduced > serialized-versions
+          QQ.txt.text
+            ""
+          [accum version]
+            chained. > @
+              accum
+              *
+                QQ.txt.text
+                  version.version-number
+                QQ.txt.text
+                  "|||"
+                QQ.txt.text
+                  QQ.txt.sprintf
+                    "%d"
+                    * version.timestamp
+                QQ.txt.text
+                  "\n"
+        external.log
+          serialized-versions
+        external.write
+          file
+          serialized-versions
+        program-data-instance
+
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+[branch program-name versions] > program-data
+  program-name > @
+
+  # Have some weird stackoverflow problems if I try to separate rss-string creation and the output.
+  # Therefore, I have to break responsibilities here and unify rss-string creation and the ouput.
+  [] > output-as-rss
+    QQ.txt.sprintf > prefix
+      "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<rss version=\"2.0\">\n\n<channel>\n  <title>%s versions</title>\n  <link>https://search.nixos.org/packages?channel=%s&from=0&size=50&sort=relevance&type=packages&query=%s</link>\n  <description>History of versions</description>"
+      * program-name branch program-name
+    [] > output-middle-part
+      seq > @
+        mapped.
+          versions
+          [version] >>
+            QQ.io.stdout > @
+              QQ.txt.sprintf
+                "  <item>\n    <title>%s</title>\n    <link>https://search.nixos.org/packages?channel=%s&from=0&size=50&sort=relevance&type=packages&query=%s</link>\n    <description>New version at %d</description>\n  </item>\n"
+                * version.version-number branch program-name version.timestamp
+    "</channel>\n\n</rss>" > suffix
+    seq > @
+      *
+        QQ.io.stdout
+          "Rss:\n"
+        5.times versions.length > number-of-lines-middle
+        7 > prefix-lines
+        3 > suffix-lines
+        (number-of-lines-middle.plus prefix-lines).plus suffix-lines > number-of-lines
+        external.line-counter number-of-lines
+        QQ.io.stdout
+          prefix
+        QQ.io.stdout
+          "\n"
+        output-middle-part
+        QQ.io.stdout
+          suffix
+        QQ.io.stdout
+          "\n"
+
+  # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+  [new-version] > actualized
+    program-data > @
+      branch
+      program-name
+      if.
+        and.
+          eq.
+            last-index-of.
+              versions
+              new-version
+            versions.length.minus 1
+          not.
+            versions.is-empty
+        versions
+        versions.with new-version
+
+# An application handling program data versions, managing state paths, reading and writing to data files, and generating RSS outputs for version history. It utilizes external commands for operations while maintaining structured data management.
+[version-number timestamp] > program-version
+  version-number > @
+
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+[] > external
+  "" > @
+  "|||" > command-separator
+
+  [line-count] > line-counter
+    QQ.io.stdout > @
+      QQ.txt.sprintf
+        "(lines: %d)\n"
+        * line-count
+
+  [content] > output-multiline
+    QQ.txt.text > text-content
+      content
+    split. > lines
+      text-content
+      "\n"
+    seq > @
+      *
+        line-counter
+          lines.length
+        QQ.io.stdout
+          QQ.txt.sprintf
+            "%s\n"
+            * content
+
+  [text] > log
+    seq > @
+      *
+        QQ.io.stdout
+          "Log:\n"
+        output-multiline
+          text
+
+  [file content] > write
+    QQ.txt.text > write-file
+      "write-file"
+    seq > @
+      *
+        send-command
+          write-file.chained
+            * command-separator file.as-path
+        output-multiline content
+        get-confirmation
+
+  [file] > read
+    [items] > range
+      QQ.structs.range > @
+        []
+          [num] > build
+            num > @
+            build (@.plus 1) > next
+          build 0 > @
+        items
+    QQ.txt.text > read-file
+      "read-file"
+    seq > @
+      *
+        send-command
+          read-file.chained
+            * command-separator file.as-path
+        QQ.io.stdin.next-line > metadata
+        (QQ.txt.sscanf "(lines: %d)" metadata).at 0 > line-count
+        joined. > content
+          QQ.txt.text
+            "\n"
+          mapped.
+            range
+              line-count
+            QQ.io.stdin.next-line > [i]
+        content
+
+  [command] > send-command
+    QQ.io.stdout > @
+      chained.
+        QQ.txt.text
+          "Request: "
+        *
+          QQ.txt.text
+            command
+          QQ.txt.text
+            "\n"
+
+  [] > get-response
+    seq > @
+      *
+        QQ.io.stdin.next-line
+
+  [] > get-confirmation
+    seq > @
+      *
+        QQ.io.stdin.next-line
+
+  [branch program-name] > version
+    QQ.txt.text > get-version
+      "get-version"
+    seq > @
+      *
+        send-command
+          get-version.chained
+            * command-separator branch command-separator program-name
+        get-response > version-number
+        version-number
+
+  [] > branch
+    QQ.txt.text > get-branch
+      "branch"
+    seq > @
+      *
+        send-command
+          get-branch
+        get-response
+
+  [] > program-name
+    QQ.txt.text > program-name
+      "program-name"
+    seq > @
+      *
+        send-command
+          program-name
+        get-response

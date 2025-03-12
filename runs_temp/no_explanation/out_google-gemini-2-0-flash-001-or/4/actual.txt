@@ -1,0 +1,133 @@
+<ALL-OUTPUT-START>[eo:register] 0ms; 0 files generated so far...[0K[1G[eo:register] 2s; 0 files generated so far...[0K[1G[eo:register] 3s; 0 files generated so far...[0K[1G[eo:register] 4s; 0 files generated so far...[0K[1G[2KEO objects registered in .eoc/eo-foreign.json
+[eo:assemble] 0ms; 1 files generated so far...[0K[1G[eo:assemble] 688ms; 1 files generated so far...[0K[1G[eo:assemble] 1s; 1 files generated so far...[0K[1G[eo:assemble] 2s; 1 files generated so far...[0K[1G[eo:assemble] 2s; 1 files generated so far...[0K[1G[eo:assemble] 3s; 1 files generated so far...[0K[1G[eo:assemble] 4s; 1 files generated so far...[0K[1G[eo:assemble] 4s; 1 files generated so far...[0K[1G[eo:assemble] 5s; 1 files generated so far...[0K[1G[eo:assemble] 5s; 1 files generated so far...[0K[1G[eo:assemble] 6s; 1 files generated so far...[0K[1G[eo:assemble] 6s; 1 files generated so far...[0K[1G[eo:assemble] 7s; 1 files generated so far...[0K[1G[eo:assemble] 7s; 1 files generated so far...[0K[1G[eo:assemble] 8s; 1 files generated so far...[0K[1G[eo:assemble] 8s; 3 files generated so far...[0K[1G[eo:assemble] 9s; 3 files generated so far...[0K[1G[eo:assemble] 9s; 4 files generated so far...[0K[1G[eo:assemble] 10s; 4 files generated so far...[0K[1G[eo:assemble] 10s; 5 files generated so far...[0K[1G[eo:assemble] 11s; 5 files generated so far...[0K[1G[eo:assemble] 11s; 9 files generated so far...[0K[1G[eo:assemble] 12s; 10 files generated so far...[0K[1G[eo:assemble] 12s; 12 files generated so far...[0K[1G[eo:assemble] 13s; 14 files generated so far...[0K[1G[eo:assemble] 13s; 16 files generated so far...[0K[1G[eo:assemble] 14s; 17 files generated so far...[0K[1G[eo:assemble] 14s; 20 files generated so far...[0K[1G[eo:assemble] 15s; 21 files generated so far...[0K[1G[eo:assemble] 15s; 23 files generated so far...[0K[1G[eo:assemble] 16s; 23 files generated so far...[0K[1G[eo:assemble] 16s; 23 files generated so far...[0K[1G[eo:assemble] 17s; 24 files generated so far...[0K[1G[eo:assemble] 17s; 774 files generated so far...[0K[1G[eo:assemble] 18s; 778 files generated so far...[0K[1G[eo:assemble] 18s; 783 files generated so far...[0K[1G[eo:assemble] 19s; 786 files generated so far...[0K[1G[eo:assemble] 19s; 787 files generated so far...[0K[1G[eo:assemble] 20s; 787 files generated so far...[0K[1G[eo:assemble] 20s; 790 files generated so far...[0K[1G[eo:assemble] 21s; 790 files generated so far...[0K[1G[eo:assemble] 21s; 791 files generated so far...[0K[1G[eo:assemble] 22s; 791 files generated so far...[0K[1G[eo:assemble] 22s; 792 files generated so far...[0K[1G[eo:assemble] 23s; 802 files generated so far...[0K[1G[eo:assemble] 23s; 810 files generated so far...[0K[1G[eo:assemble] 24s; 822 files generated so far...[0K[1G[eo:assemble] 24s; 828 files generated so far...[0K[1G[eo:assemble] 25s; 828 files generated so far...[0K[1G[eo:assemble] 25s; 829 files generated so far...[0K[1G[eo:assemble] 26s; 830 files generated so far...[0K[1G[eo:assemble] 26s; 833 files generated so far...[0K[1G[eo:assemble] 27s; 834 files generated so far...[0K[1G[eo:assemble] 27s; 837 files generated so far...[0K[1G[eo:assemble] 28s; 838 files generated so far...[0K[1G[eo:assemble] 28s; 841 files generated so far...[0K[1G[eo:assemble] 29s; 842 files generated so far...[0K[1G[eo:assemble] 29s; 845 files generated so far...[0K[1G[eo:assemble] 30s; 846 files generated so far...[0K[1G[eo:assemble] 30s; 849 files generated so far...[0K[1G[eo:assemble] 31s; 851 files generated so far...[0K[1G[eo:assemble] 31s; 853 files generated so far...[0K[1G[eo:assemble] 32s; 855 files generated so far...[0K[1G[eo:assemble] 32s; 857 files generated so far...[0K[1G[eo:assemble] 33s; 859 files generated so far...[0K[1G[eo:assemble] 33s; 862 files generated so far...[0K[1G[eo:assemble] 34s; 863 files generated so far...[0K[1G[eo:assemble] 34s; 865 files generated so far...[0K[1G[eo:assemble] 35s; 866 files generated so far...[0K[1G[eo:assemble] 35s; 869 files generated so far...[0K[1G[eo:assemble] 36s; 870 files generated so far...[0K[1G[eo:assemble] 37s; 891 files generated so far...[0K[1G[eo:assemble] 37s; 901 files generated so far...[0K[1G[eo:assemble] 38s; 907 files generated so far...[0K[1G[eo:assemble] 38s; 909 files generated so far...[0K[1G[eo:assemble] 39s; 911 files generated so far...[0K[1G[eo:assemble] 39s; 911 files generated so far...[0K[1G[eo:assemble] 40s; 912 files generated so far...[0K[1G[eo:assemble] 40s; 915 files generated so far...[0K[1G[eo:assemble] 41s; 936 files generated so far...[0K[1G[eo:assemble] 41s; 946 files generated so far...[0K[1G[eo:assemble] 42s; 980 files generated so far...[0K[1G[eo:assemble] 42s; 995 files generated so far...[0K[1G[eo:assemble] 43s; 996 files generated so far...[0K[1G[eo:assemble] 43s; 996 files generated so far...[0K[1G[2KEO program assembled in .eoc
+[eo:lint] 0ms; 996 files generated so far...[0K[1G[eo:lint] 287ms; 996 files generated so far...[0K[1G[eo:lint] 500ms; 996 files generated so far...[0K[1G[eo:lint] 2s; 996 files generated so far...[0K[1G[eo:lint] 2s; 996 files generated so far...[0K[1G[eo:lint] 2s; 996 files generated so far...[0K[1G[eo:lint] 3s; 996 files generated so far...[0K[1G[eo:lint] 3s; 996 files generated so far...[0K[1G[eo:lint] 3s; 996 files generated so far...[0K[1G[eo:lint] 4s; 996 files generated so far...[0K[1G[eo:lint] 4s; 996 files generated so far...[0K[1G[eo:lint] 4s; 996 files generated so far...[0K[1G[eo:lint] 5s; 996 files generated so far...[0K[1G[eo:lint] 5s; 996 files generated so far...[0K[1G[eo:lint] 5s; 996 files generated so far...[0K[1G[eo:lint] 6s; 996 files generated so far...[0K[1G[eo:lint] 6s; 1005 files generated so far...[0K[1G[eo:lint] 6s; 1008 files generated so far...[0K[1G[eo:lint] 7s; 1009 files generated so far...[0K[1G[eo:lint] 7s; 1014 files generated so far...[0K[1G[eo:lint] 7s; 1017 files generated so far...[0K[1G[eo:lint] 8s; 1022 files generated so far...[0K[1G[eo:lint] 8s; 1027 files generated so far...[0K[1G[eo:lint] 8s; 1031 files generated so far...[0K[1G[eo:lint] 9s; 1038 files generated so far...[0K[1G[eo:lint] 9s; 1047 files generated so far...[0K[1G[eo:lint] 9s; 1057 files generated so far...[0K[1G[2KEO program linted in .eoc
+[eo:transpile] 0ms; 1057 files generated so far...[0K[1G[eo:transpile] 310ms; 1057 files generated so far...[0K[1G[eo:transpile] 587ms; 1057 files generated so far...[0K[1G[eo:transpile] 789ms; 1057 files generated so far...[0K[1G[eo:transpile] 2s; 1057 files generated so far...[0K[1G[eo:transpile] 2s; 1057 files generated so far...[0K[1G[eo:transpile] 2s; 1057 files generated so far...[0K[1G[eo:transpile] 2s; 1057 files generated so far...[0K[1G[eo:transpile] 3s; 1057 files generated so far...[0K[1G[eo:transpile] 3s; 1057 files generated so far...[0K[1G[eo:transpile] 3s; 1057 files generated so far...[0K[1G[eo:transpile] 3s; 1057 files generated so far...[0K[1G[eo:transpile] 4s; 1057 files generated so far...[0K[1G[eo:transpile] 4s; 1057 files generated so far...[0K[1G[eo:transpile] 4s; 1065 files generated so far...[0K[1G[eo:transpile] 4s; 1083 files generated so far...[0K[1G[eo:transpile] 5s; 1101 files generated so far...[0K[1G[eo:transpile] 5s; 1131 files generated so far...[0K[1G[eo:transpile] 5s; 1148 files generated so far...[0K[1G[eo:transpile] 5s; 1158 files generated so far...[0K[1G[eo:transpile] 6s; 1188 files generated so far...[0K[1G[eo:transpile] 6s; 1223 files generated so far...[0K[1G[eo:transpile] 6s; 1238 files generated so far...[0K[1G[eo:transpile] 6s; 1252 files generated so far...[0K[1G[eo:transpile] 7s; 1274 files generated so far...[0K[1G[eo:transpile] 7s; 1316 files generated so far...[0K[1G[eo:transpile] 7s; 1330 files generated so far...[0K[1G[eo:transpile] 7s; 1351 files generated so far...[0K[1G[eo:transpile] 8s; 1380 files generated so far...[0K[1G[eo:transpile] 8s; 1442 files generated so far...[0K[1G[eo:transpile] 8s; 1472 files generated so far...[0K[1G[eo:transpile] 8s; 1500 files generated so far...[0K[1G[eo:transpile] 9s; 1531 files generated so far...[0K[1G[eo:transpile] 9s; 1577 files generated so far...[0K[1G[eo:transpile] 9s; 1606 files generated so far...[0K[1G[eo:transpile] 9s; 1623 files generated so far...[0K[1G[eo:transpile] 10s; 1652 files generated so far...[0K[1G[eo:transpile] 10s; 1706 files generated so far...[0K[1G[eo:transpile] 10s; 1755 files generated so far...[0K[1G[eo:transpile] 11s; 1774 files generated so far...[0K[1G[eo:transpile] 11s; 1793 files generated so far...[0K[1G[eo:transpile] 11s; 1842 files generated so far...[0K[1G[eo:transpile] 11s; 1869 files generated so far...[0K[1G[eo:transpile] 12s; 1929 files generated so far...[0K[1G[eo:transpile] 12s; 1929 files generated so far...[0K[1G[eo:transpile] 12s; 1929 files generated so far...[0K[1G[eo:transpile] 12s; 1946 files generated so far...[0K[1G[eo:transpile] 13s; 1946 files generated so far...[0K[1G[eo:transpile] 13s; 1946 files generated so far...[0K[1G[eo:transpile] 13s; 1948 files generated so far...[0K[1G[eo:transpile] 13s; 1955 files generated so far...[0K[1G[eo:transpile] 14s; 1955 files generated so far...[0K[1G[eo:transpile] 14s; 1955 files generated so far...[0K[1G[eo:transpile] 14s; 1955 files generated so far...[0K[1G[eo:transpile] 14s; 1955 files generated so far...[0K[1G[eo:transpile] 15s; 1955 files generated so far...[0K[1G[eo:transpile] 15s; 1955 files generated so far...[0K[1G[eo:transpile] 15s; 1955 files generated so far...[0K[1G[eo:transpile] 15s; 1996 files generated so far...[0K[1G[eo:transpile] 16s; 2051 files generated so far...[0K[1G[eo:transpile] 16s; 2051 files generated so far...[0K[1G[eo:transpile] 16s; 2051 files generated so far...[0K[1G[eo:transpile] 16s; 2051 files generated so far...[0K[1G[eo:transpile] 17s; 2082 files generated so far...[0K[1G[2KJava sources generated in .eoc/generated-sources
+[compiler:compile] 0ms; 2094 files generated so far...[0K[1G[compiler:compile] 47ms; 2094 files generated so far...[0K[1G[compiler:compile] 440ms; 2094 files generated so far...[0K[1G[compiler:compile] 656ms; 2094 files generated so far...[0K[1G[compiler:compile] 897ms; 2094 files generated so far...[0K[1G[compiler:compile] 2s; 2094 files generated so far...[0K[1G[compiler:compile] 2s; 2094 files generated so far...[0K[1G[compiler:compile] 2s; 2094 files generated so far...[0K[1G[compiler:compile] 2s; 2094 files generated so far...[0K[1G[compiler:compile] 2s; 2094 files generated so far...[0K[1G[compiler:compile] 3s; 2094 files generated so far...[0K[1G[compiler:compile] 3s; 2094 files generated so far...[0K[1G[compiler:compile] 3s; 2094 files generated so far...[0K[1G[compiler:compile] 3s; 2095 files generated so far...[0K[1G[compiler:compile] 3s; 2118 files generated so far...[0K[1G[compiler:compile] 4s; 2130 files generated so far...[0K[1G[compiler:compile] 4s; 2139 files generated so far...[0K[1G[compiler:compile] 4s; 2202 files generated so far...[0K[1G[compiler:compile] 4s; 2232 files generated so far...[0K[1G[compiler:compile] 4s; 2299 files generated so far...[0K[1G[compiler:compile] 5s; 2321 files generated so far...[0K[1G[compiler:compile] 5s; 2330 files generated so far...[0K[1G[compiler:compile] 5s; 2418 files generated so far...[0K[1G[compiler:compile] 5s; 2473 files generated so far...[0K[1G[2KJava .class files compiled into .eoc
+[jar:jar] 0ms; 2523 files generated so far...[0K[1G[jar:jar] 56ms; 2523 files generated so far...[0K[1G[jar:jar] 158ms; 2523 files generated so far...[0K[1G[jar:jar] 210ms; 2523 files generated so far...[0K[1G[jar:jar] 615ms; 2523 files generated so far...[0K[1G[jar:jar] 815ms; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2523 files generated so far...[0K[1G[jar:jar] 2s; 2524 files generated so far...[0K[1G[jar:jar] 2s; 2524 files generated so far...[0K[1G[jar:jar] 3s; 2524 files generated so far...[0K[1G[jar:jar] 3s; 2524 files generated so far...[0K[1G[jar:jar] 3s; 2524 files generated so far...[0K[1G[jar:jar] 3s; 2525 files generated so far...[0K[1G[2KExecutable JAR created at .eoc/eoc.jar
+
+
+<MEANINGFUL-OUTPUT-START>
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢ 1) "EOorg.EOeolang.EOtxt.EOsprintfν1236303588 has just 2 attribute(s), can't read the 2-th one"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢ 1) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 2) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 3) "EOorg.EOeolang.EOtxt.EOsprintfν1236303588 has just 2 attribute(s), can't read the 2-th one"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢  1) Error in the "Φ.org.eolang.dataized.φ.α0.Δ" attribute at 58:4
+  ⇢  2) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ.α0.Δ" attribute at 47:26
+  ⇢  3) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢  4) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢  5) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  6) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  7) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢  8) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  9) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 10) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 11) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 12) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢ 13) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢ 14) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 15) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 16) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 17) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢ 18) Error in the "Φ.org.eolang.io.stdout.φ.α0.α0.α1.Δ" attribute at 41:13
+  ⇢ 19) Error in the "Φ.org.eolang.io.console$posix-console.write.Δ" attribute at 128:4
+  ⇢ 20) Error in the "Φ.org.eolang.io.console$posix-console$write.φ" attribute at 129:33
+  ⇢ 21) Error in the "Φ.org.eolang.io.console$posix-console$write.φ.ρ" attribute at 129:19
+  ⇢ 22) Error in the "Φ.org.eolang.io.console$posix-console$write$output-block.write" attribute at 141:8
+  ⇢ 23) Error in the "Φ.org.eolang.io.console$posix-console$write$output-block$write.φ" attribute at 142:10
+  ⇢ 24) Error in the "Φ.org.eolang.io.console$posix-console$write$output-block$write.φ.ρ" attribute at 143:12
+  ⇢ 25) Error in the "Φ.org.eolang.seq.φ" attribute at 32:2
+  ⇢ 26) Error in the "Φ.org.eolang.false.if" attribute at 35:2
+  ⇢ 27) Error in the "Φ.org.eolang.false$if.φ" attribute at 35:2
+  ⇢ 28) Error in the "Φ.org.eolang.seq.φ.α1" attribute at 35:4
+  ⇢ 29) Error in the "Φ.org.eolang.seq.loop" attribute at 42:2
+  ⇢ 30) Error in the "Φ.org.eolang.seq$loop.φ" attribute at 43:4
+  ⇢ 31) Error in the "Φ.org.eolang.seq$loop.φ.ρ" attribute at 44:6
+  ⇢ 32) Error in the "Φ.org.eolang.true.and" attribute at 38:2
+  ⇢ 33) Error in the "Φ.org.eolang.true$and.φ" attribute at 38:5
+  ⇢ 34) Error in the "Φ.org.eolang.bytes.eq" attribute at 61:2
+  ⇢ 35) Error in the "Φ.org.eolang.true$and.φ.α0" attribute at 38:9
+  ⇢ 36) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0" attribute at 46:8
+  ⇢ 37) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ" attribute at 47:37
+  ⇢ 38) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ" attribute at 47:11
+  ⇢ 39) Error in the "Φ.org.eolang.dataized.φ" attribute at 57:2
+  ⇢ 40) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 41) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 42) "EOorg.EOeolang.EOtxt.EOsprintfν1236303588 has just 2 attribute(s), can't read the 2-th one"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢ 1) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 2) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 3) "EOorg.EOeolang.EOtxt.EOsprintfν1236303588 has just 2 attribute(s), can't read the 2-th one"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢  1) Error in the "Φ.org.eolang.dataized.φ.α0.Δ" attribute at 58:4
+  ⇢  2) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ.α0.Δ" attribute at 47:26
+  ⇢  3) Error in the "Φ.org.eolang.tuple.at.Δ" attribute at 46:2
+  ⇢  4) Error in the "Φ.org.eolang.tuple$at.φ.Δ" attribute at 53:4
+  ⇢  5) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  6) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  7) Error in the "Φ.org.eolang.tuple$at.φ.α1.Δ" attribute at 58:6
+  ⇢  8) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢  9) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 10) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢ 11) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 12) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α0.Δ" attribute at 63:9
+  ⇢ 13) Error in the "Φ.org.eolang.tuple$at.at-fast.Δ" attribute at 60:4
+  ⇢ 14) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.Δ" attribute at 61:6
+  ⇢ 15) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 16) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 17) Error in the "Φ.org.eolang.tuple$at$at-fast.φ.α1.Δ" attribute at 66:11
+  ⇢ 18) Error in the "Φ.doctest-entry.φ.α0.α0.α1.Δ" attribute at 341:6
+  ⇢ 19) Error in the "Φ.doctest.φ.Δ" attribute at 350:7
+  ⇢ 20) Error in the "Φ.org.eolang.io.stdout.φ.Δ" attribute at 39:2
+  ⇢ 21) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢ 22) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢ 23) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢ 24) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢ 25) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 26) Error in the "Φ.org.eolang.seq$loop.φ" attribute at 43:4
+  ⇢ 27) Error in the "Φ.org.eolang.seq$loop.φ.ρ" attribute at 44:6
+  ⇢ 28) Error in the "Φ.org.eolang.true.and" attribute at 38:2
+  ⇢ 29) Error in the "Φ.org.eolang.true$and.φ" attribute at 38:5
+  ⇢ 30) Error in the "Φ.org.eolang.bytes.eq" attribute at 61:2
+  ⇢ 31) Error in the "Φ.org.eolang.true$and.φ.α0" attribute at 38:9
+  ⇢ 32) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0" attribute at 46:8
+  ⇢ 33) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ" attribute at 47:37
+  ⇢ 34) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ" attribute at 47:11
+  ⇢ 35) Error in the "Φ.org.eolang.dataized.φ" attribute at 57:2
+  ⇢ 36) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 37) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 38) "EOorg.EOeolang.EOtxt.EOsprintfν1236303588 has just 2 attribute(s), can't read the 2-th one"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢ 1) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 2) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 3) "EOorg.EOeolang.EOtxt.EOsprintfν1236303588 has just 2 attribute(s), can't read the 2-th one"
+Dataized to org.eolang.error with org.eolang.string inside, at:
+  ⇢  1) Error in the "Φ.doctest-entry.φ.Δ" attribute at 337:2
+  ⇢  2) Error in the "Φ.org.eolang.seq.φ.Δ" attribute at 32:2
+  ⇢  3) Error in the "Φ.org.eolang.false.if.Δ" attribute at 35:2
+  ⇢  4) Error in the "Φ.org.eolang.false$if.φ.Δ" attribute at 35:2
+  ⇢  5) Error in the "Φ.org.eolang.seq.φ.α1.Δ" attribute at 35:4
+  ⇢  6) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢  7) Error in the "Φ.org.eolang.seq$loop.φ.Δ" attribute at 43:4
+  ⇢  8) Error in the "Φ.org.eolang.true.if.Δ" attribute at 35:2
+  ⇢  9) Error in the "Φ.org.eolang.true$if.φ.Δ" attribute at 35:2
+  ⇢ 10) Error in the "Φ.org.eolang.seq$loop.φ.α0.Δ" attribute at 49:7
+  ⇢ 11) Error in the "Φ.org.eolang.seq.loop.Δ" attribute at 42:2
+  ⇢ 12) Error in the "Φ.org.eolang.seq$loop.φ" attribute at 43:4
+  ⇢ 13) Error in the "Φ.org.eolang.seq$loop.φ.ρ" attribute at 44:6
+  ⇢ 14) Error in the "Φ.org.eolang.true.and" attribute at 38:2
+  ⇢ 15) Error in the "Φ.org.eolang.true$and.φ" attribute at 38:5
+  ⇢ 16) Error in the "Φ.org.eolang.bytes.eq" attribute at 61:2
+  ⇢ 17) Error in the "Φ.org.eolang.true$and.φ.α0" attribute at 38:9
+  ⇢ 18) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0" attribute at 46:8
+  ⇢ 19) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ" attribute at 47:37
+  ⇢ 20) Error in the "Φ.org.eolang.seq$loop.φ.ρ.α0.ρ.ρ" attribute at 47:11
+  ⇢ 21) Error in the "Φ.org.eolang.dataized.φ" attribute at 57:2
+  ⇢ 22) Error in the "Φ.org.eolang.dataized.φ.α1.Δ" attribute at 59:4
+  ⇢ 23) Error in the "Φ.org.eolang.dataized$t1$a1.φ.Δ" attribute at 59:4
+  ⇢ 24) "EOorg.EOeolang.EOtxt.EOsprintfν1236303588 has just 2 attribute(s), can't read the 2-th one"
+<Φ.org.eolang.dataized$t1$a1.φ.α0:59:10>EOorg.EOeolang.EOdataized$EOt1$EOa1ν1414744768.ex(Δ = [0x454F6F72-672E454F-656F6C61-6E672E45-4F747874-2E454F73-7072696E-7466CEBD-31323336-33303335-38382068-6173206A-75737420-32206174-74726962-75746528-73292C20-63616E27-74207265-61642074-68652032-2D746820-6F6E65] = "EOorg.EOeolang.EOtxt.EOsprintf\u03bd1236303588 has just 2 attribute(s), can't read the 2-th one")
+JVM failed with exit code #1
+<ALL-OUTPUT-END>

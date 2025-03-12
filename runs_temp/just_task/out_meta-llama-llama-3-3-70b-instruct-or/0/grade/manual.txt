@@ -1,0 +1,11 @@
+Accuracy: 2
+Accuracy-note: "a list of arguments and a state path as input"?
+Completeness: 2
+Completeness-note: stdin/stdout?
+Relevance: 2
+Relevance-note: all code
+Understandability: 3
+Understandability-note: x
+Formatting: 3
+Formatting-note: x
+General-note: x

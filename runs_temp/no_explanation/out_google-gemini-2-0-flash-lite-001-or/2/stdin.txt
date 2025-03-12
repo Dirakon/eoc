@@ -1,0 +1,12 @@
+Log:
+(lines: 1)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>program-name versions</title>
+  <link>https://search.nixos.org/packages?channel=branch-name&from=0&size=50&sort=relevance&type=packages&query=program-name</link>
+  <description>History of versions</description>
+</channel>
+
+</rss>

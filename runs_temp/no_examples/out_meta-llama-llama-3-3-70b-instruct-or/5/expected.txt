@@ -1,0 +1,5 @@
+Log:
+Test log message
+Request: read-file|||test.txt
+(lines: 1)
+Hello World!

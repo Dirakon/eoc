@@ -1,0 +1,9 @@
+Log:
+(lines: 3)
+1.0.0|||1615000000
+1.1.0|||1625000000
+
+Request: write-file|||test_state/main/example-program
+(lines: 3)
+1.0.0|||1615000000
+1.1.0|||1625000000

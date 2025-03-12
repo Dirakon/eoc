@@ -1,0 +1,11 @@
+Request: branch
+nixos-unstable
+Request: program-name
+firefox
+Request: get-version|||nixos-unstable|||firefox
+114.0.1
+Request: read-file|||state_dir/nixos-unstable/firefox
+(lines: 0)
+
+Request: write-file|||state_dir/nixos-unstable/firefox
+OK

@@ -1,0 +1,11 @@
+Accuracy: 3
+Accuracy-note: x
+Completeness: 0
+Completeness-note: x
+Relevance: 0
+Relevance-note: is not related to the things it is related to.
+Understandability: 2
+Understandability-note: weird remarks about language and sections.
+Formatting: 3
+Formatting-note: x
+General-note: has literally no clue what eo is (like in previous answers too). no grading because 

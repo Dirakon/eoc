@@ -1,0 +1,106 @@
+Request: get-branch
+origin
+Request: program-name
+test-app
+Log:
+Reading...
+Request: read-file|||./origin/test-app
+(lines: 2)
+version|||1678886400
+version|||1678886401
+Log:
+Getting current version
+Request: get-version|||origin|||test-app
+version2
+Log:
+Writing...
+Log:
+Log:
+(lines: 5)
+Rss:
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>test-app versions</title>
+  <link>https://search.nixos.org/packages?channel=origin&from=0&size=50&sort=relevance&type=packages&query=test-app</link>
+  <description>History of versions</description>  <item>
+    <title>version</title>
+    <link>https://search.nixos.org/packages?channel=origin&from=0&size=50&sort=relevance&type=packages&query=test-app</link>
+    <description>New version at 1678886400</description>
+  </item>
+  <item>
+    <title>version</title>
+    <link>https://search.nixos.org/packages?channel=origin&from=0&size=50&sort=relevance&type=packages&query=test-app</link>
+    <description>New version at 1678886401</description>
+  </item>
+  <item>
+    <title>version2</title>
+    <link>https://search.nixos.org/packages?channel=origin&from=0&size=50&sort=relevance&type=packages&query=test-app</link>
+    <description>New version at 0</description>
+  </item>
+</channel>
+
+</rss>
+Request: write-file|||./origin/test-app
+Log:
+Log:
+(lines: 3)
+version|||1678886400
+version|||1678886401
+version2|||0
+
+Log:
+Reading...
+Request: read-file|||./origin/test-app
+(lines: 3)
+version|||1678886400
+version|||1678886401
+version2|||0
+Log:
+Getting current version
+Request: get-version|||origin|||test-app
+version3
+Log:
+Writing...
+Log:
+Log:
+(lines: 6)
+Rss:
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>test-app versions</title>
+  <link>https://search.nixos.org/packages?channel=origin&from=0&size=50&sort=relevance&type=packages&query=test-app</link>
+  <description>History of versions</description>  <item>
+    <title>version</title>
+    <link>https://search.nixos.org/packages?channel=origin&from=0&size=50&sort=relevance&type=packages&query=test-app</link>
+    <description>New version at 1678886400</description>
+  </item>
+  <item>
+    <title>version</title>
+    <link>https://search.nixos.org/packages?channel=origin&from=0&size=50&sort=relevance&type=packages&query=test-app</link>
+    <description>New version at 1678886401</description>
+  </item>
+  <item>
+    <title>version2</title>
+    <link>https://search.nixos.org/packages?channel=origin&from=0&size=50&sort=relevance&type=packages&query=test-app</link>
+    <description>New version at 0</description>
+  </item>
+  <item>
+    <title>version3</title>
+    <link>https://search.nixos.org/packages?channel=origin&from=0&size=50&sort=relevance&type=packages&query=test-app</link>
+    <description>New version at 0</description>
+  </item>
+</channel>
+
+</rss>
+Request: write-file|||./origin/test-app
+Log:
+Log:
+(lines: 4)
+version|||1678886400
+version|||1678886401
+version2|||0
+version3|||0

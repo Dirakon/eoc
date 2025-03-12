@@ -1,0 +1,16 @@
+Reading...
+Getting current version
+Writing...
+Rss:
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>example-program versions</title>
+  <link>https://search.nixos.org/packages?channel=example-branch&from=0&size=50&sort=relevance&type=packages&query=example-program</link>
+  <description>History of versions</description>
+  ...
+  </item>
+</channel>
+
+</rss>

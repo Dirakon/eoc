@@ -1,0 +1,11 @@
+Accuracy: 3
+Accuracy-note: x
+Completeness: 2
+Completeness-note: stdin/stdout not mentioned.
+Relevance: 1
+Relevance-note: whole code, not class
+Understandability: 3
+Understandability-note: x
+Formatting: 1.5
+Formatting-note: x
+General-note: x

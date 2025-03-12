@@ -1,0 +1,11 @@
+Accuracy: x
+Accuracy-note: x
+Completeness: x
+Completeness-note: x
+Relevance: x
+Relevance-note: x
+Understandability: x
+Understandability-note: x
+Formatting: 0
+Formatting-note: x
+General-note: response format broken... TODO look into it

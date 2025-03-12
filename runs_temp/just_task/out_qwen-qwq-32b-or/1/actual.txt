@@ -1,0 +1,56 @@
+<ALL-OUTPUT-START>[eo:register] 0ms; 0 files generated so far...[0K[1G[eo:register] 2s; 0 files generated so far...[0K[1G[eo:register] 3s; 0 files generated so far...[0K[1G[2KEO objects registered in .eoc/eo-foreign.json
+[eo:assemble] 0ms; 1 files generated so far...[0K[1G[eo:assemble] 755ms; 1 files generated so far...[0K[1G[eo:assemble] 1s; 1 files generated so far...[0K[1G[eo:assemble] 2s; 1 files generated so far...[0K[1G[eo:assemble] 2s; 1 files generated so far...[0K[1G[eo:assemble] 3s; 1 files generated so far...[0K[1G[eo:assemble] 4s; 1 files generated so far...[0K[1G[eo:assemble] 4s; 1 files generated so far...[0K[1G[eo:assemble] 5s; 1 files generated so far...[0K[1G[eo:assemble] 5s; 1 files generated so far...[0K[1G[eo:assemble] 6s; 1 files generated so far...[0K[1G[eo:assemble] 6s; 1 files generated so far...[0K[1G[eo:assemble] 7s; 1 files generated so far...[0K[1G[eo:assemble] 7s; 1 files generated so far...[0K[1G[eo:assemble] 8s; 1 files generated so far...[0K[1G[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:346': [346:8] token recognition error at: '=': "doctest = {"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:346': [346:9] no viable alternative at input '# Doctest\ndoctest  ': "doctest = {"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:346': [346:10] token recognition error at: '{': "doctest = {"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:347': [347:13] token recognition error at: '=': "  state_path = "test";"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:347': [347:21] token recognition error at: ';': "  state_path = "test";"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:348': [348:9] token recognition error at: '=': "  branch = "nixos-23.05";"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:348': [348:24] token recognition error at: ';': "  branch = "nixos-23.05";"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:349': [349:10] token recognition error at: '=': "  program = "example";"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:349': [349:21] token recognition error at: ';': "  program = "example";"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:350': [350:8] token recognition error at: '=': "  store = program-data-storage state_path;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:350': [350:41] token recognition error at: ';': "  store = program-data-storage state_path;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:352': [352:10] token recognition error at: '=': "  initial = store.read;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:352': [352:22] token recognition error at: ';': "  initial = store.read;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:353': [353:2] token recognition error at: '{': "  { versions } = initial;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:353': [353:13] token recognition error at: '}': "  { versions } = initial;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:353': [353:15] token recognition error at: '=': "  { versions } = initial;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:353': [353:24] token recognition error at: ';': "  { versions } = initial;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:354': [354:18] token recognition error at: '~': "  versions.length ~ 0;  # Check initial emptiness"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:354': [354:21] token recognition error at: ';': "  versions.length ~ 0;  # Check initial emptiness"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:356': [356:2] token recognition error at: '{': "  {timestamp,...} = QQ.sys.posix.timeval();"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:356': [356:12] token recognition error at: ',': "  {timestamp,...} = QQ.sys.posix.timeval();"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:356': [356:16] token recognition error at: '}': "  {timestamp,...} = QQ.sys.posix.timeval();"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:356': [356:18] token recognition error at: '=': "  {timestamp,...} = QQ.sys.posix.timeval();"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:356': [356:42] token recognition error at: ';': "  {timestamp,...} = QQ.sys.posix.timeval();"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:357': [357:19] token recognition error at: '=': "  current_time_sec = timestamp.tv-sec;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:357': [357:37] token recognition error at: ';': "  current_time_sec = timestamp.tv-sec;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:359': [359:14] token recognition error at: '=': "  new_version = program-version "v1.2.3" current_time_sec;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:359': [359:57] token recognition error at: ';': "  new_version = program-version "v1.2.3" current_time_sec;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:360': [360:11] token recognition error at: '=': "  new_data = initial.actualized(new_version);"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:360': [360:44] token recognition error at: ';': "  new_data = initial.actualized(new_version);"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:361': [361:15] token recognition error at: '=': "  write_result = store.write(new_data);"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:361': [361:38] token recognition error at: ';': "  write_result = store.write(new_data);"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:363': [363:24] token recognition error at: ';': "  new_data.output-as-rss;"
+[ERROR] Failed to parse '/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/app.eo:364': [364:0] token recognition error at: '}': "}"
+[eo:assemble] 8s; 3 files generated so far...[0K[1G[eo:assemble] 9s; 3 files generated so far...[0K[1G[eo:assemble] 9s; 4 files generated so far...[0K[1G[eo:assemble] 10s; 5 files generated so far...[0K[1G[eo:assemble] 10s; 5 files generated so far...[0K[1G[eo:assemble] 11s; 6 files generated so far...[0K[1G[ERROR] Failed to pull 'org.eolang.doctest' earlier discovered at /home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc/3-shake/app.xmir
+[ERROR] Failed while trying to save to /home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc/4-pull/org/eolang/doctest.eo
+[ERROR] https://raw.githubusercontent.com/objectionary/home/1c2b3ed/objects/org/eolang/doctest.eo
+[ERROR] 'PullMojo' execution failed
+[ERROR] Failed to pull 'org.eolang.doctest' earlier discovered at /home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc/3-shake/app.xmir
+[ERROR] Failed while trying to save to /home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc/4-pull/org/eolang/doctest.eo
+[ERROR] https://raw.githubusercontent.com/objectionary/home/1c2b3ed/objects/org/eolang/doctest.eo
+[ERROR] Failed to execute goal org.eolang:eo-maven-plugin:0.48.1:assemble (default-cli) on project eoc: 'AssembleMojo' execution failed: java.lang.IllegalStateException: org.apache.maven.plugin.MojoFailureException: 'PullMojo' execution failed: java.io.IOException: Failed to pull 'org.eolang.doctest' earlier discovered at /home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc/3-shake/app.xmir: Failed while trying to save to /home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc/4-pull/org/eolang/doctest.eo: EO object 'https://raw.githubusercontent.com/objectionary/home/1c2b3ed/objects/org/eolang/doctest.eo' is not found in this GitHub repository: https://github.com/objectionary/home by url: org.eolang.doctest. This means that you either misspelled the name of it or simply referred to your own local object somewhere in your code as if it was an object of 'org.eolang' package. Check the sources and make sure you always use +alias meta when you refer to an object outside of 'org.eolang', even if this object belongs to your package. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+The command "/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/node_modules/eolang/mvnw/mvnw eo:assemble -Deo.version=0.48.1 -Deo.tag=0.48.1 --quiet -Deo.sourcesDir=/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1 -Deo.targetDir=/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc -Deo.outputDir=/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc/classes -Deo.generatedDir=/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc/generated-sources -Deo.placed=/home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc/eo-placed.csv -Deo.placedFormat=csv --batch-mode --color=never --update-snapshots --fail-fast --strict-checksums" exited with #1 code
+
+
+Error: Unable to access jarfile /home/dirakon/JsProjects/eoc-dev/eoc/runs_temp/just_task/out_qwen-qwq-32b-or/1/.eoc/eoc.jar
+JVM failed with exit code #1
+<ALL-OUTPUT-END>

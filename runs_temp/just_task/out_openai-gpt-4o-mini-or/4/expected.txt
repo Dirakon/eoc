@@ -1,0 +1,8 @@
+1
+1662892800
+Request: write-file ||| test-file
+Log:
+Test content
+Request: read-file ||| test-file
+(lines: 1)
+'Test content'

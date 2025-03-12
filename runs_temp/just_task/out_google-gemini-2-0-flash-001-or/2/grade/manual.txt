@@ -1,0 +1,11 @@
+Accuracy: 3
+Accuracy-note: x
+Completeness: 2
+Completeness-note: no mention of stdin/stdout.
+Relevance: 2
+Relevance-note: program-version is also documented?
+Understandability: 2
+Understandability-note: for some reason list object itself in the sublist? why?
+Formatting: 1.5
+Formatting-note: md. Weird double spaces are present.
+General-note: x

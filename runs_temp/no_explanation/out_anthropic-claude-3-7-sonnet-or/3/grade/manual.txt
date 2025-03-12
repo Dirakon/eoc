@@ -1,0 +1,11 @@
+Accuracy: x
+Accuracy-note: x
+Completeness: x
+Completeness-note: x
+Relevance: x
+Relevance-note: x
+Understandability: x
+Understandability-note: x
+Formatting: x
+Formatting-note: x
+General-note: x

@@ -1,0 +1,11 @@
+Accuracy: 2
+Accuracy-note: distributed? inter-process? 
+Completeness: 3
+Completeness-note: stdin/stdout finally mentioned!
+Relevance: 2
+Relevance-note: for some reason two random other modules are mentioned?
+Understandability: 3
+Understandability-note: x
+Formatting: 3
+Formatting-note: x
+General-note: x

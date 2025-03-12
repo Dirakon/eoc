@@ -1,0 +1,4 @@
+Log:\n(lines: 1)\nTest log message\n
+Request: write-file|||test_file\n(lines: 1)\nTest file content\n
+Request: read-file|||test_file\n(lines: 1)\nTest file content\n
+Request: get-version|||test_branch|||test_program\n1.2.3\n

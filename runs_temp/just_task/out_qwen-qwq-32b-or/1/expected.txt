@@ -1,0 +1,18 @@
+Rss:
+(lines:7)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>example versions</title>
+  <link>https://search.nixos.org/packages?channel=nixos-23.05&from=0&size=50&sort=relevance&type=packages&query=example</link>
+  <description>History of versions</description>
+  <item>
+    <title>v1.2.3</title>
+    <link>https://search.nixos.org/packages?channel=nixos-23.05&from=0&size=50&sort=relevance&type=packages&query=example</link>
+    <description>New version at 1234567890</description>
+  </item>
+</channel>
+
+</rss>
+(lines:9 total)

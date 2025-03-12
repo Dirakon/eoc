@@ -1,0 +1,8 @@
+Log:
+(lines: 1)
+Testing external module
+Request: test-command
+Request: branch
+Request: program-name
+Request: get-version|||branch-value|||program-value
+(lines: 5)

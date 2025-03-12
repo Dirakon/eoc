@@ -1,0 +1,7 @@
+Request: Log:
+Request: write-file|||test-file
+(lines: 1)
+Request: read-file|||test-file
+(lines: 1)
+(lines: 1)
+test

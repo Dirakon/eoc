@@ -1,0 +1,36 @@
+Getting branch
+Request: branch
+nixos-23.11
+Getting program name
+Request: program-name
+node
+Log:
+Reading...
+
+Getting current version
+Getting version for nixos-23.11/node
+Log:
+Writing...
+
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>node versions</title>
+  <link>https://search.nixos.org/packages?channel=nixos-23.11&from=0&size=50&sort=relevance&type=packages&query=node</link>
+  <description>History of versions</description>
+  <item>
+    <title>1.0.0</title>
+    <link>https://search.nixos.org/packages?channel=nixos-23.11&from=0&size=50&sort=relevance&type=packages&query=node</link>
+    <description>New version at 1682000000</description>
+  </item>
+  <item>
+    <title>1.0.1</title>
+    <link>https://search.nixos.org/packages?channel=nixos-23.11&from=0&size=50&sort=relevance&type=packages&query=node</link>
+    <description>New version at 1682086400</description>
+  </item>
+</channel>
+
+</rss>

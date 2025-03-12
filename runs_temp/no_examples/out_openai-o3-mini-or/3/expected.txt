@@ -1,0 +1,2 @@
+program-data(main, TestApp, [v1])
+program-data(main, TestApp, [v1, v2])

@@ -1,0 +1,2 @@
+Request: get-version|||nixos-unstable|||nginx
+1.23.4

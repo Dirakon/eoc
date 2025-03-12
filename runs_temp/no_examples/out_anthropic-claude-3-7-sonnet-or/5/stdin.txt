@@ -1,0 +1,6 @@
+nixos-23.05
+test-program
+1.2.3
+(lines: 1)
+Hello, world!
+OK

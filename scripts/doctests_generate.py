@@ -69,9 +69,20 @@ def generate_doctest(eo_file: Path, generated_mapping_file: Path, comment_placeh
                 if (doctest_code is not None) \
                 else "")
 
-        explanation_as_comment = "# " + '\n# '.join(
-            [i.strip() for i in explanation.split('\n') if len(i.strip()) > 0])
         correct_mark_start = find_nth_substr(eo_file_content, comment_placeholder, i + 1)
+
+        comment_indentation = ""
+        for i in reversed(range(0, correct_mark_start)):
+            if eo_file_content[i] == ' ':
+                comment_indentation = " " + comment_indentation
+            elif eo_file_content[i] == '\t':
+                comment_indentation = '\t' + comment_indentation
+            elif eo_file_content[i] == '\n':
+                break
+
+        explanation_as_comment = "# " + f'\n{comment_indentation}# '.join(
+            [i.strip() for i in explanation.split('\n') if len(i.strip()) > 0])
+
         eo_file_with_new_documentation = (eo_file_content[:correct_mark_start] + \
             explanation_as_comment + \
             eo_file_content[correct_mark_start + len(comment_placeholder):]).strip() + \

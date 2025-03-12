@@ -1,0 +1,11 @@
+Accuracy: 2
+Accuracy-note: does not seem to get that it still stores both values even if evaluates to one only.
+Completeness: 2
+Completeness-note: unix?types?
+Relevance: 3
+Relevance-note: x
+Understandability: 3
+Understandability-note: x
+Formatting: 3
+Formatting-note: x
+General-note: x

@@ -10,6 +10,7 @@
 6.3. Note the overexplaining
 6.4. Note the cost/time and shit by the by.
 6.5. Note that some LLMs decide to document all functions, which opens more potential for factual errors.
+6.6. For future research mention that the documentation scope and the number of errors should also be measured (i.e. 1 error vs errors)
 7. [DONE] Parallel requests to openrouter
 8. [DONE] Other models
 9. [DONE] Also print stderr with RED

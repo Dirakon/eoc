@@ -1,0 +1,2 @@
+Request: get-version|||master|||MyApp
+v1.0

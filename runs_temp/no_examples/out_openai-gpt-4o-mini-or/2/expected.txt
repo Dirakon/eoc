@@ -1,0 +1,21 @@
+Rss:
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>example-program versions</title>
+  <link>https://search.nixos.org/packages?channel=branch-name&from=0&size=50&sort=relevance&type=packages&query=example-program</link>
+  <description>History of versions</description>
+  <item>
+    <title>1.0.0</title>
+    <link>https://search.nixos.org/packages?channel=branch-name&from=0&size=50&sort=relevance&type=packages&query=example-program</link>
+    <description>New version at 1622556800</description>
+  </item>
+  <item>
+    <title>1.0.1</title>
+    <link>https://search.nixos.org/packages?channel=branch-name&from=0&size=50&sort=relevance&type=packages&query=example-program</link>
+    <description>New version at 1622643200</description>
+  </item>
+</channel>
+
+</rss>

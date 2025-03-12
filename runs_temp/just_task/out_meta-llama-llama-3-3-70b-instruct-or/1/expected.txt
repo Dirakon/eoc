@@ -1,0 +1,19 @@
+```
+Log:
+Rss:
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+<channel>
+  <title>program1 versions</title>
+  <link>https://search.nixos.org/packages?channel=master&from=0&size=50&sort=relevance&type=packages&query=program1</link>
+  <description>History of versions</description>
+  <item>
+    <title>version1</title>
+    <link>https://search.nixos.org/packages?channel=master&from=0&size=50&sort=relevance&type=packages&query=program1</link>
+    <description>New version at 1643723400</description>
+  </item>
+</channel>
+
+</rss>
+```

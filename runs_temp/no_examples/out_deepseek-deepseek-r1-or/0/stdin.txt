@@ -1,0 +1,7 @@
+Request: branch
+nixos-unstable
+Request: program-name
+nginx
+Request: get-version|||nixos-unstable|||nginx
+1.25.3
+(lines: 1)

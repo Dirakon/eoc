@@ -1,0 +1,11 @@
+Accuracy: 2
+Accuracy-note: empty list = strucuture with versions as empty list
+Completeness: 2
+Completeness-note: stdin/stdout?
+Relevance: 3
+Relevance-note: x
+Understandability: 3
+Understandability-note: x
+Formatting: 3
+Formatting-note: x
+General-note: x

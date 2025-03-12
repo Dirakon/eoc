@@ -1,0 +1,3 @@
+Empty list actualized: 1
+Second version added: 2
+Duplicate version not added: 1

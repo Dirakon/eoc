@@ -1,0 +1,22 @@
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>vim versions</title>
+  <link>https://search.nixos.org/packages?channel=nixos-unstable&from=0&size=50&sort=relevance&type=packages&query=vim</link>
+  <description>History of versions</description>
+  <item>
+    <title>2.3.0</title>
+    <link>https://search.nixos.org/packages?channel=nixos-unstable&from=0&size=50&sort=relevance&type=packages&query=vim</link>
+    <description>New version at 1641034800</description>
+  </item>
+  <item>
+    <title>2.4.0</title>
+    <link>https://search.nixos.org/packages?channel=nixos-unstable&from=0&size=50&sort=relevance&type=packages&query=vim</link>
+    <description>New version at 1648771200</description>
+  </item>
+</channel>
+
+</rss>

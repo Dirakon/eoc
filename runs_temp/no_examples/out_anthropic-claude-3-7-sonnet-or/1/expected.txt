@@ -1,0 +1,16 @@
+Testing program-data-storage...
+Writing data to storage...
+Request: write-file|||./test-state/main/test-program
+1.0.0|||1623456789
+1.1.0|||1623556789
+
+Log:
+(lines: 2)
+1.0.0|||1623456789
+1.1.0|||1623556789
+
+Reading data from storage...
+Request: read-file|||./test-state/main/test-program
+Found 2 versions for program 'test-program' in branch 'main'
+First version:
+Version: 1.0.0, Timestamp: 1623456789

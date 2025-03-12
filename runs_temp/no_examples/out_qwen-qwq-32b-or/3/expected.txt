@@ -1,0 +1,31 @@
+Test 1: Initial addition (expected 1 item)
+Rss:
+(lines: ...)
+  <item>
+    <title>v1</title>
+    <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=test</link>
+    <description>New version at 123456</description>
+  </item>
+
+Test 2: Duplicate addition (expected 1 item)
+Rss:
+(lines: ...)
+  <item>
+    <title>v1</title>
+    <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=test</link>
+    <description>New version at 123456</description>
+  </item>
+
+Test 3: Adding new version (expected 2 items)
+Rss:
+(lines: ...)
+  <item>
+    <title>v1</title>
+    <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=test</link>
+    <description>New version at 123456</description>
+  </item>
+  <item>
+    <title>v2</title>
+    <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=test</link>
+    <description>New version at 654321</description>
+  </item>

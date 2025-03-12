@@ -1,0 +1,7 @@
+Log:
+(lines: 2)
+1.0|||42
+
+Request: write-file|||state/beta/prog
+(lines: 2)
+1.0|||42
