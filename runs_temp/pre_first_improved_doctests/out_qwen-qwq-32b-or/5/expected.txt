@@ -1,0 +1,3 @@
+Log:
+(lines: 1)
+Sample Log Entry

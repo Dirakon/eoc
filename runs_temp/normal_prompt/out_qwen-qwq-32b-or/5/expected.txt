@@ -1,0 +1,4 @@
+Log:
+(lines: 2)
+Sample log entry line one
+Second line test message

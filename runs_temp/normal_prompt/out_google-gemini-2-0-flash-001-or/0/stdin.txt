@@ -1,0 +1,70 @@
+Request: program-name
+test-program
+Request: branch
+test-branch
+Request: get-version|||test-branch|||test-program
+1.2.3
+Request: write-file|||test-dir/test-branch/test-program
+Log:
+1.2.3|||0
+
+Request: program-name
+test-program
+Request: branch
+test-branch
+Request: get-version|||test-branch|||test-program
+1.2.4
+Request: write-file|||test-dir/test-branch/test-program
+Log:
+1.2.3|||0
+1.2.4|||0
+
+Request: program-name
+test-program
+Request: branch
+test-branch
+Request: get-version|||test-branch|||test-program
+1.2.4
+Request: write-file|||test-dir/test-branch/test-program
+Log:
+1.2.3|||0
+1.2.4|||0
+
+Request: program-name
+test-program
+Request: branch
+test-branch
+Request: get-version|||test-branch|||test-program
+1.2.5
+Request: write-file|||test-dir/test-branch/test-program
+Log:
+1.2.3|||0
+1.2.4|||0
+1.2.5|||0
+
+Request: program-name
+test-program
+Request: branch
+test-branch
+Request: get-version|||test-branch|||test-program
+1.2.6
+Request: write-file|||test-dir/test-branch/test-program
+Log:
+1.2.3|||0
+1.2.4|||0
+1.2.5|||0
+1.2.6|||0
+
+Request: program-name
+test-program
+Request: branch
+test-branch
+Request: get-version|||test-branch|||test-program
+1.2.7
+Request: write-file|||test-dir/test-branch/test-program
+Log:
+1.2.3|||0
+1.2.4|||0
+1.2.5|||0
+1.2.6|||0
+1.2.7|||0

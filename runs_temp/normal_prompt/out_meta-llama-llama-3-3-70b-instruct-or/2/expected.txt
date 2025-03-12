@@ -1,0 +1,9 @@
+Rss:
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;rss version="2.0"&gt;
+&lt;channel&gt;
+  &lt;title&gt;example-program versions&lt;/title&gt;
+  &lt;link&gt;https://search.nixos.org/packages?channel=main&amp;from=0&amp;size=50&amp;sort=relevance&amp;type=packages&amp;query=example-program&lt;/link&gt;
+  &lt;description&gt;History of versions&lt;/description&gt;
+&lt;/channel&gt;
+&lt;/rss&gt;

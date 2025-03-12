@@ -1,0 +1,5 @@
+Log:
+(lines: 1)
+hello world
+Request: get-version|||nixpkgs-unstable|||firefox
+115.0.2

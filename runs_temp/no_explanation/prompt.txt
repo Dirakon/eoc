@@ -1,0 +1,112 @@
+# Task explanation
+
+You are LLM, and your goal is to create documentation for undocumented code. Your task is to write a concise explanation of the code structure marked by <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED> mark. That structure can be either class or a function.
+
+Your answer should have four sections: explanation, doctest-code, doctest-stdin, doctest-output. Doctest should define object named specifically `doctest`, which should output some values to stdout. Doctest-stdin should describe expected user input for test to run properly (it will be directly fed into stdin of the doctest to automatically check the correctness of it, so do not provide any unnecessary text there). Doctest-output should provide the expected output of evaluated doctest.
+
+Do not add any additional text besides the required format. You will be provided three interaction examples so that you become familiar with the format. There is no need to explain them - they are just here to show how you should answer queries. After that, you will receive the actual user input - THAT is what you should explain.
+
+# Interaction examples (DO NOT EXPLAIN THEM)
+
+Input:
+```eo
+# <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+[a b] > app
+  plus. > @
+    a
+    b
+```
+Output: 
+```
+<explanation>
+Object that adds two numbers together.
+</explanation>
+<doctest-code>
+[] > doctest
+  QQ.io.stdout > @
+    QQ.txt.sprintf
+      "%d"
+      *
+        app
+          1
+          2
+</doctest-code>
+<doctest-stdin>
+</doctest-stdin>
+<doctest-output>
+3
+</doctest-output>
+```
+
+Input:
+```eo
+# Built-in string structure, which is
+# an abstraction of a text string, which internally is a chain of bytes.
+[as-bytes] > string
+  as-bytes > @
+
+  # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+  [] > length
+    # Function is built-in in the EO language, so the code is ommited
+
+  # Takes a piece of a string as another string.
+  [start len] > slice
+    # Function is built-in in the EO language, so the code is ommited
+```
+Output: 
+```
+<explanation>
+Get the length of it.
+</explanation>
+<doctest-code>
+[] > doctest
+  QQ.io.stdout > @
+    QQ.txt.sprintf
+      "%d"
+      *
+        "hello".length
+</doctest-code>
+<doctest-stdin>
+</doctest-stdin>
+<doctest-output>
+5
+</doctest-output>
+```
+
+Input:
+```eo
+# Interactions with IO.
+[] > io-utils
+  # <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>
+  [] > parrot
+    seq > @
+      *
+        QQ.io.stdout "Say something: "
+        QQ.io.stdin.next-line > line
+        QQ.io.stdout "You said:\n"
+        QQ.io.stdout line
+```
+Output: 
+```
+<explanation>
+Interactively outputs to stdout the copy of the line received through stdin.
+</explanation>
+<doctest-code>
+[] > doctest
+  io-utils.parrot > @
+</doctest-code>
+<doctest-stdin>
+hello world
+</doctest-stdin>
+<doctest-output>
+Say something: You said:
+hello world
+</doctest-output>
+```
+
+# The actual user input to be documented (THAT IS WHAT YOU SHOULD EXPLAIN)
+
+Input:
+```eo
+{code}
+```

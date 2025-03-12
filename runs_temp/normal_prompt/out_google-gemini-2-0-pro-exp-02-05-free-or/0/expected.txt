@@ -1,0 +1,58 @@
+Request: write-file|||my-data.txt
+dummy-multiline
+Log:
+dummy-multiline
+Request: get-version|||main|||my-program
+Log:
+dummy-multiline
+Request: write-file|||my-data.txt
+dummy-multiline
+Rss:
+(lines: 15)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>my-program versions</title>
+  <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=my-program</link>
+  <description>History of versions</description>
+  <item>
+    <title>version</title>
+    <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=my-program</link>
+    <description>New version at 0</description>
+  </item>
+</channel>
+
+</rss>
+
+Request: write-file|||my-data.txt
+dummy-multiline
+Log:
+dummy-multiline
+Request: get-version|||main|||my-program
+Log:
+dummy-multiline
+Request: write-file|||my-data.txt
+dummy-multiline
+Rss:
+(lines: 20)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>my-program versions</title>
+  <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=my-program</link>
+  <description>History of versions</description>
+  <item>
+    <title>version</title>
+    <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=my-program</link>
+    <description>New version at 0</description>
+  </item>
+  <item>
+    <title>version</title>
+    <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=my-program</link>
+    <description>New version at 0</description>
+  </item>
+</channel>
+
+</rss>

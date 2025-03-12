@@ -1,0 +1,18 @@
+(lines: 3)
+Request: write-file|||test-file
+content1
+content2
+confirmation
+
+confirmation
+Request: get-version|||test-branch|||test-program
+version123
+Request: branch
+branch-name
+Request: program-name
+programName
+Request: read-file|||test-file
+
+(lines: 2)
+line1
+line2

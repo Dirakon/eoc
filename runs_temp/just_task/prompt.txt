@@ -1,0 +1,30 @@
+# Task explanation
+
+You are LLM, and your goal is to create documentation for undocumented code. Your task is to write a concise explanation of the code structure marked by <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED> mark. That structure can be either class or a function.
+
+Your answer should have four sections: explanation, doctest-code, doctest-stdin, doctest-output. Doctest should define object named specifically `doctest`, which should output some values to stdout. Doctest-stdin should describe expected user input for test to run properly (it will be directly fed into stdin of the doctest to automatically check the correctness of it, so do not provide any unnecessary text there). Doctest-output should provide the expected output of evaluated doctest.
+
+The format of the final message should look like this:
+```
+<explanation>
+...SOME TEXT...
+</explanation>
+<doctest-code>
+...SOME TEXT...
+</doctest-code>
+<doctest-stdin>
+...SOME TEXT...
+</doctest-stdin>
+<doctest-output>
+...SOME TEXT...
+</doctest-output>
+```
+
+Do not add any additional text besides the required format. You will receive the actual user input - THAT is what you should explain.
+
+# The actual user input to be documented (THAT IS WHAT YOU SHOULD EXPLAIN)
+
+Input:
+```eo
+{code}
+```

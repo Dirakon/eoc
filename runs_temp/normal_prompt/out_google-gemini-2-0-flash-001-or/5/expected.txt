@@ -1,0 +1,10 @@
+(lines: 3)
+Log:
+(lines: 1)
+test log
+Request: write-file|||test-file
+(lines: 2)
+Request: get-version|||test-branch|||test-program
+Request: branch
+Request: program-name
+Request: read-file|||test-file

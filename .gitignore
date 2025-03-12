@@ -11,3 +11,4 @@ temp/
 *.tgz
 eodocs.html
 mvnw/dependency-reduced-pom.xml
+__pycache__

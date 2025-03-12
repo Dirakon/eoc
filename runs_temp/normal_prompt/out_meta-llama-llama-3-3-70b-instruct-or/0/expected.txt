@@ -1,0 +1,11 @@
+Rss:
+  <title>test-program versions</title>
+  <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>
+  <description>History of versions</description>
+  <item>
+    <title>version-number</title>
+    <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>
+    <description>New version at timestamp</description>
+  </item>
+</channel>
+</rss>

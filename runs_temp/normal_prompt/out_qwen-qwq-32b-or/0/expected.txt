@@ -1,0 +1,3 @@
+Rss:
+(lines: 9)
+<?xml version="1.0" encoding="UTF-8" ?>\n<rss version="2.0">\n\n<channel>\n  <title>test-program versions</title>\n  <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>\n  <description>History of versions</description>\n  <item>\n    <title>0.1.0</title>\n    <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>\n    <description>New version at 1680000000</description>\n  </item>\n</channel>\n\n\n</rss>\n

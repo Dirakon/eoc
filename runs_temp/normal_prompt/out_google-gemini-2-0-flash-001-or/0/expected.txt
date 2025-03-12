@@ -1,0 +1,48 @@
+Log:
+Log:
+Log:
+Log:
+Log:
+Log:
+Reading...
+Getting current version
+Writing...
+Rss:
+(lines: 15)
+Log:
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>test-program versions</title>
+  <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>
+  <description>History of versions</description>
+  <item>
+    <title>1.2.3</title>
+    <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>
+    <description>New version at 0</description>
+  </item>
+  <item>
+    <title>1.2.4</title>
+    <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>
+    <description>New version at 0</description>
+  </item>
+  <item>
+    <title>1.2.5</title>
+    <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>
+    <description>New version at 0</description>
+  </item>
+  <item>
+    <title>1.2.6</title>
+    <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>
+    <description>New version at 0</description>
+  </item>
+  <item>
+    <title>1.2.7</title>
+    <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>
+    <description>New version at 0</description>
+  </item>
+</channel>
+
+</rss>

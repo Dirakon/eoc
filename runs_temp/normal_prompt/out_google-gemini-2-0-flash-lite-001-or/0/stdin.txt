@@ -1,0 +1,126 @@
+Request: branch
+some-branch
+Request: program-name
+some-program
+Log:
+Reading...
+Request: read-file|||./state/some-branch/some-program
+(lines: 1)
+version1|||1678886400
+Log:
+Getting current version
+Request: get-version|||some-branch|||some-program
+version2
+Log:
+Writing...
+Request: write-file|||./state/some-branch/some-program
+version2|||1678886400
+Log:
+Rss:
+(lines: 14)
+Log:
+Request: branch
+some-branch
+Request: program-name
+some-program
+Log:
+Reading...
+Request: read-file|||./state/some-branch/some-program
+(lines: 1)
+version2|||1678886400
+Log:
+Getting current version
+Request: get-version|||some-branch|||some-program
+version3
+Log:
+Writing...
+Request: write-file|||./state/some-branch/some-program
+version3|||1678886400
+Log:
+Rss:
+(lines: 14)
+Log:
+Request: branch
+some-branch
+Request: program-name
+some-program
+Log:
+Reading...
+Request: read-file|||./state/some-branch/some-program
+(lines: 1)
+version3|||1678886400
+Log:
+Getting current version
+Request: get-version|||some-branch|||some-program
+version4
+Log:
+Writing...
+Request: write-file|||./state/some-branch/some-program
+version4|||1678886400
+Log:
+Rss:
+(lines: 14)
+Log:
+Request: branch
+some-branch
+Request: program-name
+some-program
+Log:
+Reading...
+Request: read-file|||./state/some-branch/some-program
+(lines: 1)
+version4|||1678886400
+Log:
+Getting current version
+Request: get-version|||some-branch|||some-program
+some-version-5
+Log:
+Writing...
+Request: write-file|||./state/some-branch/some-program
+some-version-5|||1678886400
+Log:
+Rss:
+(lines: 14)
+Log:
+Request: branch
+some-branch
+Request: program-name
+some-program
+Log:
+Reading...
+Request: read-file|||./state/some-branch/some-program
+(lines: 1)
+some-version-5|||1678886400
+Log:
+Getting current version
+Request: get-version|||some-branch|||some-program
+some-version-6
+Log:
+Writing...
+Request: write-file|||./state/some-branch/some-program
+some-version-6|||1678886400
+Log:
+Rss:
+(lines: 14)
+Log:
+Request: branch
+some-branch
+Request: program-name
+some-program
+Log:
+Reading...
+Request: read-file|||./state/some-branch/some-program
+(lines: 1)
+some-version-6|||1678886400
+Log:
+Getting current version
+Request: get-version|||some-branch|||some-program
+some-version-7
+Log:
+Writing...
+Request: write-file|||./state/some-branch/some-program
+some-version-7|||1678886400
+Log:
+Rss:
+(lines: 14)
+Log:

@@ -1,0 +1,10 @@
+Request: write-file|||test-state/test-branch/test-program
+(lines: 2)
+1.0.0|||1678886400
+1.1.0|||1678972800
+
+Confirmation: OK
+Request: read-file|||test-state/test-branch/test-program
+(lines: 2)
+1.0.0|||1678886400
+1.1.0|||1678972800

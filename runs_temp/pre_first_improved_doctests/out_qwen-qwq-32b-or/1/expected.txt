@@ -1,0 +1,18 @@
+Rss:
+(lines: 12)
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>test-prog versions</title>
+  <link>https://search.nixos.org/packages?channel=nixos&from=0&size=50&sort=relevance&type=packages&query=test-prog</link>
+  <description>History of versions</description>
+  <item>
+    <title>1.2.3beta</title>
+    <link>https://search.nixos.org/packages?channel=nixos&from=0&size=50&sort=relevance&type=packages&query=test-prog</link>
+    <description>New version at 1677734400</description>
+  </item>
+</channel>
+
+
+</rss>
