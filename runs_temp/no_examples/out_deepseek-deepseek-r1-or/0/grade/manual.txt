@@ -1,0 +1,11 @@
+Accuracy: 3
+Accuracy-note: x
+Completeness: 2
+Completeness-note: stdin/out not mentioned when talking about app.
+Relevance: 1
+Relevance-note: whole code
+Understandability: 2
+Understandability-note: "checks" branch and program name?
+Formatting: 3
+Formatting-note: x
+General-note: x

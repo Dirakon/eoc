@@ -1,7 +1,7 @@
-Accuracy: 3
-Accuracy-note: x
-Completeness: 3
-Completeness-note: x
+Accuracy: 2
+Accuracy-note: NOT substructures
+Completeness: 2
+Completeness-note: stdin/stdout? querying stdout for branch/prog?
 Relevance: 3
 Relevance-note: x
 Understandability: 3

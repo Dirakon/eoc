@@ -1,9 +1,9 @@
 Accuracy: 3
 Accuracy-note: x
-Completeness: 3
-Completeness-note: x
-Relevance: 3
-Relevance-note: x
+Completeness: 2
+Completeness-note: unix?int?
+Relevance: 1
+Relevance-note: other structures get documented
 Understandability: 3
 Understandability-note: x
 Formatting: 3

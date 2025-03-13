@@ -1,5 +1,5 @@
 Accuracy: 3
-Accuracy-note: x
+Accuracy-note: no mention of consecutive duplicates, but considering chronological order implied no need?
 Completeness: 3
 Completeness-note: x
 Relevance: 3

@@ -1,0 +1,11 @@
+Accuracy: 3
+Accuracy-note: x
+Completeness: 1
+Completeness-note: what argments? stdin/stdout? loop?
+Relevance: 3
+Relevance-note: x
+Understandability: 2
+Understandability-note: weird mention of used 'helper' functions.
+Formatting: 3
+Formatting-note: x
+General-note: x

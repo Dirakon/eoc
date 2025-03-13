@@ -1,7 +1,7 @@
 Accuracy: 3
 Accuracy-note: x
-Completeness: 3
-Completeness-note: x
+Completeness: 1
+Completeness-note: timestampt not mentioned completely? unix and types also therefore.
 Relevance: 3
 Relevance-note: x
 Understandability: 3

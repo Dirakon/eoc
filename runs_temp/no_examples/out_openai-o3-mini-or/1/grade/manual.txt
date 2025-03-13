@@ -1,0 +1,11 @@
+Accuracy: 2
+Accuracy-note: 'using external functions for path manipulation' = false (they are used for file manipulation, not path manipulation)
+Completeness: 2
+Completeness-note: stdin/out?
+Relevance: 3
+Relevance-note: x
+Understandability: 2
+Understandability-note: goes too into detail
+Formatting: 3
+Formatting-note: x
+General-note: x

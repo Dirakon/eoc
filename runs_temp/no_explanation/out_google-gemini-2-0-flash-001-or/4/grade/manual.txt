@@ -1,7 +1,7 @@
-Accuracy: 3
-Accuracy-note: x
-Completeness: 3
-Completeness-note: x
+Accuracy: 2
+Accuracy-note: not released, recorded.
+Completeness: 2
+Completeness-note: unix, types?
 Relevance: 3
 Relevance-note: x
 Understandability: 3

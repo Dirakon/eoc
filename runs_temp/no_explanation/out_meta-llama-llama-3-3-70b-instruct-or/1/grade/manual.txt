@@ -4,8 +4,8 @@ Completeness: 2
 Completeness-note: stdin/stdout
 Relevance: 3
 Relevance-note: x
-Understandability: 3
-Understandability-note: x
+Understandability: 2
+Understandability-note: why is read and current state of program treated like separate functions?
 Formatting: 3
 Formatting-note: x
 General-note: x

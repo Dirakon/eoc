@@ -1,11 +1,11 @@
-Accuracy: x
+Accuracy: 3
 Accuracy-note: x
-Completeness: x
-Completeness-note: x
-Relevance: x
+Completeness: 2
+Completeness-note: stdin/stdout
+Relevance: 3
 Relevance-note: x
-Understandability: x
+Understandability: 3
 Understandability-note: x
-Formatting: x
+Formatting: 3
 Formatting-note: x
 General-note: x

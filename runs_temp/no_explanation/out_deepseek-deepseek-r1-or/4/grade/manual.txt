@@ -1,7 +1,7 @@
 Accuracy: 3
 Accuracy-note: x
 Completeness: 3
-Completeness-note: x
+Completeness-note: unix? assuming timestamp integer can only be unix, so don't remove the point here.
 Relevance: 3
 Relevance-note: x
 Understandability: 3

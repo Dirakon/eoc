@@ -1,7 +1,7 @@
-Accuracy: 3
-Accuracy-note: x
+Accuracy: 2
+Accuracy-note: not created, recorded
 Completeness: 3
-Completeness-note: x
+Completeness-note: unix? int mentioned, so fine
 Relevance: 3
 Relevance-note: x
 Understandability: 3

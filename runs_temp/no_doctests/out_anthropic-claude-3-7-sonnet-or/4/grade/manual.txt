@@ -1,7 +1,7 @@
-Accuracy: 3
-Accuracy-note: x
+Accuracy: 2
+Accuracy-note: primary identifier - false.
 Completeness: 3
-Completeness-note: x
+Completeness-note: unix not mentioned, but assuming there are no more int timstamps.
 Relevance: 3
 Relevance-note: x
 Understandability: 3

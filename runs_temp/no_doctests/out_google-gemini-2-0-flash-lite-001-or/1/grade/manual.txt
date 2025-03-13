@@ -1,11 +1,11 @@
 Accuracy: 3
 Accuracy-note: x
 Completeness: 2
-Completeness-note: actualization not mentioned
+Completeness-note: stdin/stdout?
 Relevance: 3
 Relevance-note: x
-Understandability: 3
-Understandability-note: x
+Understandability: 2
+Understandability-note: wdym, "typically" version?
 Formatting: 3
 Formatting-note: x
 General-note: x

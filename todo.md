@@ -15,9 +15,10 @@
 8. [DONE] Other models
 9. [DONE] Also print stderr with RED
 10. [DONE] Fix objects not being printed
-
-
-
+11. Go though actualized - 
+  redundant empty list ought to be punished
+12. And go through understandability - some should be punished on relevance instead.
+13. Im on like 11-12-13
 
 
 

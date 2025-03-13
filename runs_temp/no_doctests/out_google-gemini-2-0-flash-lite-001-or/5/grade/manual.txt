@@ -1,7 +1,7 @@
 Accuracy: 2
-Accuracy-note: primary identifier?
+Accuracy-note: external system calls = literally stdout and stdin
 Completeness: 2
-Completeness-note: unix?types?
+Completeness-note: some features (eg logging) are not covered
 Relevance: 3
 Relevance-note: x
 Understandability: 3

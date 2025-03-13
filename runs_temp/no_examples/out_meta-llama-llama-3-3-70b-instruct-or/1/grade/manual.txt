@@ -1,0 +1,11 @@
+Accuracy: 2
+Accuracy-note: empty list = empty version history (not, in fact, a list)
+Completeness: 2
+Completeness-note: stdin/stdout
+Relevance: 2
+Relevance-note: unrelated classes also get documetned
+Understandability: 3
+Understandability-note: x
+Formatting: 3
+Formatting-note: x
+General-note: x

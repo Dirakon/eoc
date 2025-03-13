@@ -1,0 +1,11 @@
+Accuracy: 2
+Accuracy-note: NOT nested functions
+Completeness: 2
+Completeness-note: stdin/stdout. no mention of quiery stdin for a program/branch to work on.
+Relevance: 3
+Relevance-note: x
+Understandability: 2
+Understandability-note: not clear that 'determines state path' means 'assumes that the first given arg is state path'
+Formatting: 3
+Formatting-note: x
+General-note: x

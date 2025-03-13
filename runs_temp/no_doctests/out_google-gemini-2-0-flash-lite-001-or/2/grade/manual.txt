@@ -6,6 +6,6 @@ Relevance: 3
 Relevance-note: x
 Understandability: 3
 Understandability-note: x
-Formatting: 3
-Formatting-note: x
+Formatting: 1.5
+Formatting-note: classic gemini double spaces
 General-note: x
