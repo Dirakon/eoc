@@ -2,7 +2,7 @@ Accuracy: 3
 Accuracy-note: x
 Completeness: 2
 Completeness-note: unix?types?
-Relevance: x
+Relevance: 3
 Relevance-note: 3
 Understandability: 2
 Understandability-note: tells the contents twice?

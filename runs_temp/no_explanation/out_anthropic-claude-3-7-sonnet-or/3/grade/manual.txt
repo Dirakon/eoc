@@ -2,7 +2,7 @@ Accuracy: 3
 Accuracy-note: x
 Completeness: 3
 Completeness-note: x
-Relevance: x
+Relevance: 3
 Relevance-note: 3
 Understandability: 2
 Understandability-note: a lot of redundnacy in explanation

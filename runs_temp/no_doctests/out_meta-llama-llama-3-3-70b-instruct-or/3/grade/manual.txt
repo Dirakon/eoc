@@ -1,11 +1,11 @@
-Accuracy: x
-Accuracy-note: x
-Completeness: x
+Accuracy: 2
+Accuracy-note: duplicates = consecutive duplicates. outdated versions?
+Completeness: 3
 Completeness-note: x
-Relevance: x
+Relevance: 3
 Relevance-note: x
-Understandability: x
-Understandability-note: x
-Formatting: x
-Formatting-note: x
-General-note: invalid. TODO check
+Understandability: 2
+Understandability-note: redundant conditition
+Formatting: 0
+Formatting-note: Completely ignores request format, breaking system
+General-note: invalid.

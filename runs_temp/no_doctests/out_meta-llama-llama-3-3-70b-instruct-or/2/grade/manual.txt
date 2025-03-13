@@ -1,11 +1,11 @@
-Accuracy: x
+Accuracy: 3
 Accuracy-note: x
-Completeness: x
+Completeness: 3
 Completeness-note: x
-Relevance: x
+Relevance: 3
 Relevance-note: x
-Understandability: x
+Understandability: 3
 Understandability-note: x
-Formatting: x
-Formatting-note: x
-General-note: Invalid. TODO check
+Formatting: 0
+Formatting-note: Completely ignores request format, breaking system
+General-note: Invalid.

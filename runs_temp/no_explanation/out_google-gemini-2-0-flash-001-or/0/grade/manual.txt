@@ -1,11 +1,11 @@
-Accuracy: x
+Accuracy: 3
 Accuracy-note: x
-Completeness: 2
-Completeness-note: stdin/stdout
+Completeness: 1
+Completeness-note: stdin/stdout. arg. queries
 Relevance: 2
 Relevance-note: whole code
-Understandability: x
+Understandability: 3
 Understandability-note: x
-Formatting: x
+Formatting: 3
 Formatting-note: x
 General-note: x
