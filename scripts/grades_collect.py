@@ -46,10 +46,11 @@ def main():
             grades['Doctest'] = doctest_grade
             grades['Answer'] = mapping
             grades['Prompt'] = model_dir_path.parent.name
+            grades['Place'] = i
 
             results.append(grades)
     with open('grades.csv', 'w', newline='') as csvfile:
-        fieldnames = ['Accuracy-note', 'Completeness-note', 'Relevance-note', 'Understandability-note', 'Formatting-note', 'Accuracy', 'Completeness', 'Relevance', 'Understandability', 'Formatting', 'General-note', 'Model', 'Answer', 'Prompt', 'Doctest']
+        fieldnames = ['Accuracy-note', 'Completeness-note', 'Relevance-note', 'Understandability-note', 'Formatting-note', 'Accuracy', 'Completeness', 'Relevance', 'Understandability', 'Formatting', 'General-note', 'Model', 'Answer', 'Prompt', 'Doctest', 'Place']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(results)

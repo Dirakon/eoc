@@ -1,4 +1,4 @@
-Accuracy-note,Completeness-note,Relevance-note,Understandability-note,Formatting-note,Accuracy,Completeness,Relevance,Understandability,Formatting,General-note,Model,Answer,Prompt,Doctest
+Accuracy-note,Completeness-note,Relevance-note,Understandability-note,Formatting-note,Accuracy,Completeness,Relevance,Understandability,Formatting,General-note,Model,Answer,Prompt,Doctest,Place
 "initializes paths""?",stdout/stdin? cli?,,,,2.0,1.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 This code implements a program tracking and version management system in the EO programming language. The primary function `app` continuously monitors and updates program version information, outputting the data as an RSS feed.
 
@@ -135,7 +135,7 @@ Rss:
 
 </rss>
 Test completed
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,0
 creating and managing paths?,stdin/stdout?,,,,2.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `program-data-storage` class provides functionality for managing program data files. It handles reading, writing, and organizing versioned program data in a hierarchical file structure.
 
@@ -193,7 +193,7 @@ Request: read-file|||/tmp/test-state/unstable/test-program
 0
 1
 1.0.0
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,1
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `program-data` class represents data about a program's version history. It's a core data structure in a system that tracks and manages versions of different programs across branches (likely in the context of package management, possibly for Nix packages given the URLs in the output).
 
@@ -269,7 +269,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,2
 duplicates = consecutive duplicates,,,redundnant note about empty list check. Too deep into impl ('with method'?),,2.0,3.0,3.0,2.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `actualized` method is part of the `program-data` class and is designed to update a list of program versions. It takes a `new-version` parameter and returns a `program-data` object with an updated version list.
 
@@ -320,7 +320,7 @@ After trying to add same version again:
 1
 After adding a new 9.1.0 version:
 2
-</doctest-output>",just_task,0.0
+</doctest-output>",just_task,0.0,3
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `program-version` class represents a version of a program with a timestamp. It is used in the application to track and manage program versions.
 
@@ -353,7 +353,7 @@ QQ.io.stdout.print(""Has timestamp: "" + (timestamp.as-string))
 <doctest-output>
 Version number: 1.2.3
 Has timestamp: 1678912345
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,4
 likely command line interface = definetely stdin and stdout,,,,,2.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `external` module in this code serves as an interface for inputting and outputting data with the external environment (likely a command-line interface). It provides methods for handling external commands, file I/O operations, logging, and retrieving program information.
 
@@ -393,7 +393,7 @@ Request: branch
 Request: program-name
 Request: get-version|||branch-value|||program-value
 (lines: 5)
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,5
 ,stdin/stdout not mentioned.,"whole code, not class",,,3.0,2.0,1.0,3.0,1.5,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 The code defines a complex system for managing and tracking versions of software programs, potentially within a NixOS environment. Let's break down the key components:
@@ -441,7 +441,7 @@ QQ.io.stdout ""doctest is running\\n""
 Log:
 doctest is running
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,0
 NOT witin app object.,not mentions stdin/stdout. no mention of directories being created automatically in data-file,,,,2.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 The `program-data-storage` object is defined within the `app` object and handles reading and writing program data to the file system. It takes `state-path` as input during object construction which specifies the root directory for storing program data, as well as `branch` and `program-name` to identify program file version, storing versions in a file structure under state-path/branch/program-name. Key functionalities include:
@@ -546,7 +546,7 @@ Write data for test_branch/test_program
 Read data for test_branch/test_program
 [{'version_number': '1.0.0', 'timestamp': 1678886400}, {'version_number': '1.1.0', 'timestamp': 1678890000}]
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,1
 ,no mention of stdin/stdout.,program-version is also documented?,for some reason list object itself in the sublist? why?,md. Weird double spaces are present.,3.0,2.0,2.0,2.0,1.5,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 The code defines an object `program-data` with nested objects related to managing program versions and outputting them as an RSS feed.
@@ -931,7 +931,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This code defines a method `actualized` within the `program-data` object. The `actualized` method takes a `new-version` as input and returns an updated `program-data` object. The returned `program-data` includes the `new-version` if it's not already the last version in the list of `versions`. More formally, it checks if the provided `new-version` is different from last version present in `versions` list of current `program-data`. If it already exists the same object is returned, but if not the object with newly added version is returned.
@@ -943,7 +943,7 @@ doctest = None # No tests can be implemented because of IO calls.
 </doctest-stdin>
 <doctest-output>
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,3
 ,unix?types?,3,tells the contents twice?,,3.0,2.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This code defines a data structure representing a program version, composed of a version number and a timestamp. The `program-version` object takes the `version-number` and `timestamp` as input and exposes `version-number` itself and makes the object itself the returned value.
@@ -956,7 +956,7 @@ doctest = app.program-version ""1.2.3"" 1678886400
 <doctest-output>
 1.2.3
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,4
 "not, in fact, for testing purposes, but llm can't know it.",,,,,3.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"<explanation>
 The `external` object defines interactions with an external environment, likely for testing purposes. It includes methods for logging, reading from and writing to files, retrieving version information, branch names, and program names. These methods, such as `write`, `read`, and `version`, communicate with the external environment via standard input/output. Crucially, the external environment is expected to follow the format defined by `command-separator` (""|||"") when providing information. The functions like `send-command` and `get-response` handle the interface with that environment. Furthermore, `line-counter` outputs the number of lines processed during file operations, and `output-multiline` handles printing multiline content to standard output. The object acts as an interface to an environment outside the core logic, mocking external calls and providing a means to control dependency behavior during testing.
 </explanation>
@@ -998,7 +998,7 @@ start
 hello
 WRITE: file.txtcontent
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,5
 "a list of arguments and a state path as input""?",stdin/stdout?,all code,,,2.0,2.0,2.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The provided code is written in a functional programming language and appears to be a part of a larger system for managing program versions and storing data. It consists of several functions and data structures that interact with each other to perform tasks such as reading and writing program data, updating versions, and generating RSS feeds.
 
@@ -1053,7 +1053,7 @@ Rss:
     </item>
   </channel>
 </rss>
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,0
 ,not mentioned the fact that stdin/stdout instead of normal IO.,,"phrase ""takes a `program-data-instance` and writes its"" is weird.",,3.0,2.0,3.0,2.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The provided code is written in a functional programming language and appears to be managing program data storage and retrieval. It defines a `program-data-storage` function that takes a `state-path` as input and provides methods for reading and writing program data. The `read` method reads data from a file, parses it, and returns a `program-data` instance. The `write` method takes a `program-data-instance` and writes its serialized versions to a file. The `program-data` function creates a new instance with a given `branch`, `program-name`, and `versions`. The `output-as-rss` method generates an RSS feed from the program data and outputs it to the console.
 </explanation>
@@ -1190,7 +1190,7 @@ Rss:
 
 </rss>
 ```
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,1
 ,"output function not only generates, but outputs too.",Documents external too.,,,3.0,2.0,2.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The provided code defines a data structure and functions for managing program versions and generating RSS feeds. The main structure is the `program-data` function, which takes a `branch`, `program-name`, and `versions` as input. It has two main components: `output-as-rss` and `actualized`. The `output-as-rss` function generates an RSS feed based on the provided versions, while the `actualized` function updates the program data with a new version. The code also defines several helper functions for logging, reading and writing files, and sending commands.
 </explanation>
@@ -1237,7 +1237,7 @@ Rss:
   &lt;/item&gt;
 &lt;/channel&gt;
 &lt;/rss&gt;
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The structure to be documented is the `actualized` function, which takes a `new-version` as input and returns the actualized program data. This function is part of the `program-data` structure and is used to update the versions of a program.
 
@@ -1292,7 +1292,7 @@ Rss:
 
 </rss>
 ```
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,3
 ,unix-types,,,,3.0,2.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The provided code structure is a function named `program-version` that takes two arguments: `version-number` and `timestamp`. The function returns the `version-number` as its output. This function appears to be part of a larger system that manages program versions and their corresponding timestamps. The function does not perform any complex operations, but rather serves as a simple data structure to hold version information.
 </explanation>
@@ -1309,7 +1309,7 @@ The provided code structure is a function named `program-version` that takes two
 </doctest-stdin>
 <doctest-output>
 1.0
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,4
 ,stdin/stdout? no mention? even in external itself???,,,,3.0,1.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The provided code defines an external interface that interacts with an external system to perform various operations such as reading and writing files, logging messages, and retrieving version information. The external interface is designed to communicate with the external system using a command-based protocol, where each command is a string that is sent to the external system and the response is received and processed. The interface provides several functions, including line-counter, output-multiline, log, write, read, send-command, get-response, get-confirmation, version, branch, and program-name. These functions enable interactions with the external system, such as writing and reading files, logging messages, and retrieving version information.
 </explanation>
@@ -1352,7 +1352,7 @@ Request: branch
 main
 Request: program-name
 test-program
-```",just_task,0.0
+```",just_task,0.0,5
 "nested"" structures?",stdin/stdout,,,weird unicode.,2.0,2.0,3.0,3.0,1.5,,out_openai-o3-mini-or,"<explanation>
 This EO-based code defines an application that monitors and manages version information for a program. The “app” structure starts by extracting a state path from its arguments and then enters an infinite loop. Inside the loop it:
 • Reads the saved version data from a file using a file‐storage abstraction.
@@ -1396,7 +1396,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,0
 ,somewhat mentions that out is stdout ('prints'...) but no mention of stdin at least.,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This EO structure defines a “program-data-storage” component that encapsulates file‐based persistence for program data. It takes a “state‐path” during construction and provides two main methods: “read” and “write”. The “read” method computes a file path (named “data‐file”) based on a branch and a program name, ensures that the file exists, reads its contents if available, splits the content line‐by‐line and parses each line into a program version (using a format with a version number and a timestamp); if the file does not exist, it returns an empty data list. The “write” method similarly computes the data file for a given program-data instance (which must include branch, program-name and a list of version records). It then “reduces” (serializes) the versions list by concatenating each version number and its timestamp (joined by “|||” and ending with a newline), logs the serialized text by invoking an external logger, writes the serialized data to the file (using an external write command that prints a request and the data), and finally returns the program-data instance.
 </explanation>
@@ -1425,7 +1425,7 @@ Log:
 Request: write-file|||dummy/beta/TestProg
 1.2.3|||161803398
 
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,1
 ,,program-version also gets explain for some reason?,Goes too into detail maybe?,,3.0,3.0,2.0,2.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This EO structure, named “program-data”, encapsulates version‐tracking information for a specific program and branch. It takes three parameters – branch, program-name, and a list of versions – and provides two main responsibilities. First, its method “output‐as‐rss” creates and immediately outputs an RSS feed: it computes an XML prefix (including a title and a link formed using the branch and program name), then maps over each version in the versions list to print an RSS item (with the version number and timestamp), and finally prints a suffix to close the XML. In doing so, it also computes and logs a total line count (based on a fixed formula using the number of versions, a fixed number of prefix and suffix lines). Second, the “actualized” method is used to update the stored version data: it checks if the new version is already at the end of the versions list (and that the list is not empty) and, if not, appends the new version. Additionally, a helper “program-version” is defined to construct a version “tuple” from a version-number and a timestamp.
 </explanation>
@@ -1462,7 +1462,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,2
 ,,,too into detail?,,3.0,3.0,3.0,2.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This structure defines a function named “actualized” for updating a program’s version data. It takes one parameter (new-version) and works on an existing collection (program-data) identified by branch and program-name. The function inspects the current list of versions. If the list is not empty and its last element is already equal to the new-version, the function returns the current versions list unchanged. Otherwise, it “appends” the new-version to the versions collection (using versions.with new-version) and returns the updated list. This mechanism prevents duplicate consecutive version entries.
 </explanation>
@@ -1524,7 +1524,7 @@ print(actualized(data3, ""2.0""))
 ['1.0']
 ['1.0', '2.0']
 ['1.0', '2.0']
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,3
 does not seem to get that it still stores both values even if evaluates to one only.,unix?types?,,,,2.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This structure defines a simple constructor-like function named ""program-version"" that takes two parameters: ""version-number"" and ""timestamp"". The function’s body returns the provided ""version-number"", effectively using it as the primary value while ignoring the ""timestamp"". This makes it a lightweight encapsulation for representing a program’s version.
 </explanation>
@@ -1556,7 +1556,7 @@ if __name__ == ""__main__"":
 </doctest-stdin>
 <doctest-output>
 Version: 1.2.3
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,4
 ,,,,weird unicode,3.0,3.0,3.0,3.0,1.5,,out_openai-o3-mini-or,"<explanation>
 This code defines an “external” module that encapsulates several side‐effect operations for communicating with external systems. It specifies a constant command separator (""|||"") and provides functions to log messages, read from and write to files using a simple command protocol, and retrieve version, branch, or program name information. In detail:
 • The line-counter function formats and prints a message showing the number of lines.
@@ -1593,7 +1593,7 @@ World
 Request: example
 Request: get-version|||main|||demo
 v1.0
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,5
 distributed? inter-process?,stdin/stdout finally mentioned!,for some reason two random other modules are mentioned?,,,2.0,3.0,2.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The code defines a distributed application `app` that tracks program version history and outputs RSS feed XML. It uses command-based inter-process communication with external services. The core workflow reads branch/program name, fetches current version, stores program data with timestamps, and outputs version history as XML. The program-data module handles storage operations with serialized versions stored as newline-separated text files. External functions abstract interactions with external services through stdin/stdout communication.
 </explanation>
@@ -1661,7 +1661,7 @@ Writing...
 
 </rss>
 
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,0
 ,no ment of stdin/stdout,,,,3.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `program-data-storage` structure manages persistent storage for program version data. It stores and retrieves structured version information in files organized by branch and program name. Key functions include read/write operations for versions formatted as RSS XML. The read function parses newline-separated ""version|||timestamp"" strings into program versions. The write prepares versions as a formatted RS, writes to file, and outputs it with line counts.
 </explanation>
@@ -1723,7 +1723,7 @@ Rss:
 
 </rss>
 (lines:9 total)
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,1
 duplicates = consecutive duplicates,stdout is not mentioned?,,,,2.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `program-data` structure manages version history for a program, generating RSS feeds. It includes:
 
@@ -1789,7 +1789,7 @@ Rss:
 
 </rss>
 
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,2
 i like use of redundant (seems correct) instead of duplicates (factually incorrect),,,,,3.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `actualized` function checks if the new version is already the latest entry in the program-data's version list. If so, it retains the existing list. Otherwise, it appends the new version to versions. This ensures no redundant entries.
 </explanation>
@@ -1821,7 +1821,7 @@ doctest = function() {
 1
 2
 1
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,3
 ,,,Using arguments when explaning which structure is being documented for some reason.,,3.0,3.0,3.0,2.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `[version-number timestamp] > program-version` defines a data structure for representing software version information. It stores:
 - `version-number`: A string representing the version identifier (e.g., ""1.0.0"").
@@ -1844,7 +1844,7 @@ This struct is used to track version history and is typically created by parsing
 <doctest-output>
 v2.3.7
 1709923200
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,4
 "inter-process? not always, but i guess not that wrong. It is NOT, in fact, 'prefixed with ""(Log)""'",,,,,2.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `external` module provides inter-process communication utilities. It facilitates interactions with external systems via STDOUT requests and STDIN responses. Key components include logging, file operations, and fetching metadata like branch/program version. Commands use a ""|||"" separator for parameters, send requests, read metadata responses, and handle multi-line outputs with line counting.
 
@@ -1885,7 +1885,7 @@ Request: get-version|||nixos-22.11|||hello-world
 Log:
 (lines:1)
 Version result: v1.2.3
-</doctest-output>",just_task,1.0
+</doctest-output>",just_task,1.0,5
 regularly? why?,,,,,2.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This code defines a system for managing and versioning program data. It uses a state-path to store data, reads and writes data to files, and retrieves version information. Key functionalities include fetching the current version, reading and writing program data, and outputting the data as RSS. The code interacts with external commands for operations like reading files, writing files, and getting version information, and it uses standard input/output for communication and logging. The system regularly updates the program data with the latest available data.
@@ -1897,7 +1897,7 @@ doctest = 1
 </doctest-stdin>
 <doctest-output>
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,0
 ,stdin/stdout?,,,,3.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The code defines a `program-data-storage` function that manages the storage and retrieval of program data. It takes a `state-path` as input, which specifies the directory where data is stored. Inside, it defines helper functions and uses file system operations to read and write program data. The main functionality includes reading data for a specific branch and program from a file, and writing a `program-data-instance`, which is then serialized into a specific format before writing to disk. Reading includes parsing content from a file, splitting it into lines and extracting version numbers and timestamps. Writing consists of serializing version information into a specific format and saving it to a file.
@@ -2012,7 +2012,7 @@ test_version|||1234
 Log:
 File content
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,1
 using qq.stdout for CONSTRUCTING? doesn't already exists factually wrong.,,,,,2.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The `program-data` function is responsible for managing and outputting program version data. It takes the program name, branch, and a list of versions as input. The function defines an `output-as-rss` function, which generates and prints an RSS feed containing the program's version history. The `actualized` function updates the version data by adding a new version if it doesn't already exist. The `output-as-rss` function constructs an RSS feed string containing the program's versions using `QQ.txt.sprintf` and `QQ.io.stdout`. Finally, it outputs the RSS feed to standard output.
@@ -2033,7 +2033,7 @@ print(program_data(""main"", ""my-program"", [{""version-number"": ""1.0.0"", ""
 <doctest-output>
 Program data for my-program on main. versions: [{'version-number': '1.0.0', 'timestamp': 1678886400}, {'version-number': '1.0.1', 'timestamp': 1678972800}]
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,2
 database? what database,,,,,2.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The `actualized` function updates the program data with a new version of the software if that new version is not already stored in the database. It takes the current program data and a new version as input and it returns the updated program data.
@@ -2047,7 +2047,7 @@ doctest = ""Test""
 </doctest-stdin>
 <doctest-output>
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,3
 ,unix?,,don't understand this about mapping.,,3.0,2.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The `program-version` function is a simple data structure representing a version of a program. It takes two arguments: `version-number` (presumably a string) and `timestamp` (an integer). It simply creates a structure (likely a tuple or similar) containing these two values. This suggests a mapping between the version number and the time it was recorded.
@@ -2064,7 +2064,7 @@ print(doctest)
 <doctest-output>
 {'1': {'version-number': '1.2.3', 'timestamp': 1678886400}, '2': {'version-number': '4.5.6', 'timestamp': 1678886401}}
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,4
 ,,,why mention used stdlib modules? qq.txt?,,3.0,3.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The `external` function defines a set of external interactions, likely with the operating system or external services. It encapsulates various operations such as logging, reading from and writing to files, retrieving version information, and interacting with a command-line interface. It uses `QQ.io.stdout` for output and `QQ.io.stdin` for input, and `QQ.txt` for text manipulation.
@@ -2090,7 +2090,7 @@ doctest = ""ok""
 </doctest-stdin>
 <doctest-output>
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,5
 ,loop? cli? stdin/stdout?,hard to tell if it tries to document the whole file.,,,3.0,0.0,2.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 This code appears to represent a workflow for managing and tracking the versions of a software program. It involves reading and writing version data, handling file storage, and generating RSS feeds for version histories. The structure utilizes a combination of sequencing and external commands to read, log, and write relevant information about program versions. Key components include the handling of file paths for program data storage, the management of version information, and the output of RSS formatted feeds.
@@ -2144,7 +2144,7 @@ None
 
 </rss>
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,0
 ,where info about read/write? stdin/stdout?,"once again, hard to tell if its even understands which part is suuposed to be docuemnted","why is rss human-readable? i mean it is, but it's made to be machine-readable first, no?",,3.0,1.0,2.0,2.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 The provided code block defines a structure for handling program data storage and version management using a configuration-like syntax. It includes the creation and reading of file paths for program versions, as well as functionalities to serialize, write, and output this data in a human-readable format (RSS). The code consists of multiple sections where each section handles specific operations such as reading from files, writing data, logging output, and formatting for display. The use of sequences and external operations suggests interaction with a file system and possibly a command-line interface for receiving input and returning output.
@@ -2167,7 +2167,7 @@ example_program
 <doctest-output>
 # Example output assuming the program interacting with this successfully reads version data:
 {'versions': [{'version_number': '1.0.0', 'timestamp': 1638345600}, {'version_number': '1.0.1', 'timestamp': 1638432000}]}
-```",just_task,0.0
+```",just_task,0.0,1
 ,stdout?,,historical context? unique format for logging?,,3.0,2.0,3.0,2.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 This code defines a data structure `program-data` representing versioning information for a given program, identified by a combination of its branch and program name. The structure contains methods and details pertaining to the program's versions, including capabilities for outputting the version history as RSS and managing new versions. It uses a unique format to log details, read and write version information, and format RSS outputs. The structure also allows for creating a new actualized version based on a historical context.
@@ -2232,7 +2232,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,2
 ,,is not related to the things it is related to.,weird remarks about language and sections.,,3.0,0.0,0.0,2.0,3.0,has literally no clue what eo is (like in previous answers too). no grading because,out_openai-gpt-4o-mini-or,"```
 <explanation>
 This code defines a data processing structure using a mix of pseudo-code and a domain-specific language that appears to be tailored for managing program versioning and state information. It manages several operations related to file storage and logging, specifically focusing on reading, writing, updating, and outputting the version history of specific programs identified by their branch and program name. The system uses streams and sequential commands to handle data, log progress, and response handling. The components are organized into named sections that clearly delineate the purposes of the different parts of the structure, including data storage, reading and writing processes, and external command handling.
@@ -2265,7 +2265,7 @@ Enter branch and program name: 'main' 'my_program'
 <doctest-output>
 <current_version_value>
 <updated_versions_list>
-```",just_task,0.0
+```",just_task,0.0,3
 ,,whole code...,,,3.0,0.0,0.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 This code represents a structured definition of a program's functionality in an unknown language, potentially related to a data processing or version control application. It defines how to handle various operations such as reading and writing data, managing program versions, and outputting data in an RSS format. The structure is ornamented with a clear separation of responsibilities such as data storage, reading, writing, and logging. Additionally, the segments indicate a strong reliance on external commands and a set of conditioning and sequencing operations that suggest a flow-driven execution model.
@@ -2308,7 +2308,7 @@ Request: read-file ||| test-file
 (lines: 1)
 'Test content'
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,4
 ,,,"Does not mention that all IO apperation are actually stdin/stdout, only mentions it in (some) function leaving the implication implicit.","Problems with response format, breaking system",3.0,3.0,3.0,2.0,0.0,response format broken(?),out_openai-gpt-4o-mini-or,"```
 The code defines a structure for handling external interactions and data operations related to a program's version management system. It includes functionalities for logging, reading, writing files, and sending commands to an external system. The 'external' structure encompasses various methods such as 'line-counter' for counting lines, 'output-multiline' for handling multi-line content, 'log' for logging text information, 'write' and 'read' for file operations, and 'send-command' for sending requests to an external resource. Additionally, it includes mechanisms for handling confirmation and responses associated with those interactions.
 
@@ -2359,7 +2359,7 @@ Request: read-file
 This is some test content.
 (lines: 3)
 """"""
-```",just_task,0.0
+```",just_task,0.0,5
 ,cli-arg? stdin/stdout?,whole code again.,,,3.0,1.0,1.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The code defines a version tracking system for programs, generating RSS feeds. The main object is `app`, which runs an infinite loop checking for updates. It uses `program-data-storage` to persist version history in files and `external` for I/O operations. Key components:
@@ -2425,7 +2425,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",just_task,2.0
+```",just_task,2.0,0
 empty list = strucuture with versions as empty list,stdin/stdout?,,,,2.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The `program-data-storage` class manages persistent storage of program version data. It handles:
@@ -2483,7 +2483,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,1
 no duplicates at the end = no consecutive duplicates.,output outputs. not mentioned.,,,,2.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The `program-data` class manages version history data for a program in a specific branch. It stores the program name, branch, and a list of versions. Key methods:
@@ -2520,7 +2520,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,2
 ,,a lot of irrelevant info,,,3.0,3.0,1.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The `actualized` method in the `program-data` object updates the version history by conditionally adding new versions. 
@@ -2565,7 +2565,7 @@ Rss:
 Rss:
 (lines: 30)
 </doctest-output>
-```",just_task,2.0
+```",just_task,2.0,3
 ,unix?,,,,3.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The `program-version` object represents a version entry with a version number and timestamp. 
@@ -2593,7 +2593,7 @@ Log:
 (lines: 1)
 1609459200
 </doctest-output>
-```",just_task,2.0
+```",just_task,2.0,4
 "it, in fact, uses stdin/stdout not only for ""Request: "" bits.",,,,,2.0,3.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The `external` object acts as an interface for external system interactions. It provides methods for logging, file I/O, version checking, and command communication. Key components include:
@@ -2625,7 +2625,7 @@ Log:
 (lines: 1)
 Test
 </doctest-output>
-```",just_task,1.0
+```",just_task,1.0,5
 ,stdin/stdout,,,,3.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 This code implements a monitoring application that tracks and records program versions. It continuously polls for the latest versions of a specified program in a specified branch, saves this data to a persistent storage, and can output the version history in RSS format.
 
@@ -2701,7 +2701,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,0
 ,stdin/stdout,,,,3.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `program-data-storage` class provides functionality for reading and writing program version data to a filesystem. It manages version data storage for different program and branch combinations, where each version has a version number and a timestamp. It serializes this data as text files with each version entry formatted as `version_number|||timestamp`.
 </explanation>
@@ -2740,7 +2740,7 @@ Log:
 1.0.0|||1615000000
 1.1.0|||1625000000
 (lines: 2)
-</doctest-output>",no_explanation,3.0
+</doctest-output>",no_explanation,3.0,1
 ,actualization not mentioned,,,,3.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `program-data` class represents a data structure for managing versions of a specific program in a specific branch. It stores the program's name and a collection of versions, and provides functionality for outputting this data in RSS format.
 </explanation>
@@ -2784,7 +2784,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_explanation,3.0
+</doctest-output>",no_explanation,3.0,2
 ,,3,a lot of redundnacy in explanation,,3.0,3.0,3.0,2.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 This `actualized` method is part of the `program-data` class and is used to update a version history list. It returns a new instance of `program-data` with an updated versions list.
 
@@ -2837,7 +2837,7 @@ In other words, this method ensures new versions are only added if they're diffe
 Empty list actualized: 1
 Second version added: 2
 Duplicate version not added: 1
-</doctest-output>",no_explanation,4.0
+</doctest-output>",no_explanation,4.0,3
 primary identifier?,unix?types?,,,,2.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 A class representing a version of a program with a version number and timestamp. The primary identifier is the version number.
 </explanation>
@@ -2853,7 +2853,7 @@ A class representing a version of a program with a version number and timestamp.
 </doctest-stdin>
 <doctest-output>
 1.0.0
-</doctest-output>",no_explanation,4.0
+</doctest-output>",no_explanation,4.0,4
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `external` class provides an interface for communicating with an external system through command-line requests and responses. It manages logging, file operations (reading and writing), and retrieving version information for programs. The class uses a command-based protocol where commands are sent to stdout and responses are read from stdin, with ""|||"" used as a separator between command arguments.
 </explanation>
@@ -2876,7 +2876,7 @@ Log:
 Testing external interface
 Command response simulation:
 Request: branch
-</doctest-output>",no_explanation,4.0
+</doctest-output>",no_explanation,4.0,5
 ,stdin/stdout. arg. queries,whole code,,,3.0,1.0,2.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This code defines an application (`app`) that manages program versions and saves them to disk, offering an RSS feed of the version history. It interacts with an ""external"" system to get program versions, branch names, program names, and to read/write data. It utilizes file system operations to store program data. Several helper objects are defined: `program-data-storage`, `program-data`, `program-version`, and `external`. The application takes a path to a state directory as input.
@@ -2998,7 +2998,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",no_explanation,2.0
+```",no_explanation,2.0,0
 ,stdin/stdout,,,,3.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 Represents storage for program data, using the file system. It manages reading and writing program version data to files within a specified directory structure (`state-path`).
@@ -3020,7 +3020,7 @@ Represents storage for program data, using the file system. It manages reading a
 <doctest-output>
 test/branch1/program1
 </doctest-output>
-```",no_explanation,4.0
+```",no_explanation,4.0,1
 a specific program and branch = program in specific branch,,,,,2.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 Represents data for a specific program and branch, including a list of versions. Provides functionality to output the versions as an RSS feed and update the version list.
@@ -3071,7 +3071,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",no_explanation,1.0
+```",no_explanation,1.0,2
 ,,,its actually new = potentially ambiguos,,3.0,3.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 Takes a program data and a new version and returns either the existing version list or a new version list appended with the new version if it's actually new.
@@ -3099,7 +3099,7 @@ Takes a program data and a new version and returns either the existing version l
 <doctest-output>
 my-program
 </doctest-output>
-```",no_explanation,1.0
+```",no_explanation,1.0,3
 "not released, recorded.","unix, types?",,,,2.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 Represents a specific version of a program. It stores the version number (as a string) and a timestamp (presumably when the version was released or recorded).
@@ -3117,7 +3117,7 @@ Represents a specific version of a program. It stores the version number (as a s
 <doctest-output>
 1.2.3 1678886400
 </doctest-output>
-```",no_explanation,2.0
+```",no_explanation,2.0,4
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 An object that encapsulates external interactions, providing methods to interact with the system through stdin/stdout. It provides functionalities like logging, reading from and writing to files, retrieving version information, branch names, and program names. All interactions are mediated through commands sent to stdout and responses received from stdin.
@@ -3145,7 +3145,7 @@ Request: write-file|||test-file
 Request: read-file|||test-file
 test
 </doctest-output>
-```",no_explanation,1.0
+```",no_explanation,1.0,5
 ,what argments? stdin/stdout? loop?,,weird mention of used 'helper' functions.,,3.0,1.0,3.0,2.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The provided code is a complex system that manages program data, including versions and RSS output. It appears to interact with an external system, sending commands and receiving responses. The main functionality is encapsulated in the `app` function, which takes arguments and performs a series of actions, including reading and writing data, getting current versions, and outputting RSS feeds. The system uses various helper functions, such as `version`, `currently-saved-data`, and `program-data-storage`, to manage data and interactions.
 </explanation>
@@ -3180,7 +3180,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,0
 ,stdin/stdout,,why is read and current state of program treated like separate functions?,,3.0,2.0,3.0,2.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The program-data-storage class is responsible for managing the data storage for a given program. It provides methods to read and write data to a file, and to retrieve the current state of the program. The storage is identified by a state-path, which is used to construct the file path where the data is stored.
 </explanation>
@@ -3207,7 +3207,7 @@ The program-data-storage class is responsible for managing the data storage for 
 </doctest-stdin>
 <doctest-output>
 Read data: test-program-name
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,1
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 Represents data about a program, including its name, branch, and version history. It provides methods for outputting the version history as an RSS feed and for updating the version history with new versions.
 </explanation>
@@ -3244,7 +3244,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The `actualized` function takes a new version and returns the actualized program data by checking if the new version is already the latest version in the program data's versions list. If it is, the function returns the existing versions list; otherwise, it appends the new version to the list.
 </explanation>
@@ -3264,7 +3264,7 @@ The `actualized` function takes a new version and returns the actualized program
 </doctest-stdin>
 <doctest-output>
 [/branch/program-name 3 versions: [1, 2, new-version]]
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,3
 ,unix?types?,,,,3.0,2.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 Represents a version of a program with a version number and a timestamp.
 </explanation>
@@ -3281,7 +3281,7 @@ Represents a version of a program with a version number and a timestamp.
 </doctest-stdin>
 <doctest-output>
 1.0 1643723400
-</doctest-output>",no_explanation,4.0
+</doctest-output>",no_explanation,4.0,4
 ,stdin/stdout? IO?,,,,3.0,1.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The external structure serves as an abstraction layer for interactions with an external system, providing methods for sending commands, reading and writing files, logging, and retrieving responses. It enables communication with the external system through a command-based interface.
 </explanation>
@@ -3303,7 +3303,7 @@ The external structure serves as an abstraction layer for interactions with an e
 Log:
 Hello, world!
 This is a test.
-</doctest-output>",no_explanation,0.0
+</doctest-output>",no_explanation,0.0,5
 not within app...,stdin/stdout,no need to mention logging...,,classic weird unicode,2.0,2.0,2.0,3.0,1.5,,out_openai-o3-mini-or,"<explanation>
 The “app” structure bootstraps the application by taking a state‐storage path from its arguments and then entering an infinite loop that repeatedly performs a version update cycle. In each cycle it:
 • Retrieves the current branch and program name from external sources.
@@ -3327,7 +3327,7 @@ v1.0
 <doctest-output>
 Request: get-version|||master|||MyApp
 v1.0
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,0
 ,"stdout is mentioned, but not stdin...",,,,3.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This structure manages storage of program data on disk. Given a base state path, it computes the file location for a given branch and program name, ensuring that the corresponding directory exists. It provides two main operations: “read” (which returns the stored program data by reading and parsing the file content into version records) and “write” (which serializes a program‐data instance’s versions into a text format, logs the serialization, sends a write request to store the data, and then returns the instance).
 </explanation>
@@ -3353,7 +3353,7 @@ Request: write-file|||state/beta/prog
 (lines: 2)
 1.0|||42
 
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,1
 ,no mention of stdout-ing generates xml,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 Encapsulates and manages version information for a program identified by its branch and name. Its primary responsibility is to generate an RSS feed (via output-as-rss) that combines a fixed XML header (prefix), a dynamically built middle part listing each version (with its version number and timestamp), and an XML footer (suffix). It also includes a method (actualized) that updates the contained version list only if the provided new version is not already the latest entry.
 </explanation>
@@ -3388,7 +3388,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,2
 ,,,redundant not empty part,,3.0,3.0,3.0,2.0,3.0,,out_openai-o3-mini-or,"<explanation>
 The “actualized” method of the program-data structure takes a candidate new version and “updates” the versions list: if the list is non-empty and its last element already matches the new version, it returns the original versions list; otherwise, it appends the new version to the list.
 </explanation>
@@ -3405,7 +3405,7 @@ The “actualized” method of the program-data structure takes a candidate new 
 </doctest-stdin>
 <doctest-output>
 v1
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,3
 "not ""returns"" per say",unix? types?,,,,2.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 Creates a simple object that receives a version number and a timestamp, then returns the version number.
 </explanation>
@@ -3420,7 +3420,7 @@ Creates a simple object that receives a version number and a timestamp, then ret
 </doctest-stdin>
 <doctest-output>
 v1.2.3
-</doctest-output>",no_explanation,2.0
+</doctest-output>",no_explanation,2.0,4
 ,"stdout mentioned, not stdin tho",,external interface for external system???,,3.0,2.0,3.0,2.0,3.0,,out_openai-o3-mini-or,"<explanation>
 Provides an external interface for interacting with an external system. It defines utilities for logging text, reading from and writing to files via command calls, and for sending commands and receiving responses. Additionally, it offers functions to obtain version information, branch, and program-name by sending specific commands. Each function wraps the command transmission with formatted output to stdout.
 </explanation>
@@ -3435,7 +3435,7 @@ Provides an external interface for interacting with an external system. It defin
 Log:
 (lines: 1)
 Test message
-</doctest-output>",no_explanation,4.0
+</doctest-output>",no_explanation,4.0,5
 a program = programs,,,,,2.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `app` function monitors and updates the version history of a program, outputting RSS feed updates. It uses external command interactions with the system via stdin/stdout and persists version data to a state file. The main loop runs indefinitely, checking for new versions and recording them in the RSS feed format.
 </explanation>
@@ -3501,7 +3501,7 @@ Rss:
 
 
 (lines: 12)
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,0
 ,'external command abstraction'?,,,,3.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 Manages storage of program version data, persisting versions to a file hierarchy with branch and program name, supporting read/write operations through an external command abstraction.
 </explanation>
@@ -3524,7 +3524,7 @@ Log:
 Request: write-file|||test-path/testing-branch/sample-program
 (lines: 1)
 2.0|||1617265000
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,1
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"SelfPermissionอยู่แล้ว
 
 Okay, now that I have to explain the code structure marked by <STRUCTURE-BELOW-IS-TO-BE-DOCUMENTED>, which is the 'program-data' structure here. Let me go through the code step by step.
@@ -3630,7 +3630,7 @@ Rss:
 
 
 </rss>
-</doctest-output>",no_explanation,2.0
+</doctest-output>",no_explanation,2.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 This method adds a new version to the program's version list only if it is not already the most recent one.
 </explanation>
@@ -3650,7 +3650,7 @@ This method adds a new version to the program's version list only if it is not a
 </doctest-stdin>
 <doctest-output>
 2
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,3
 'exposing only version number' is false,unix? types?,,,,2.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 Represents a program version with a version number and timestamp, exposing only the version number when accessed.
 </explanation>
@@ -3668,7 +3668,7 @@ Represents a program version with a version number and timestamp, exposing only 
 </doctest-stdin>
 <doctest-output>
 v1.0.0
-</doctest-output>",no_explanation,4.0
+</doctest-output>",no_explanation,4.0,4
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The object handles communication with an external system by sending command protocols through stdout and processing responses read from stdin. It includes functions for logging with line counters, file manipulation, retrieving program versions, and managing system interactions.
 </explanation>
@@ -3683,7 +3683,7 @@ The object handles communication with an external system by sending command prot
 Log:
 (lines:1)
 Single-line text
-</doctest-output>",no_explanation,3.0
+</doctest-output>",no_explanation,3.0,5
 ,args? stdin/stdout? prompting for program/branch?,,,,3.0,1.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This is the main application object. It reads program data from a file, updates the version, and writes the data back to the file. The application continuously reads and processes new versions.
@@ -3806,7 +3806,7 @@ version3|||0
 </doctest-stdin>
 <doctest-output>
 </doctest-output>
-```",no_explanation,2.0
+```",no_explanation,2.0,0
 ,stdin/stdout?,,,double whitespace,3.0,2.0,3.0,3.0,1.5,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 Represents storage for program data, including read and write operations. Reads from and writes to a file based on the branch and program name.  Manages the file path and creates directory if it doesn't exist.
@@ -3843,7 +3843,7 @@ Request: read-file|||test_data/my-branch/my-program
 <doctest-output>
 Log:
 </doctest-output>
-```",no_explanation,1.0
+```",no_explanation,1.0,1
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This object represents a program's data, including a list of versions, and provides methods to generate an RSS feed from this data and to update the data with a ""new-version"". output-as-rss generates the rss feed and prints it to stdout.
@@ -3889,7 +3889,7 @@ Log:
 
 </rss>
 </doctest-output>
-```",no_explanation,1.0
+```",no_explanation,1.0,2
 if it's not already present = false,,,,double whitespace,2.0,3.0,3.0,3.0,1.5,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 Updates program data by adding a new version if it's not already present or is the same as the last version in the list.  If the new version is identical to the last recorded version, no new version is added. It also takes care of preserving the already recorded versions in case if there is a version update.
@@ -3934,7 +3934,7 @@ Updates program data by adding a new version if it's not already present or is t
 123
 1
 </doctest-output>
-```",no_explanation,1.0
+```",no_explanation,1.0,3
 ,types? unix?,,,,3.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 Represents a program version with a version number and a timestamp.
@@ -3954,7 +3954,7 @@ Represents a program version with a version number and a timestamp.
 <doctest-output>
 1.0 1678886400
 </doctest-output>
-```",no_explanation,2.0
+```",no_explanation,2.0,4
 ,does not mention stdin or stdout.,,,,3.0,1.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This structure defines external interactions for file system operations and version control. It provides functions to log text, write and read files, get program information(name, branch and version) from an external source (likely a shell or another program), and provide confirmation/response handshakes.
@@ -3971,7 +3971,7 @@ Test Log message
 <doctest-output>
 Test Log message
 </doctest-output>
-```",no_explanation,3.0
+```",no_explanation,3.0,5
 ,cli? loop? stdin/stdout?,,,,3.0,1.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 Application that manages program versioning and data storage, providing functionalities to read, write, and output version data in RSS format.
@@ -4002,7 +4002,7 @@ Reading... Getting current version Writing... Rss:
 
 </rss>
 </doctest-output>
-```",no_explanation,2.0
+```",no_explanation,2.0,0
 outputting data in an RSS format = false,stdin/stdout?,,,,2.0,2.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 Manages the storage and retrieval of program versioning data associated with specific branch names and program names, providing functionality for reading, writing, and outputting data in an RSS format.
@@ -4046,7 +4046,7 @@ Rss:
 
 </rss>
 
-```",no_explanation,0.0
+```",no_explanation,0.0,1
 ,program = program on a specific branch,,"program-specific data stores""?",,3.0,2.0,3.0,2.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 This code defines a structure for managing version information of a program, including reading, writing, and outputting this information in RSS format. It encompasses functionalities for creating program-specific data stores and handling version-related data operations, as well as logging and outputting content.
@@ -4075,7 +4075,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",no_explanation,2.0
+```",no_explanation,2.0,2
 ,,whole code...,,,3.0,3.0,0.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 This code represents an application that manages version control for software programs, enabling reading, saving, and outputting version data as RSS. The main function initializes by setting a path for state storage, with multiple sub-functions handling tasks such as reading current versions, saving data, and formatting the output as RSS. The program is structured with separate sections for management of program data, external interactions, and logging.
@@ -4094,7 +4094,7 @@ This code represents an application that manages version control for software pr
 <doctest-output>
 RSS data generated for the program versions.
 </doctest-output>
-```",no_explanation,2.0
+```",no_explanation,2.0,3
 ,,whole code...,,,3.0,3.0,0.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 The code defines a structured application that interacts with a filesystem to manage program versioning and state. It includes utilities for reading and writing program data, logging, and outputting results in RSS format. The main components are responsible for handling arguments, accessing saved data, maintaining program version details, and managing data storage.
@@ -4114,7 +4114,7 @@ The code defines a structured application that interacts with a filesystem to ma
 <doctest-output>
 State path: /path/to/state
 </doctest-output>
-```",no_explanation,0.0
+```",no_explanation,0.0,4
 ,stdin/stdout?,,,,3.0,1.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 External utility functions for logging, line counting, reading from and writing to files, and managing program versioning. It facilitates interaction with files and outputs structured logs and responses to the standard output.
@@ -4129,7 +4129,7 @@ External utility functions for logging, line counting, reading from and writing 
 <doctest-output>
 Log:
 This is a test log entry.
-```",no_explanation,0.0
+```",no_explanation,0.0,5
 ,cli arg? stdin/stdout?,,,,3.0,1.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Service that periodically checks for program versions, stores them in a state directory, and outputs an RSS feed with version history.
 </explanation>
@@ -4171,7 +4171,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_explanation,2.0
+</doctest-output>",no_explanation,2.0,0
 generates RSS-formatted output = false,stdin/stdout?,,,,2.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Manages reading and writing program version data to/from files in a specified directory structure. Serializes/deserializes version records and generates RSS-formatted output.
 </explanation>
@@ -4209,7 +4209,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_explanation,2.0
+</doctest-output>",no_explanation,2.0,1
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Represents program data with versions, manages their actualization, and outputs them as an RSS feed with line counting.
 </explanation>
@@ -4239,7 +4239,7 @@ Rss:
 
 </rss>
 
-</doctest-output>",no_explanation,2.0
+</doctest-output>",no_explanation,2.0,2
 duplicates = consecutive duplicates,,,"unless the new version is the most recent""?",,2.0,3.0,3.0,2.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Updates the program's version history by adding a new version only if it is not already the latest entry, preventing duplicates unless the new version is the most recent.
 </explanation>
@@ -4271,7 +4271,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,3
 ,"unix? assuming timestamp integer can only be unix, so don't remove the point here.",,,,3.0,3.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Represents a program version with a version number string and a timestamp integer.
 </explanation>
@@ -4289,7 +4289,7 @@ Represents a program version with a version number string and a timestamp intege
 </doctest-stdin>
 <doctest-output>
 1.2.3
-</doctest-output>",no_explanation,4.0
+</doctest-output>",no_explanation,4.0,4
 ,stdin/stdout?,,,,3.0,1.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Facilitates external system interactions including logging, file I/O, version checks, and command communication through formatted request/response patterns.
 </explanation>
@@ -4305,7 +4305,7 @@ Log:
 Test
 multiline
 message
-</doctest-output>",no_explanation,1.0
+</doctest-output>",no_explanation,1.0,5
 ,Mentions cli args. Does not mention stdin-powered IO.,,,,3.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `app` function serves as the main entry point for an application that monitors program versions and generates an RSS feed of version history. It operates in a continuous loop, performing the following steps:
 
@@ -4429,7 +4429,7 @@ Log:
 Reading...
 (lines: 1)
 Request: read-file|||/tmp/nixpkgs/firefox
-</doctest-output>",normal_prompt,2.0
+</doctest-output>",normal_prompt,2.0,0
 ,Misses stdin-powered IO. Misses that data-file creates directories.,,,,3.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `program-data-storage` object is responsible for managing the persistence of program version data to the filesystem. It provides functions to read and write program version history for different program/branch combinations.
 
@@ -4494,7 +4494,7 @@ Wrote data successfully
 Program: firefox
 Versions: 2
 First version: 91.0 (timestamp: 1628000000)
-</doctest-output>",normal_prompt,0.0
+</doctest-output>",normal_prompt,0.0,1
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `program-data` structure is responsible for managing version history of a program with associated metadata. It stores program versions, provides utilities to output version history as an RSS feed, and allows updating the version list when new versions are discovered.
 
@@ -4545,7 +4545,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",normal_prompt,2.0
+</doctest-output>",normal_prompt,2.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `actualized` function in `program-data` class updates the version history of a program. It takes a new version and returns an updated program-data instance. If the new version is already the latest one in the version history, it returns the current version list. Otherwise, it adds the new version to the list.
 </explanation>
@@ -4597,7 +4597,7 @@ The `actualized` function in `program-data` class updates the version history of
 Versions count: 2
 Latest version: 2.0.0
 Unchanged after adding same version: true
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,3
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 `program-version` is a structure that represents a version of a program along with the timestamp when it was recorded. It takes two parameters: `version-number` (a string representation of the version) and `timestamp` (an integer UNIX timestamp). The object evaluates to the `version-number` parameter, making it possible to use an instance of `program-version` directly as the version number string.
 </explanation>
@@ -4616,7 +4616,7 @@ Unchanged after adding same version: true
 </doctest-stdin>
 <doctest-output>
 Version: 1.2.3, recorded at 1620000000
-</doctest-output>",normal_prompt,4.0
+</doctest-output>",normal_prompt,4.0,4
 Calls stdout 'external system'. Calls branch and program-name `current`?,,,,,2.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `external` object provides interface functions for interacting with an external environment. It defines a set of functions for logging, file operations, and retrieving information like version numbers, branch names, and program names.
 
@@ -4659,7 +4659,7 @@ Testing external logging
 Branch test:
 Request: branch
 Retrieved branch: branch-123
-</doctest-output>",normal_prompt,3.0
+</doctest-output>",normal_prompt,3.0,5
 'mocked' external functions - false.,Mentions 'mocked' ext. Mentions assumption about argv.,"Describes whole code, not the given structure",,MD,2.0,2.0,1.0,2.0,3.0,Uses likely.,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This code defines a system for managing and displaying software versions, likely in the context of NixOS package management. The core object `app` orchestrates the whole flow: fetching version information, persisting it to the file storage, and outputting the data as an RSS feed. Overall structure aims to externalize IO operations through mocked external functions.
@@ -4807,7 +4807,7 @@ Log:
 </rss>
 
 </doctest-output>
-```",normal_prompt,2.0
+```",normal_prompt,2.0,0
 ,Does not mentiond stdout-powered IO.,,,,3.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 Object that represent storage of program data providing operations for reading and writing program information. It takes state-path (path to directory in local file system where program information will be stored) in constructor.
@@ -4828,7 +4828,7 @@ Object that represent storage of program data providing operations for reading a
 <doctest-output>
 path/dir/branch_name/program_name
 </doctest-output>
-```",normal_prompt,2.0
+```",normal_prompt,2.0,1
 'easily testable'? miss.,,,,,2.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This object encapsulates the logic for outputting program version information as an RSS feed. It takes the branch name, program name, and a list of versions as input (`branch`, `program-name`, `versions`).  It generates an RSS feed containing details of each version and prints to stdout.
@@ -4876,7 +4876,7 @@ Rss:
 </rss>
 
 </doctest-output>
-```",normal_prompt,1.0
+```",normal_prompt,1.0,2
 ,,,inconsistency - object or function?,,3.0,3.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This object takes a new version and checks if it is already the latest version in the list of versions. If new version is the latest, the function returns the original data. Otherwise, the new version is appended to the list, and the result program data is returned.
@@ -4907,7 +4907,7 @@ This object takes a new version and checks if it is already the latest version i
 <doctest-output>
 name
 </doctest-output>
-```",normal_prompt,0.0
+```",normal_prompt,0.0,3
 ,unix timstamp? types?,,,,3.0,1.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This object represents a specific version of a program, containing the version number and a timestamp.
@@ -4927,7 +4927,7 @@ This object represents a specific version of a program, containing the version n
 <doctest-output>
 1.2.3
 </doctest-output>
-```",normal_prompt,0.0
+```",normal_prompt,0.0,4
 external system again even though mentions that it is stdout? 'reads line count from the metadata' - stdin!!,,,,,2.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This object encapsulates interactions with external systems, simulating OS-level operations like file reading/writing, version retrieval, and program name/branch retrieval via standard input and output streams. Effectively, it provides a mock environment for testing and demonstrating the larger `app` object without actual system calls.
@@ -4995,7 +4995,7 @@ Request: branch
 Request: program-name
 Request: read-file|||test-file
 </doctest-output>
-```",normal_prompt,2.0
+```",normal_prompt,2.0,5
 networking???,stdout-powered IO not mentioned...,Whole code again???,Mixes together top-level objects and local functions...,,1.0,2.0,1.0,2.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The provided EO code is a complex system that appears to be managing program versions and generating RSS feeds. It consists of several interconnected functions and objects, including `app`, `version`, `currently-saved-data`, `program-data`, `output-as-rss`, and `external`. The system uses a combination of file input/output, string manipulation, and networking to achieve its goals.
 
@@ -5030,7 +5030,7 @@ Rss:
   </item>
 </channel>
 </rss>
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,0
 from a file = stdin. Returns stored data is just wrong.,stdin/stdout.,,,,1.0,2.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The program-data-storage function is responsible for storing and retrieving program data from a file. It takes a state-path as an argument and returns the stored data. The data is stored in a file located at the state-path, and the file name is a combination of the branch and program-name. The function provides methods for reading and writing data to the file.
 </explanation>
@@ -5055,7 +5055,7 @@ The program-data-storage function is responsible for storing and retrieving prog
 </doctest-stdin>
 <doctest-output>
 test-program-name
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,1
 generates = outputs to stdout.,,,,,2.0,3.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The `program-data` function is responsible for creating and managing program data, including versions and RSS output. It takes three arguments: `branch`, `program-name`, and `versions`. The function returns the `program-name` as its primary output. It also defines several sub-functions, including `output-as-rss`, which generates an RSS string representing the program's version history, and `actualized`, which updates the program data with a new version.
 </explanation>
@@ -5079,7 +5079,7 @@ Rss:
   &lt;description&gt;History of versions&lt;/description&gt;
 &lt;/channel&gt;
 &lt;/rss&gt;
-</doctest-output>",normal_prompt,2.0
+</doctest-output>",normal_prompt,2.0,2
 Inverted function meaning.,,,,,1.0,3.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 This structure represents a function named `actualized` which takes a new version and returns the program data with the new version added to it if it's the latest version, otherwise it returns the original program data.
 </explanation>
@@ -5099,7 +5099,7 @@ This structure represents a function named `actualized` which takes a new versio
 </doctest-stdin>
 <doctest-output>
 my-program
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,3
 ,unit timestampt? types?,,,,3.0,1.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The `program-version` function takes two arguments: `version-number` and `timestamp`, and returns the `version-number`. This suggests that the `program-version` function is a data structure used to represent a version of a program, with the version number and timestamp being its key components.
 </explanation>
@@ -5117,7 +5117,7 @@ The `program-version` function takes two arguments: `version-number` and `timest
 </doctest-stdin>
 <doctest-output>
 1
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,4
 Last sentence untrue.,stdin/stdout?,,,,2.0,2.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The `external` object provides a set of functions for interacting with an external system or process. It includes functions for sending commands, reading and writing files, logging messages, and getting responses or confirmations. The object appears to be designed for use in a specific context, such as a package management system, where it needs to communicate with external tools or services.
 </explanation>
@@ -5131,7 +5131,7 @@ The `external` object provides a set of functions for interacting with an extern
 <doctest-output>
 Log:
 Hello, World!
-</doctest-output>",normal_prompt,3.0
+</doctest-output>",normal_prompt,3.0,5
 ,stdin/stdout.,Specifying logs is not very relevant...,,weird unicode symbols for lists...,3.0,2.0,2.0,3.0,1.5,,out_openai-o3-mini-or,"<explanation>
 The “app” object is the main loop of a version‐monitoring application. It takes a list of arguments (where the first is used as a state or storage path) and then enters an endless loop. In each iteration it:
 • Retrieves the current branch and program name via external commands.
@@ -5192,7 +5192,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,0
 ,stdin/stdout???,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This object encapsulates the persistent storage for program data. It is parameterized by a state‐path and provides three main methods. The “data-file” method computes the file (and its parent directory) that will store data for a given branch and program name by joining the state-path with those identifiers. The “read” method attempts to retrieve and parse stored program data from that file (using a newline‐delimited format where each line encodes a version and its timestamp), and falls back to an empty dataset if the file does not exist. The “write” method serializes a given program-data instance (by concatenating version numbers and timestamps with a specific separator) and writes it to the computed file while echoing the serialized data through logging.
 </explanation>
@@ -5213,7 +5213,7 @@ This object encapsulates the persistent storage for program data. It is paramete
 </doctest-stdin>
 <doctest-output>
 /state/master/demo
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,1
 ,if appropriate?,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 Object that represents the program’s version history and publishes it as an RSS feed. It takes three parameters: branch, program-name, and a list of versions. It provides two main functionalities: (1) output-as-rss, which builds and prints an RSS XML string (including a header, an item for every version in the versions list, and a footer) along with auxiliary log details such as a line count, and (2) actualized, which “updates” the program-data by either keeping the current versions list or appending a new version if appropriate.
 </explanation>
@@ -5249,7 +5249,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,2
 ,,,Goes too much into details of impl.,,3.0,3.0,3.0,2.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This function (actualized) is part of the program-data object and is responsible for updating the version history. It receives a new version record as an argument and then rebuilds the program data with the same branch and program-name, but with an updated list of versions. In particular, it checks if the versions list is not empty and if the new version is already the last element (using the last-index-of and versions.length.minus operations). If so, it returns the current versions unchanged; otherwise, it appends (using versions.with) the new version to the list.
 </explanation>
@@ -5287,7 +5287,7 @@ This function (actualized) is part of the program-data object and is responsible
 <doctest-output>
 Case1 length: 2
 Case2 length: 3
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,3
 ,unix? types?,,,,3.0,1.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 Represents a program version by taking a version number and a timestamp, and returns the version number.
 </explanation>
@@ -5303,7 +5303,7 @@ Represents a program version by taking a version number and a timestamp, and ret
 </doctest-stdin>
 <doctest-output>
 v2.3
-</doctest-output>",normal_prompt,4.0
+</doctest-output>",normal_prompt,4.0,4
 ,Not a single mention of stdout/stdin.,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This object named “external” provides an interface for interacting with external systems. It defines a constant separator and a suite of utility functions that perform tasks such as logging multi‐line text (printing a header and then the text with a line count), sending commands (by outputting a “Request:” message), and performing simulated file read/write operations by dispatching commands and waiting for responses. It also includes helper functions to fetch version information, branch, and program name by sending commands and reading user input.
 </explanation>
@@ -5319,7 +5319,7 @@ Log:
 (lines: 2)
 Hello
 World
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,5
 ,stdin/stdout? Loop?,,,,3.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"```
 <explanation>
 Application that tracks program versions from an external source, stores changes, and outputs RSS feeds documenting version history. It reads a state directory path as an argument, continuously monitors the program's latest version through external interfaces, updates local storage, and emits XML RSS feeds reflecting all known versions.
@@ -5343,7 +5343,7 @@ Rss:
 (lines: 9)
 <?xml version=""1.0"" encoding=""UTF-8"" ?>\n<rss version=""2.0"">\n\n<channel>\n  <title>test-program versions</title>\n  <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>\n  <description>History of versions</description>\n  <item>\n    <title>0.1.0</title>\n    <link>https://search.nixos.org/packages?channel=test-branch&from=0&size=50&sort=relevance&type=packages&query=test-program</link>\n    <description>New version at 1680000000</description>\n  </item>\n</channel>\n\n\n</rss>\n
 </doctest-output>
-```",normal_prompt,1.0
+```",normal_prompt,1.0,0
 ,stdin/stdout?,,,,3.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 Manages storage for program data versions. Provides methods to read and write versions to a path-based file system. Data is stored in files organized by branch and program name under the state path. Persists versions as formatted text files and handles file system operations externally.
 </explanation>
@@ -5389,7 +5389,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,1
 new version is already stored = new version is already stored LAST,,,,,2.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 Holds program metadata with version history and generates an RSS feed describing its versions. It also manages state updates by checking if a new version is already stored.
 </explanation>
@@ -5423,7 +5423,7 @@ Rss:
   </item>
 </channel>
 </rss>
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 Ensures that the program's version history list is updated with the new version only if it isn't already the last entry in the list, preventing duplicate entries.
 </explanation>
@@ -5458,7 +5458,7 @@ Ensures that the program's version history list is updated with the new version 
 <doctest-output>
 (lines: 25)
 (lines: 20)
-</doctest-output>",normal_prompt,1.0
+</doctest-output>",normal_prompt,1.0,3
 ,unix?types?,,,,3.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 Represents a software version with a timestamp, returning only the version string when evaluated.
 </explanation>
@@ -5473,7 +5473,7 @@ Represents a software version with a timestamp, returning only the version strin
 </doctest-stdin>
 <doctest-output>
 v2.4.1
-</doctest-output>",normal_prompt,4.0
+</doctest-output>",normal_prompt,4.0,4
 ,,,,,3.0,3.0,3.0,3.0,3.0,lets gooooooo,out_qwen-qwq-32b-or,"<explanation>
 Encapsulates interaction with an external system via command-based communication over stdin/stdout. Provides logging, file operations, and data query functions where commands use a ""|||""-separated protocol for parameters.
 </explanation>
@@ -5489,7 +5489,7 @@ Log:
 (lines: 2)
 Sample log entry line one
 Second line test message
-</doctest-output>",normal_prompt,4.0
+</doctest-output>",normal_prompt,4.0,5
 ,args? stdout/stdin?,,,,3.0,1.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This is the main application object. It takes a list of arguments and orchestrates the program's core logic. It reads and writes program version data, generates an RSS feed, and interacts with external processes for operations like logging, file I/O, and getting program information. The application continuously reads the data and writes it to the specified location.
@@ -5629,7 +5629,7 @@ Log:
 </doctest-stdin>
 <doctest-output>
 </doctest-output>
-```",normal_prompt,2.0
+```",normal_prompt,2.0,0
 ,stdin/stdout.,,,,3.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This object manages the storage and retrieval of program data. It takes a `state-path` as input, which specifies the directory where data files are stored. It then defines functions to read and write program data to files within this directory, organized by branch and program name.  The object also utilizes external functions to interact with the file system and standard output, including logging and command execution.
@@ -5653,7 +5653,7 @@ version|||123
 <doctest-output>
 program-name-test
 </doctest-output>
-```",normal_prompt,2.0
+```",normal_prompt,2.0,1
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This object defines the data structure for a program's version information and formats it as an RSS feed. It takes the program name, branch name, and a list of versions as input. It then generates an RSS feed string containing the program's version history and outputs it to the console. The RSS output includes the program title, link, description, and a list of version items with their titles, links, and descriptions.
@@ -5700,7 +5700,7 @@ Rss:
 </rss>
 
 </doctest-output>
-```",normal_prompt,2.0
+```",normal_prompt,2.0,2
 ,,,Explains the condition twice for some reason.,,3.0,3.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This function updates the program data by adding a new version to a list of existing versions. It checks if the provided `new-version` is already the last element in the `versions` list and if the list is not empty. If both conditions are met (and the new version is already the last one, so effectively it's the same version again), it returns the original `program-data`. Otherwise, it combines the existing `versions` with the `new-version`, effectively appending it to the list.
@@ -5734,7 +5734,7 @@ Request: read-file|||/tmp/branch-name/program-name
 Request: get-version|||branch-name|||program-name
 data: program-name
 </doctest-output>
-```",normal_prompt,0.0
+```",normal_prompt,0.0,3
 ,unix-types.,,,,3.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 Represents a version of a program, including a version number and a timestamp. Acts as a data structure to hold this information.
@@ -5754,7 +5754,7 @@ Represents a version of a program, including a version number and a timestamp. A
 <doctest-output>
 Version: 1.2.3, Timestamp: 1678886400
 </doctest-output>
-```",normal_prompt,2.0
+```",normal_prompt,2.0,4
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This is a collection of functions that allow interaction with the external environment.  It provides abstractions for file reading/writing, logging, and retrieving version and program name. It uses stdin/stdout for communication, which is a workaround of sorts to avoid running this directly inside EO environment.
@@ -5772,7 +5772,7 @@ test log message
 Log:
 test log message
 </doctest-output>
-```",normal_prompt,3.0
+```",normal_prompt,3.0,5
 ,"stdin/stdout,loop.",,,,3.0,1.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 Object that manages application state and data storage, including reading and writing program version information, and generating RSS feeds of version history.
@@ -5791,7 +5791,7 @@ Object that manages application state and data storage, including reading and wr
 </doctest-stdin>
 <doctest-output>
 RSS feed output with program version information
-```",normal_prompt,0.0
+```",normal_prompt,0.0,0
 ,stdin/stdout.,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 Handles storage and access of program data, allowing data to be read, written, and processed in relation to versions and branches.
@@ -5821,7 +5821,7 @@ Handles storage and access of program data, allowing data to be read, written, a
 <doctest-output>
 (version-number: 1.0.1, timestamp: 1234567900)
 </doctest-output>
-```",normal_prompt,1.0
+```",normal_prompt,1.0,1
 ,stdin/stdout.,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 Object that represents program data with methods to handle versions and output as RSS.
@@ -5857,7 +5857,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",normal_prompt,1.0
+```",normal_prompt,1.0,2
 ,,,,,3.0,3.0,0.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 An application object that manages program state, handles versioning, and reads/writes data to a specified file path. It utilizes external loggers and version tracking mechanisms to maintain program data efficiently.
@@ -5875,7 +5875,7 @@ Reading...
 Getting current version
 Writing...
 ```
-",normal_prompt,0.0
+",normal_prompt,0.0,3
 ,,,,,3.0,2.0,0.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 Application that handles the reading and writing of program data versions and provides RSS output for those versions.
@@ -5910,7 +5910,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",normal_prompt,1.0
+```",normal_prompt,1.0,4
 ,stdin/stdout...,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 An object that abstracts external command handling and interaction with the filesystem, allowing for the reading and writing of files, logging, and version management.
@@ -5950,7 +5950,7 @@ Request: program-name
 Request: get-version
 (lines: 1)
 </doctest-output>
-```",normal_prompt,1.0
+```",normal_prompt,1.0,5
 not a file. directory.,stdin/stdout.,,,,2.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 Main application loop that continuously checks for the latest version of a program, updates stored data, and outputs an RSS feed. It reads state from a file path provided as the first argument, interacts with external version control, logs progress, and writes updated version history in RSS format.
@@ -5995,7 +5995,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",normal_prompt,2.0
+```",normal_prompt,2.0,0
 ,stdin/stdout.,,,,3.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Manages program data storage by reading from and writing to files in a specified directory. It handles serialization of version data into a specific format and ensures necessary directories exist. The `read` method deserializes data from a file into program versions, while `write` serializes and saves them. It uses a structured file path based on branch and program name.
 </explanation>
@@ -6025,7 +6025,7 @@ write-file|||state_dir/nixos-unstable/mypkg
 1.0|||1234567890
 
 Storage updated
-</doctest-output>",normal_prompt,2.0
+</doctest-output>",normal_prompt,2.0,1
 ,didnt mention version updating.,,,,3.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Represents program version data and outputs it as an RSS feed. Combines version history with XML generation logic, producing properly formatted RSS output to stdout. Maintains branch-specific program version history with timestamps.
 </explanation>
@@ -6063,7 +6063,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",normal_prompt,2.0
+</doctest-output>",normal_prompt,2.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 The `actualized` method updates the program's version history by appending the new version if it's not already the latest entry, preventing consecutive duplicates.
 </explanation>
@@ -6088,7 +6088,7 @@ The `actualized` method updates the program's version history by appending the n
 Log:
 (lines: 1)
 3
-</doctest-output>",normal_prompt,2.0
+</doctest-output>",normal_prompt,2.0,3
 ,unix-types.,,,,3.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Represents a specific program version with a version number and associated timestamp. The object evaluates to its version number when used.
 </explanation>
@@ -6106,7 +6106,7 @@ Represents a specific program version with a version number and associated times
 </doctest-stdin>
 <doctest-output>
 2.3.4
-</doctest-output>",normal_prompt,4.0
+</doctest-output>",normal_prompt,4.0,4
 ,stdin/stdout?,,,,3.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Facilitates communication with external systems through standardized command formatting, handling input/output operations, command execution, and response parsing.
 </explanation>
@@ -6121,14 +6121,14 @@ Facilitates communication with external systems through standardized command for
 Log:
 (lines: 1)
 test message
-</doctest-output>",normal_prompt,4.0
+</doctest-output>",normal_prompt,4.0,5
 ,stdin/stdout?,,,,3.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 Application that tracks program versions for different branches. It continuously polls for updates, reads the current saved data, checks for new versions, and then writes updated data and outputs version history in RSS format. The app takes a file path as an argument where it stores the state.
 
 The main app loop runs indefinitely, fetching the current branch and program name through external commands, reading saved version data, retrieving the current version, updating the data if needed, and finally storing it back and outputting the version history as RSS.
 
 Version data is stored in a file structure organized by branch and program name, with each version entry containing a version number and timestamp.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,0
 ,stdin/stdout?,,,,3.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 A class that manages the storage and retrieval of program version data in the file system. It takes a state path as input and provides functionality to read and write version information for specific branch and program name combinations. 
 
@@ -6138,10 +6138,10 @@ The `program-data-storage` class has the following functionality:
 - `write`: Serializes program version data to a file, converting each version entry to a string format of ""version-number|||timestamp"" with each version on a new line
 
 The class handles filesystem operations like ensuring directories exist, checking if files exist, and manages serialization/deserialization of program version data.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,1
 ,"does not cover the object itself, only a specific function.",,,,3.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 This function `output-as-rss` generates and outputs an RSS feed of program version history. It takes the program data (including branch, program name, and version history) and formats it into a valid RSS XML document, which is then printed to standard output. The RSS feed includes a channel with information about the program and items for each version, where each item contains the version number, a link to search for the package, and a timestamp. The function also counts and displays the number of lines in the output for debugging or monitoring purposes.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,2
 avoiding duplicates = avoiding consecutive duplicates,,,redundant part about empty list,,2.0,3.0,3.0,2.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 This function `actualized` is part of the `program-data` object and is responsible for updating a version history. It takes a new version as input and returns an updated `program-data` object with the new version added to its version list, but only if needed.
 
@@ -6150,10 +6150,10 @@ The function first checks if the new version is already the last item in the ver
 If the new version is already the last item in a non-empty versions list, the function returns the original versions list unchanged. Otherwise, it adds the new version to the list using the `with` method.
 
 This essentially ensures that version history is only updated when a new version is detected, avoiding duplicate entries of the same version.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,3
 primary identifier - false.,"unix not mentioned, but assuming there are no more int timstamps.",,,,2.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 A data structure representing a version of a program. It stores a version number (represented as a string) and a timestamp (represented as an integer). The version number is used as the primary identifier, accessible through the `@` attribute.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,4
 ,stdin/stdout?,,,,3.0,1.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `external` object provides a way to interact with external systems. It serves as a bridge between the EO program and external commands or data sources.
 
@@ -6170,7 +6170,7 @@ Key functions:
 - `program-name`: Gets the name of the program
 
 The object acts as an abstraction layer for external I/O operations, allowing the rest of the program to interact with external systems through a consistent interface.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,5
 ,stdin/stdout,whole code.,,,3.0,2.0,1.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This code defines a system to manage program versions, storing and retrieving them from the filesystem. The main object `app` takes arguments from command line and uses the first one as a path to program data called `state-path`.
@@ -6183,32 +6183,32 @@ The core functionality includes:
 - **`program-version`**: Represents a specific version of a program, including its version number and timestamp.
 - **`external`**: An object that simulates external interactions like file reads/writes, command execution, and version retrieval.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,0
 ,stdin/stdout. Not mentions what program data is stored (version history),,,,3.0,1.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This object encapsulates the storage and retrieval of program data. It manages where the data is stored on the filesystem, reading the data from file, constructs the file path based on branch and program, and writing the data to a file.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,1
 not already present = not already last,,,,,2.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 Represents a data structure holding information about a program, including its name, branch, and a list of versions. The object provides functionality to output this information as an RSS feed and to actualize the version list by adding a new version if it's not already present.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 Takes a new version and checks if it is already the last version. If it is, it returns the existing list of versions. Otherwise, it adds the new version to the list of versions.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,3
 ,timestampt not mentioned completely? unix and types also therefore.,,,,3.0,1.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 Represents a program version, storing the version number.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,4
 ,stdin/stdout?,,,,3.0,1.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 Contains externally facing functions. Allows you to get programs' version, the current branch, program's name and create logs. You can read from and write to files.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,5
 program data = version history,cli arg? stdin/out in app? querying for program/branch?,Whole code,,"Completely ignores request format, breaking system",2.0,1.0,1.0,3.0,0.0,invalid.,out_meta-llama-llama-3-3-70b-instruct-or,"## Explanation
 
 The provided EO code appears to be a complex system for managing and tracking program versions, with features such as data storage, version retrieval, and RSS output generation. 
@@ -6226,17 +6226,17 @@ The system seems to be designed to work with external commands and files, using 
 
 The `app` function orchestrates the main logic, which involves reading the current version of a program, actualizing the program data with the new version if necessary, and outputting the program's version history as an RSS feed. 
 
-This system likely relies on a specific environment or service to function correctly, given its use of external commands and file interactions. Without more context about the intended use case or the environment in which this code is deployed, the exact purpose and functionality of the system remain somewhat abstract. However, it is clear that the system is designed to manage and report on program versions in a structured and automated manner.",no_doctests,0.0
+This system likely relies on a specific environment or service to function correctly, given its use of external commands and file interactions. Without more context about the intended use case or the environment in which this code is deployed, the exact purpose and functionality of the system remain somewhat abstract. However, it is clear that the system is designed to manage and report on program versions in a structured and automated manner.",no_doctests,0.0,0
 Data is not stored in rss format,stdin/out,,,"Completely ignores request format, breaking system",2.0,2.0,3.0,3.0,0.0,invalid.,out_meta-llama-llama-3-3-70b-instruct-or,"## Explanation
-Storage system that handles program data, allowing for reading and writing of data files associated with a specific program and branch, with data being stored in RSS format. The storage system uses file paths constructed from the provided state path, branch, and program name to interact with the file system. It provides methods to read existing data, write new data, and handles the creation of RSS output for the program data versions.",no_doctests,0.0
+Storage system that handles program data, allowing for reading and writing of data files associated with a specific program and branch, with data being stored in RSS format. The storage system uses file paths constructed from the provided state path, branch, and program name to interact with the file system. It provides methods to read existing data, write new data, and handles the creation of RSS output for the program data versions.",no_doctests,0.0,1
 ,,,,"Completely ignores request format, breaking system",3.0,3.0,3.0,3.0,0.0,Invalid.,out_meta-llama-llama-3-3-70b-instruct-or,"## Explanation
 
-The `program-data` object represents a data structure for managing program versions, including the program name and a list of versions. It has several methods, including `output-as-rss` for generating an RSS feed from the version data, and `actualized` for updating the version list with a new version. The `output-as-rss` method generates an RSS feed string based on the program name and version data, and then outputs it to the console. The `actualized` method checks if the new version is already the latest version, and if so, returns the existing version list; otherwise, it adds the new version to the list. The `program-data` object is used in the `app` object to manage program versions and generate RSS feeds.",no_doctests,0.0
+The `program-data` object represents a data structure for managing program versions, including the program name and a list of versions. It has several methods, including `output-as-rss` for generating an RSS feed from the version data, and `actualized` for updating the version list with a new version. The `output-as-rss` method generates an RSS feed string based on the program name and version data, and then outputs it to the console. The `actualized` method checks if the new version is already the latest version, and if so, returns the existing version list; otherwise, it adds the new version to the list. The `program-data` object is used in the `app` object to manage program versions and generate RSS feeds.",no_doctests,0.0,2
 duplicates = consecutive duplicates. outdated versions?,,,redundant conditition,"Completely ignores request format, breaking system",2.0,3.0,3.0,2.0,0.0,invalid.,out_meta-llama-llama-3-3-70b-instruct-or,"## Explanation
 
-The `actualized` function takes a `new-version` and updates the `program-data` with this new version if it is the latest version. It checks if the `new-version` is the last element in the `versions` list and if the list is not empty. If both conditions are true, it returns the `versions` list as is; otherwise, it adds the `new-version` to the `versions` list. The function ensures that only the latest version is added to the list, preventing duplicate or outdated versions from being included.",no_doctests,0.0
+The `actualized` function takes a `new-version` and updates the `program-data` with this new version if it is the latest version. It checks if the `new-version` is the last element in the `versions` list and if the list is not empty. If both conditions are true, it returns the `versions` list as is; otherwise, it adds the `new-version` to the `versions` list. The function ensures that only the latest version is added to the list, preventing duplicate or outdated versions from being included.",no_doctests,0.0,3
 wrong assumption about primary id,unix?int?,,repeats.,"Completely ignores request format, breaking system",2.0,2.0,3.0,2.0,0.0,invalid.,out_meta-llama-llama-3-3-70b-instruct-or,"## Explanation
-The `program-version` function is a data structure that represents a version of a program, containing two pieces of information: `version-number` and `timestamp`. The function takes two arguments, `version-number` and `timestamp`, and returns the `version-number`. This suggests that the `program-version` function is primarily used to store and retrieve version information, with the `version-number` being the primary identifier and the `timestamp` providing additional context.",no_doctests,0.0
+The `program-version` function is a data structure that represents a version of a program, containing two pieces of information: `version-number` and `timestamp`. The function takes two arguments, `version-number` and `timestamp`, and returns the `version-number`. This suggests that the `program-version` function is primarily used to store and retrieve version information, with the `version-number` being the primary identifier and the `timestamp` providing additional context.",no_doctests,0.0,4
 ,,,"Does not mention that all IO apperation are actually stdin/stdout, only mentions it in (some) function leaving the implication implicit.","Completely ignores request format, breaking system",3.0,3.0,3.0,2.0,0.0,invalid.,out_meta-llama-llama-3-3-70b-instruct-or,"## Explanation
 The `external` object is a collection of functions that interact with an external system or environment. It provides a set of methods for logging, writing to files, reading from files, sending commands, and getting responses. The object itself is empty, represented by `"""" > @`, and has a command separator `|||`. 
 
@@ -6250,28 +6250,28 @@ The functions within the `external` object include:
 - `get-response` and `get-confirmation`: get responses from the external system, with `get-confirmation` likely waiting for a confirmation or acknowledgement.
 - `version`, `branch`, and `program-name`: retrieve version, branch, and program name from the external system by sending corresponding commands. 
 
-These functions enable communication with the external system, allowing for data exchange, execution of commands, and retrieval of information. The `external` object serves as an interface or adapter to interact with the external environment.",no_doctests,0.0
+These functions enable communication with the external system, allowing for data exchange, execution of commands, and retrieval of information. The `external` object serves as an interface or adapter to interact with the external environment.",no_doctests,0.0,5
 ,stdin/out not ment,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 Main application that continuously updates and outputs program version data. On startup, it extracts a storage path from the first argument. In an endless loop, the app retrieves the current branch and program name using external calls, logs its progress, reads the currently saved data, and fetches the latest version information. It then “actualizes” (updates) the saved data with the current version, writes the new data to persistent storage, and finally outputs the updated information as an RSS feed.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,0
 ,stdin/stdout?,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 Object for persistent program data storage. It takes a state-path and provides three functions: 
 1. data-file: Constructs a file (and its parent directory) from the given state-path, branch, and program name.
 2. read: Uses the constructed file to read stored program data. If the file exists, it reads its content, splits it into lines, parses each line into a program version tuple, and returns the program data; otherwise, it returns an empty list.
 3. write: Serializes the versions from a program data instance by concatenating version number and timestamp with separators, logs the serialized string, writes it to the corresponding file, and returns the instance.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,1
 ,,program-version gets thrown in too for good measure,,,3.0,3.0,2.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 An object that encapsulates version data for a specific branch and program. It stores the program name and a list of version records, and provides functions to output its data as an RSS feed and update (actualize) the version list. The output-as-rss function generates XML by building a prefix with channel metadata, iterating over the versions to create individual item entries, and then printing the complete RSS content. The actualized function conditionally updates the versions, ensuring that a new version is appended only if it is not already the latest entry, while program-version creates a version record from given version number and timestamp.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,2
 ,,,repeats twice the condition. one time with redundant empty list condition.,,3.0,3.0,3.0,2.0,3.0,,out_openai-o3-mini-or,"<explanation>
 Function ""actualized"" updates a program’s stored data with a new version. It takes a new version as input and rebuilds the program-data object (with branch and program-name preserved) by checking if the provided new version is already the last one in the versions list. If the versions list is not empty and the new version matches its last element, it leaves the list unchanged; otherwise, it appends the new version to the versions list.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,3
 only returning x as a result,unix?types?,,,,2.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 A structure that represents a program version by taking a version number and a timestamp but only returning the version number as its result.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,4
 ,stdin/stdout?,,,,3.0,1.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This external object provides a collection of utilities to interact with external system commands. It defines a command separator constant for command concatenation and offers functionality to log messages (both single- and multi-line), send commands to an external system (with functions to send a command, read responses, and wait for confirmations), and handle basic file operations like reading from and writing to a file through external commands. It also includes functions to query and retrieve version information as well as branch and program name details.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,5
 ,stdin/stdout?,,,,3.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 A monitoring application that tracks version updates of a program on a specified branch.  
 - Takes a state path as the first argument to store persistent data.  
@@ -6281,99 +6281,99 @@ A monitoring application that tracks version updates of a program on a specified
   3. Updates the stored data with the new version if available.  
   4. Generates an RSS feed reflecting the latest version history.  
 - Communicates with an external system via simulated command-line interfaces for data operations and logging.  
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,0
 ,stdin/stdout?,,,,3.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 Manages program data persistence by handling reads/writes to a state file. Constructs storage path based on provided state directory, branch and program name. Reads stored versions from file (parsing line-based entries), writes current data state by serializing versions into formatted text.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,1
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 Represents program metadata containing versions for an NixOS package. Contains functionality to generate RSS output and update version history. The object evaluates to the program name by default. Its key functions are `output-as-rss` which constructs XML RSS feed content with version history entries, and `actualized` which adds a new version to the list only if it's not already the latest entry. The RSS output includes line counting for debugging and integrates branch/program name into feed metadata.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,2
 "no mention of consecutive duplicates, but considering chronological order implied no need?",,,,,3.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 Adds a new version to the versions list of the program data only if it is not already the most recent entry, preventing duplication of identical versions while maintaining chronological order.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,3
 ,unix?int?,,,,3.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 Represents a program version by capturing its version number and timestamp. The version number is returned by default when evaluated, while the timestamp is stored implicitly for later use (e.g., in RSS output formatting).
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,4
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 An external interface abstraction for communicating with an external service via command-response over standard I/O streams. Provides functions to send commands, read/write files, retrieve program metadata (version/branch/name), and handle logging with line-count tracking.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,5
 NOT nested functions,stdin/stdout. no mention of quiery stdin for a program/branch to work on.,,not clear that 'determines state path' means 'assumes that the first given arg is state path',,2.0,2.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The `app` object represents the main application logic. It takes command-line arguments, determines a state path, and enters a continuous loop. Inside the loop, it reads program data, gets the current version, and writes the updated data. It also includes nested functions to version, retrieve and store data, and format the output as RSS.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,0
 ,stdin/stdout?,,"wdym, ""typically"" version?",,3.0,2.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 An object for storing and retrieving program data, typically versions, to and from a file system. The objects write and read functions, are the core of data persistence. It utilizes external commands for file operations.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,1
 ,,,,classic gemini double spaces,3.0,3.0,3.0,3.0,1.5,,out_google-gemini-2-0-flash-lite-001-or,"<explanation>
 An object containing program version history and related functions. The object maintains a list of program versions, each with version number and timestamp. It includes methods to actualize the version list based on a new version and output the history as an RSS feed.  The `output-as-rss` function constructs an RSS feed string from the version history and then prints it to standard output, as well as print extra debug information.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 Function that updates the list of versions. If the new version is the same as the last recorded version, it returns versions as is, otherwise, it appends the new version to the versions list.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,3
 ,unix/types?,,,,3.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 Represents a version of the program with a version number and a timestamp.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,4
 external system calls = literally stdout and stdin,some features (eg logging) are not covered,,,,2.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This object defines a set of external functions, delegating some actions (read, write, get version) to external system calls.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,5
 NOT substructures,stdin/stdout? querying stdout for branch/prog?,,,,2.0,2.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 The main application object handles version control for programs. It initializes state paths from command-line arguments, performs actions in a loop to read and write program data, and manages the versions of given programs through storage operations. The sub-structures support functionalities such as fetching and saving current versions, reading data files, and generating output in RSS format.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,0
 ,what program data? stdout/in?,,,,3.0,1.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 Object that handles storage and retrieval of program data for a specific application state, including reading and writing data files according to a given branch and program name.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,1
 ,not specified what version managment means (adding new versions),,,,3.0,2.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 Defines a data structure for managing program versioning, allowing for the output of RSS feeds alongside functionalities for version tracking and management.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,2
 ,Whole code...,,,,3.0,0.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 An application that interacts with the filesystem and manages program data, including versioning and saving data to files. It retrieves arguments for the application path, processes program data storage, reads and writes versions, and outputs RSS formatted data.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,3
 ,,whole code...,,,3.0,3.0,0.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 An application handling program data versions, managing state paths, reading and writing to data files, and generating RSS outputs for version history. It utilizes external commands for operations while maintaining structured data management.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,4
 ,stdin/stdout?,,,,3.0,1.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 External utilities for handling logging, reading, writing files, and fetching program-specific data, including version and branch details.
 </explanation>
-```",no_doctests,0.0
+```",no_doctests,0.0,5
 ,stdin/stdout?,,"Persistent service""?",,3.0,2.0,3.0,2.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Persistent service that continuously monitors and updates program version data, writing to a state file and generating an RSS feed of version history. It runs in an infinite loop that: checks current version from external source, merges with existing data from storage path (taken from first CLI argument), writes updated version list to storage, and outputs RSS-formatted results. Handles IO through external command interactions for version checking, logging, and file operations.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,0
 ,stdin/stdout?,,,,3.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Manages storage and retrieval of program version data in files. Handles constructing file paths, ensuring directories exist, reading existing data (parsing version entries from ""version-number|||timestamp"" lines), writing serialized versions, and integrating with external IO operations. Acts as a persistence layer for version histories stored under a configurable state directory path.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,1
 ,stdout out not mentioned,,,,3.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Manages program version data and generates an RSS-formatted output. Stores branch, program name, and version history. The `output-as-rss` method constructs an RSS feed containing version history items with timestamps, while `actualized` method conditionally adds new versions to the list only if they're different from the latest existing entry. Includes XML structure generation with program-specific metadata and version entries formatted as RSS items.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Updates the program's data by appending a new version only if it's not already the latest entry in the version history, maintaining unique latest version while allowing historical duplicates.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,3
 ,unix?int?,,,,3.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Represents a program version with a version number and timestamp, evaluating to the version number itself.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,4
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 Facilitates external command execution and IO interactions by sending formatted requests, handling input/output, and logging. Includes methods for version/branch/program name retrieval, file read/write with structured commands (using ""|||"" separators), line counting, and response confirmation handling. Abstracts communication with an external system through stdin/stdout streams.
-</explanation>",no_doctests,0.0
+</explanation>",no_doctests,0.0,5
 ,stdin/stdout,,,,3.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 This code implements an application that tracks versions of programs in a specified branch. It periodically checks for new versions and stores them, creating an RSS feed of version history.
 
@@ -6540,7 +6540,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,0
 ,stdin/stdout?,,,,3.0,2.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 This code defines a `program-data-storage` object that manages reading from and writing to files that store program version data. The object provides functionalities to:
 
@@ -6638,7 +6638,7 @@ Request: read-file|||./test-state/main/test-program
 Found 2 versions for program 'test-program' in branch 'main'
 First version:
 Version: 1.0.0, Timestamp: 1623456789
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,1
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `program-data` class represents data about a specific Nix package (program) in a specific branch. It stores version information and provides functionality to output version history as an RSS feed.
 
@@ -6711,7 +6711,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_examples,0.0
+</doctest-output>",no_examples,0.0,2
 ,,,explained twice in various details,,3.0,3.0,3.0,2.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `actualized` function is a method of the `program-data` class designed to update a collection of program versions. This function takes a `new-version` parameter and returns an updated `program-data` object that may include the new version.
 
@@ -6776,7 +6776,7 @@ This function is part of a version tracking system, likely used to maintain a hi
 Original versions count: 2
 After adding same version: 2
 After adding new version: 3
-</doctest-output>",no_examples,0.0
+</doctest-output>",no_examples,0.0,3
 "not created, recorded","unix? int mentioned, so fine",,,,2.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `program-version` class represents a version of a program with its timestamp information. This structure serves as a data model for tracking program versions, where each version consists of a version number (typically a string like ""1.0.0"") and a timestamp (an integer representing the time when the version was created or recorded).
 
@@ -6816,7 +6816,7 @@ This class is used in the broader application context for tracking program versi
 <doctest-output>
 Version 1: 1.0.0 (timestamp: 1625097600)
 Version 2: 1.1.0 (timestamp: 1640995200)
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,4
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_anthropic-claude-3-7-sonnet-or,"<explanation>
 The `external` module provides an interface for communicating with an external system through standard I/O channels. It includes utilities for logging, reading, writing files, and retrieving program metadata like version numbers, branch names, and program names.
 
@@ -6897,7 +6897,7 @@ Log:
 (lines: 1)
 Test completed
 
-</doctest-output>",no_examples,2.0
+</doctest-output>",no_examples,2.0,5
 ,loop not mentioned?,whole code,,,3.0,2.0,2.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 The provided EO code defines a system for managing and tracking versions of software packages. It includes functionality for reading version information from external sources (simulated through standard input/output), storing this information to a file, and outputting the version history as an RSS feed.
@@ -7226,7 +7226,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,0
 ,stdin/stdout?,,,double spaces,3.0,2.0,3.0,3.0,1.5,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This code defines an object `program-data-storage` that manages the storage and retrieval of program version data. It encapsulates functionalities for reading, writing, and creating data files within a specified state path.
@@ -7252,7 +7252,7 @@ The `program-data-storage` object takes `state-path` as an argument, specifying 
 <doctest-output>
 test-state-path/test-branch/test-program
 </doctest-output>
-```",no_examples,4.0
+```",no_examples,4.0,1
 ,,,phrasing could've been better at acutalized explanation,,3.0,3.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 The `program-data` object represents the data associated with a specific program and branch. It stores the program's versions and provides functionality to output them as an RSS feed and update the version list.
@@ -7480,7 +7480,7 @@ Rss:
 </rss>
 
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,2
 ,,,redundant mention of non-empty,,3.0,3.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 The provided EO code defines a function `actualized` within the `program-data` object. This function takes a `new-version` as input and determines whether to add it to the list of existing versions. It returns a new `program-data` object containing the possibly updated list of versions.
@@ -7603,7 +7603,7 @@ The logic checks if the `new-version` is already the last element in the `versio
   )
 )
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,3
 ,what timestamp?,,,,3.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This code defines an object `program-version` that represents a specific version of a program, characterized by its version number and a timestamp. It takes two arguments: `version-number` and `timestamp`. The object simply evaluates to the `version-number` string. The purpose of this object is to store program version information comprised in the given pair, which can be serialized/deserialized via code presented above. It will be used later to print the RSS feed with version information.
@@ -7621,7 +7621,7 @@ This code defines an object `program-version` that represents a specific version
 <doctest-output>
 1.2.3
 </doctest-output>
-```",no_examples,4.0
+```",no_examples,4.0,4
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-001-or,"```
 <explanation>
 This code defines an object named `external` which provides a set of methods for interacting with the external environment (simulated input/output). It's essentially a mock for functions that would normally interact with the file system, the console, or an external service to retrieve versions. It provides functions for logging, writing/reading files (through stdin/stdout simulation), retrieving the version of a program, and retrieving branch and program names. The file I/O is performed by writing commands to stdout and reading the results from stdin.
@@ -7786,7 +7786,7 @@ Test file content
 Request: get-version|||test_branch|||test_program
 1.2.3
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,5
 ,stdin/stdout,whole code,,,3.0,2.0,1.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The provided EO programming language code is a complex system that appears to manage program versions and interact with an external system through commands. It consists of multiple functions and objects that work together to achieve this functionality. 
 
@@ -7839,7 +7839,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,0
 "empty list = empty version history (not, in fact, a list)",stdin/stdout,unrelated classes also get documetned,,,2.0,2.0,2.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The structure being documented is the `program-data-storage` object, which is responsible for storing and retrieving program data. It has three main functions: `data-file`, `read`, and `write`.
 
@@ -7879,7 +7879,7 @@ version2|||1643723401
 ```
 program-name: test-program-name
 versions: [(version1, 1643723400), (version2, 1643723401)]
-```",no_examples,0.0
+```",no_examples,0.0,1
 ,,,for some reason each function is explained in two places in various detail,,3.0,3.0,3.0,2.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The given EO code defines a function `program-data` that takes three parameters: `branch`, `program-name`, and `versions`. This function is responsible for managing program data, including creating an RSS output.
 
@@ -7939,7 +7939,7 @@ Rss:
 </channel>
 
 </rss>
-```",no_examples,0.0
+```",no_examples,0.0,2
 logic of function is reversed,,,,,2.0,3.0,3.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The `actualized` function is used to update the program data with a new version. It takes a `new-version` as an argument and returns the updated `program-data`. If the `new-version` is the latest version in the list of versions, it is added to the list. Otherwise, the list of versions remains unchanged. This function ensures that the program data is updated correctly with the latest version information.
 </explanation>
@@ -7964,7 +7964,7 @@ The `actualized` function is used to update the program data with a new version.
 ```
 [{""version-number"": ""1.0"", ""timestamp"": 1643723400}]
 ```
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,3
 ,unix?int?,other structures get documented,,,3.0,2.0,1.0,3.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The provided EO code defines a data structure and functions for managing program versions and generating RSS feeds. The `program-version` function takes two arguments, `version-number` and `timestamp`, and returns the `version-number`. This function is used to create a new version of a program, which is then stored in the `program-data` structure. The `program-data` structure contains information about a program, including its name, branch, and a list of versions. The `actualized` function updates the `program-data` structure with a new version. The `output-as-rss` function generates an RSS feed from the `program-data` structure, which includes the program name, branch, and a list of versions with their corresponding timestamps.
 </explanation>
@@ -7983,7 +7983,7 @@ The provided EO code defines a data structure and functions for managing program
 </doctest-stdin>
 <doctest-output>
 1.0
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,4
 ,stdin/stdout?,,"in a given count""?",,3.0,1.0,3.0,2.0,3.0,,out_meta-llama-llama-3-3-70b-instruct-or,"<explanation>
 The provided EO programming language code defines an object named `external` that serves as an interface for interacting with an external system or process. It provides several functions for sending commands, reading and writing files, logging messages, and retrieving responses.
 
@@ -8022,7 +8022,7 @@ Test log message
 Request: read-file|||test.txt
 (lines: 1)
 Hello World!
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,5
 ,stdin/out?,whole code,info about logging...,,3.0,2.0,1.0,2.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This EO code defines an application “app” that continuously monitors and updates program data. The app receives command‐line arguments (with the first argument determining the “state-path”), then enters an infinite loop. In each iteration it retrieves the current branch and program name (through external commands), logs “Reading…” then uses the external interface to retrieve the currently saved data from persistent storage. It then logs “Getting current version”, obtains the current version information for the given branch and program, “actualizes” the data (updating its version history), writes the new data to storage and finally outputs the updated data as an RSS feed.
 The code further defines a “program-data-storage” object that encapsulates file handling: generating a file path, reading (with parsing of file content into a list of “program-version” items) and writing data (serializing version information). The “program-data” object handles the representation of the application’s versions and, via its output-as-rss method, creates an RSS XML string that is printed to stdout.
@@ -8059,7 +8059,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,0
 "'using external functions for path manipulation' = false (they are used for file manipulation, not path manipulation)",stdin/out?,,goes too into detail,,2.0,2.0,3.0,2.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This object “program-data‐storage” is responsible for handling persistent storage of program data. It is parameterized by a “state-path” (a base directory) and provides three methods:
 1. data-file: Given a branch and a program name, it builds the file path where the program’s data is stored. Internally it “joins” the state-path with representations of branch and program-name (using external functions for path manipulation) and then ensures the parent directory exists (by “making” the directory) before returning the file object.
@@ -8086,7 +8086,7 @@ This object “program-data‐storage” is responsible for handling persistent 
 </doctest-stdin>
 <doctest-output>
 dummy-state/test/demo
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,1
 "immediately assigns"" = false",,,redundant inf about empty. too much into detail,,2.0,3.0,3.0,2.0,3.0,,out_openai-o3-mini-or,"<explanation>
 The documented structure defines an object named “program‐data” that represents the state of a program by bundling together a branch, a program name, and a list of version records. Its responsibilities are twofold: generating an RSS feed output from the stored versions and “actualizing” (updating) its own state with a new version.
 
@@ -8134,7 +8134,7 @@ Rss:
 </channel>
 
 </rss>
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,2
 ,,,redundant info bout empty list,,3.0,3.0,3.0,2.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This function “actualized” is a method of a program‐data object that holds three properties: branch, program-name, and versions (a list of version records). It takes a new version as its parameter and returns a new program‐data instance (by reusing the surrounding object’s factory “program-data”) with potentially updated versions. Specifically, it checks if the versions list is not empty and if the new version is already present as the last element (using list functions such as last-index-of, versions.length.minus 1 and versions.is-empty). If both conditions hold then it returns the same versions list (i.e. no change is made), otherwise it “adds” the new version at the end using versions.with. In short, this function ensures that the version history is updated only when the incoming new version is different from the latest stored one.
 </explanation>
@@ -8168,7 +8168,7 @@ This function “actualized” is a method of a program‐data object that holds
 <doctest-output>
 program-data(main, TestApp, [v1])
 program-data(main, TestApp, [v1, v2])
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,3
 not ignoring,unix?int?,,,,2.0,2.0,3.0,3.0,3.0,,out_openai-o3-mini-or,"<explanation>
 This function, named ""program-version"", accepts two parameters: ""version-number"" and ""timestamp"". Its body simply returns the ""version-number"", effectively ignoring the ""timestamp"". It can be used wherever a version identifier is needed.
 </explanation>
@@ -8184,7 +8184,7 @@ This function, named ""program-version"", accepts two parameters: ""version-numb
 </doctest-stdin>
 <doctest-output>
 v1.2.3
-</doctest-output>",no_examples,4.0
+</doctest-output>",no_examples,4.0,4
 ,"some mention of stdin, but definetely not out",,too into detail,weird unicode,3.0,1.0,3.0,2.0,1.5,,out_openai-o3-mini-or,"<explanation>
 This object “external” provides a collection of utility functions for interacting with the outside world via text‐based commands, file operations, and logging. Its “@” value is set to an empty string, and it also defines a command separator (“|||”) that is used to join parts of commands. The functions can be grouped into several categories:
 • Formatting and logging functions: 
@@ -8235,7 +8235,7 @@ Line2
 Request: TestCmd
 Response: UserReply
 (lines: 3)
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,5
 ,cli? stdin/stdout? quering program branch and name?,whole code,,,3.0,1.0,2.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The application manages program version data and generates an RSS feed. It runs in an infinite loop, periodically retrieving the current version, updating stored data, and outputting an RSS XML. Key components:
 
@@ -8285,7 +8285,7 @@ Rss:
 </rss>
 
 (lines: 14)
-</doctest-output>",no_examples,0.0
+</doctest-output>",no_examples,0.0,0
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `program-data-storage` object manages persistent storage for program version data. It provides functions to:
 
@@ -8331,7 +8331,7 @@ Log:
 
 0.9 released 349823598
 1.0.1 released 350125908
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,1
 ,output outputs,,,,3.0,2.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `program-data` structure holds a program's version history and provides methods to output an RSS feed and update versions. It takes arguments: a `branch`, `program-name`, and a list of `versions` (each a `program-version` instance containing a version number and timestamp). 
 
@@ -8379,7 +8379,7 @@ Rss:
 </channel>
 </rss>
 
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,2
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `actualized` function updates a `program-data` instance by appending a new version only if it is not already the last entry in the versions list. This ensures that consecutive identical versions are not redundantly stored. It returns a new `program-data` instance with the updated versions list.
 
@@ -8469,7 +8469,7 @@ Rss:
     <link>https://search.nixos.org/packages?channel=main&from=0&size=50&sort=relevance&type=packages&query=test</link>
     <description>New version at 654321</description>
   </item>
-</doctest-output>",no_examples,0.0
+</doctest-output>",no_examples,0.0,3
 weird statements about timestamp,,,using arguments as parts of identifiying of the documented strucutre.,,2.0,3.0,3.0,2.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `[version-number timestamp] > program-version` function defines an object representing a program version. It takes two arguments: `version-number` (a string) and `timestamp` (a numerical Unix timestamp). The returned value (via the `@` function) is the `version-number`, while the `timestamp` is stored as part of the object's internal state. The timestamp is accessible in scopes where the object's closure is preserved (e.g., for downstream processing in other functions or data structures).
 
@@ -8491,7 +8491,7 @@ This structure models a version's core presentation (the version string for outp
 </doctest-stdin>
 <doctest-output>
 Testing program-version: v1.2.3
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,4
 "Not prefix with `[Log:]`. (e.g., ""lines: 5"") = (e.g., ""(lines: 5)"").",,,"when no other function is called""?",,2.0,3.0,3.0,2.0,3.0,,out_qwen-qwq-32b-or,"<explanation>
 The `external` object in EO encapsulates functions for interacting with external systems or programs via stdin and stdout. It provides utilities like logging, file operations, and command-driven I/O.
 
@@ -8535,7 +8535,7 @@ Line2
 Read result:
 Line1
 Line2
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,5
 ,retrieval of program/branch? stdin/out?,,,,3.0,2.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 This code defines the `app` object, which represents the main application logic. It takes a single argument `args`, which is expected to contain the path to the state directory. The application continuously reads and writes data related to different program versions. It retrieves the current version, saves program data, writes the updated data, and outputs the data as RSS. The object uses an infinite loop implemented with the `while` object, constantly checking and updating the program data. The `app` is used to control the execution, including reading and writing program data, getting program versions, handling branches and program names, and generating an RSS feed.
@@ -8599,7 +8599,7 @@ log:
 /tmp/state
 log: 
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,0
 ,data-file creates directory. stdin/stdout,,,double spaces,3.0,2.0,3.0,3.0,1.5,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The `program-data-storage` object appears to be responsible for managing the persistence of program data. It takes a `state-path` as an argument, which likely specifies the directory where data files are stored. It provides `data-file`, `read`, and `write` functions.  `data-file` constructs path for storing data specific to a given branch and program-name as files within the state path.  `read` retrieves and parses data for a given branch and program name from the file, handling cases where the file may not exist.  It reads and parses the content into versions.  `write` serializes and writes program data (including version information) for a given branch and program name to the corresponding file.
@@ -8784,7 +8784,7 @@ Log:
 version1|||12345
 version2|||67890
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,1
 actualized doesnt take current object as input,,,,,2.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The `program-data` object is a function that encapsulates the logic for managing program data, likely related to versioning and potentially outputting data in RSS format. It takes branch, program-name, and versions as arguments.
@@ -8840,7 +8840,7 @@ The `program-data` object is a function that encapsulates the logic for managing
 <doctest-output>
 ok
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,2
 ,,,redundant condition,,3.0,3.0,3.0,2.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The `actualized` function updates the program's version data. It takes a `new-version` as input and checks if the new version already exists as the last element of the `versions` list.  If the `new-version` isn't present at the end, it updates the versions by appending this new version to the end of the list. Otherwise, if the list is empty, it also appends the new version to the end.  It returns a new `program-data` object with the updated versions.
@@ -8869,7 +8869,7 @@ The `actualized` function updates the program's version data. It takes a `new-ve
 <doctest-output>
 ""test-program""
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,3
 "not created, recorded","unix, but int is present.",,,,2.0,3.0,3.0,3.0,3.0,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The `program-version` function represents a data structure for storing version information. It takes two arguments: `version-number` (a string or text representing the version) and `timestamp` (an integer representing the time the version was created). The function itself simply evaluates to the 'version-number'. It acts as a basic record, allowing other parts of the program to refer to a version by its number and store a related timestamp.
@@ -8885,7 +8885,7 @@ The `program-version` function represents a data structure for storing version i
 <doctest-output>
 1.2.3
 </doctest-output>
-```",no_examples,3.0
+```",no_examples,3.0,4
 ,,,,double spaces,3.0,3.0,3.0,3.0,1.5,,out_google-gemini-2-0-flash-lite-001-or,"```
 <explanation>
 The `external` object defines a set of external functions used for interacting with the operating system and other external resources. These functions handle tasks like logging, file reading and writing, and retrieving program information.  It simulates external calls by writing ""Request:"" to stdout and then expecting a response from stdin.  The `command-separator` variable is defined used to build commands with multiple parts.
@@ -8929,7 +8929,7 @@ file content
 <doctest-output>
 Log:
 (lines: 1)</doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,5
 ,querying for brnach and program,whole code,,,3.0,2.0,2.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 The code defines a structure of an application called `app` that leverages various functionalities to manage and manipulate program data. It begins by obtaining a file path based on command-line arguments and enters an infinite loop where multiple operations can be executed. The code comprises functions for version management, reading and writing data files, and generating an RSS output format for displaying version history. The structure also includes handlers for managing external commands and responses, making it modular and extensible. Key functionalities involve logging, reading current versions, and saving new data, wrapped around a functional paradigm promoting composition.
@@ -8966,7 +8966,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,0
 ,stdin/out,,,,3.0,2.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 This structure defines a class named `program-data-storage` that manages file operations related to program data states for specific branches and program names. It has methods to create file paths for data storage, read from these files, and write data to them, ensuring that the correct structure of program data instances is maintained. The data is organized with respect to branching of the program and keeps track of versions while handling file existence checks and other necessary operations for data integrity.
@@ -9008,7 +9008,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,1
 does not manage version details per say,out outs,,,,2.0,2.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 This code defines an object in the EO programming language named `program-data`, which is designed to manage version information for software programs. It takes three parameters: `branch`, `program-name`, and `versions`. The object provides methods for outputting version information in RSS format (`output-as-rss`), updating version data (`actualized`), and managing program version details associated with a specific `version-number` and `timestamp`. The output-as-rss method creates a structured RSS feed containing the version history of the specified program and branch.
@@ -9059,7 +9059,7 @@ Rss:
 </rss>
 
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,2
 ,,whole code,,,3.0,3.0,0.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 The provided EO code defines a minimalistic application framework that interacts with the file system and manages program versions, logging, and output in an RSS feed format. The main structure comprises an `app` object which processes command-line arguments, reads and writes program data, and handles version control. The nested functions allow for the retrieval and storage of versions, logging of actions, and dynamic construction of an RSS output, ensuring that version history is kept and displayed clearly.
@@ -9095,7 +9095,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,3
 not one parameter,unix?int?,,,,2.0,2.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 The `program-version` structure defines a data model that encapsulates a version number and its associated timestamp. It is designed to be used within a larger application that manages program versions, allowing for the retrieval of the version number when an instance of `program-version` is evaluated. The structure has one parameter, `version-number`, which it returns when the object is evaluated.
@@ -9110,7 +9110,7 @@ doctest > program-version
 ```
 <doctest-output>
 1
-```",no_examples,0.0
+```",no_examples,0.0,4
 ,stdin/out,,,,3.0,1.0,3.0,3.0,3.0,,out_openai-gpt-4o-mini-or,"```
 <explanation>
 The `external` object in this code defines a set of utility functions for interacting with files and outputting information to the console. It includes functionalities for logging messages, reading from and writing to files, sending commands, and counting lines in output. Each of these functions is organized using a functional programming approach, with implicit sequencing provided by indentation, making extensive use of the `seq` function to handle operations in sequence. 
@@ -9142,7 +9142,7 @@ Request: write-file
 Example content written to file.
 
 Request: read-file
-```",no_examples,0.0
+```",no_examples,0.0,5
 ,stdin/out not mentioned when talking about app.,whole code,"checks"" branch and program name?",,3.0,2.0,1.0,2.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The code defines an EO application that tracks program versions and generates an RSS feed of version history. Key components:
@@ -9216,7 +9216,7 @@ Rss:
 </rss>
 (lines: 15)
 </doctest-output>
-```",no_examples,1.0
+```",no_examples,1.0,0
 ,stdin/out?,,,,3.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The `program-data-storage` object manages persistent storage of program version data. It handles:
@@ -9269,7 +9269,7 @@ Log:
 (lines: 1)
 Getting current version
 </doctest-output>
-```",no_examples,2.0
+```",no_examples,2.0,1
 duplicates = consecutive duplicates,out outs?,,,,2.0,2.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The `program-data` structure manages version history for a program and generates an RSS feed. It has three parameters: `branch` (distribution channel), `program-name`, and `versions` (list of `program-version` objects). Key features:
@@ -9321,7 +9321,7 @@ Rss:
 
 </rss>
 </doctest-output>
-```",no_examples,2.0
+```",no_examples,2.0,2
 ,,,"and version list length comparison""???",,3.0,3.0,3.0,2.0,3.0,,out_deepseek-deepseek-r1-or,"<explanation>
 The `actualized` function within the `program-data` object updates the version history of a program. It takes a `new-version` parameter (a `program-version` object) and returns an updated `program-data` instance. 
 
@@ -9380,7 +9380,7 @@ After older version:
 Log:
 (lines: 1)
 3
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,3
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The `program-version` object represents a specific version of a program with associated metadata. It takes two parameters:
@@ -9406,7 +9406,7 @@ Log:
 (lines: 1)
 1.0.0
 </doctest-output>
-```",no_examples,0.0
+```",no_examples,0.0,4
 ,,,,,3.0,3.0,3.0,3.0,3.0,,out_deepseek-deepseek-r1-or,"```
 <explanation>
 The `external` object acts as an interface for interacting with external systems, handling input/output operations, command sending, and response retrieval. It provides methods for logging, file operations (read/write), version checking, and command communication. Key aspects:
@@ -9445,4 +9445,4 @@ Test log message
 Second line
 Request: get-version|||nixos-unstable|||nginx
 Received version: 1.23.4
-</doctest-output>",no_examples,1.0
+</doctest-output>",no_examples,1.0,5
